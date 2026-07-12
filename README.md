@@ -18,6 +18,14 @@ npm run typecheck
 npm run build
 ```
 
+관리자 처리 흐름 페이지는 로컬 포트 `9231`에서 실행됩니다.
+
+```bash
+npm run dev:admin
+```
+
+접속 주소: `http://127.0.0.1:9231`
+
 ## GitHub Pages
 
 이 `front` 폴더를 프런트엔드 GitHub 저장소의 루트로 사용합니다. `.github/workflows/pages.yml`이 `main` 브랜치 변경을 감지해 공개 사이트와 관리자 화면을 하나의 Pages 산출물로 배포합니다.
