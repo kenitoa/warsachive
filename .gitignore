@@ -1,0 +1,11 @@
+node_modules/
+# Frontend build output
+.next/
+dist/
+out/
+.expo/
+.env
+.env.local
+npm-debug.log*
+*.tsbuildinfo
+.DS_Store

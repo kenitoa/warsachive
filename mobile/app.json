@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "전쟁 역사 아카이브",
+    "slug": "war-archive",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": { "package": "com.wararchive.mobile" }
+  }
+}

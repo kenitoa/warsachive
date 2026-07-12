@@ -1,0 +1,60 @@
+name: Deploy front to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "admin/**"
+      - "mobile/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.13
+          cache: npm
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - run: npm ci
+      - name: Build public archive
+        run: npm run build --workspace @war-archive/web
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+      - name: Build admin application
+        run: npm run build --workspace @war-archive/admin
+      - name: Assemble Pages artifact
+        run: |
+          mkdir -p web/out/admin
+          cp -R admin/dist/. web/out/admin/
+          touch web/out/.nojekyll
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web/out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
