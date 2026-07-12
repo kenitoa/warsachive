@@ -53,7 +53,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="heroCopy">
           <p className="eyebrow"><span /> DIGITAL COLLECTION · EST. 2026</p>
-          <h1 id="hero-title">전쟁의 기록을<br /><em>기억의 질서</em>로.</h1>
+          <h1 id="hero-title">전쟁의 기록을<br /><span className="heroTitleLine"><em>기억의 질서</em>로.</span></h1>
           <p className="lead">전투의 결과만이 아니라 그 전후의 사람, 장소, 사료와 증언을 연결합니다. 흩어진 기록을 출처와 맥락 속에서 다시 읽는 디지털 역사 보관소입니다.</p>
           <div className="heroActions">
             <a className="primaryAction" href="#catalogue">소장 기록 열람</a>
@@ -61,17 +61,23 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="accessionCard" aria-label="대표 소장 기록 정보">
-          <div className="cardTape" />
-          <p className="cardLabel">ACCESSION RECORD</p>
-          <div className="catalogueNumber">WA–2026<br />COL. 001</div>
-          <dl>
-            <div><dt>수집 범위</dt><dd>고대 — 현대</dd></div>
-            <div><dt>자료 유형</dt><dd>사건 · 인물 · 사료</dd></div>
-            <div><dt>공개 상태</dt><dd><span className="statusDot" /> 열람 가능</dd></div>
-          </dl>
-          <div className="stamp">ARCHIVED<br /><small>검토 기록</small></div>
-        </aside>
+        <div className="heroGallery">
+          <div className="galleryFrame" aria-hidden="true">
+            <span>EXHIBITION 01</span>
+            <strong>WAR MEMORY</strong>
+          </div>
+          <aside className="accessionCard" aria-label="대표 소장 기록 정보">
+            <div className="cardTape" />
+            <p className="cardLabel">ACCESSION RECORD</p>
+            <div className="catalogueNumber">WA–2026<br />COL. 001</div>
+            <dl>
+              <div><dt>수집 범위</dt><dd>고대 — 현대</dd></div>
+              <div><dt>자료 유형</dt><dd>사건 · 인물 · 사료</dd></div>
+              <div><dt>공개 상태</dt><dd><span className="statusDot" /> 열람 가능</dd></div>
+            </dl>
+            <div className="stamp">ARCHIVED<br /><small>검토 기록</small></div>
+          </aside>
+        </div>
       </section>
 
       <section className="archiveStats" aria-label="아카이브 현황">
