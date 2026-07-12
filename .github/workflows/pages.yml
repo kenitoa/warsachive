@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - "web/**"
-      - "admin/**"
       - "mobile/**"
       - "package.json"
       - "package-lock.json"
@@ -37,12 +36,8 @@ jobs:
         run: npm run build --workspace @war-archive/web
         env:
           NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
-      - name: Build admin application
-        run: npm run build --workspace @war-archive/admin
       - name: Assemble Pages artifact
         run: |
-          mkdir -p web/out/admin
-          cp -R admin/dist/. web/out/admin/
           touch web/out/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:

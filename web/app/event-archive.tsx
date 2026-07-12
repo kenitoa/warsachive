@@ -10,7 +10,18 @@ export function EventArchive() {
   const filteredEvents = useMemo(() => {
     const keyword = query.trim().toLocaleLowerCase("ko");
     if (!keyword) return archiveEvents;
-    return archiveEvents.filter((event) => [event.title, event.period, event.region, event.summary, ...(event.labels ?? [])]
+    return archiveEvents.filter((event) => [
+      event.title,
+      event.period,
+      event.region,
+      event.summary,
+      event.curator?.context,
+      event.curator?.sourceBasis,
+      ...(event.curator?.keyPoints ?? []),
+      ...(event.curator?.chronology ?? []),
+      ...(event.curator?.peopleAndPlaces ?? []),
+      ...(event.labels ?? [])
+    ]
       .join(" ")
       .toLocaleLowerCase("ko")
       .includes(keyword));

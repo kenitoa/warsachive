@@ -163,6 +163,13 @@ h1 em { color: var(--oxide); font-weight: 500; }
 .recordBody { max-width: 720px; }
 .recordBody h2 { margin: 0 0 1.3rem; font: 500 1.8rem var(--serif); }
 .recordBody p { color: var(--ink-soft); font-size: 1rem; line-height: 2; word-break: keep-all; }
+.curatorSheet { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2.4rem; }
+.curatorSheet > div { padding: 1.2rem; border: 1px solid var(--line); background: rgba(217, 208, 187, .28); }
+.curatorSheet h2 { margin: 0 0 1rem; color: var(--oxide); font: 700 .72rem var(--sans); letter-spacing: .12em; }
+.curatorSheet ul, .curatorSheet ol { margin: 0; padding-left: 1.1rem; color: var(--ink-soft); font-size: .84rem; line-height: 1.75; word-break: keep-all; }
+.curatorSheet li + li { margin-top: .65rem; }
+.curatorSheet .sourceBasis { grid-column: 1 / -1; }
+.curatorSheet .sourceBasis p { margin: 0; color: var(--ink-soft); font-size: .86rem; line-height: 1.8; word-break: keep-all; }
 .recordLabels { display: flex; flex-wrap: wrap; gap: .5rem; margin: 2.5rem 0; }
 .recordLabels span { padding: .45rem .7rem; border: 1px solid var(--line); color: var(--ink-soft); font-size: .65rem; }
 
@@ -210,6 +217,7 @@ footer > p:last-child { justify-self: end; font: 600 .55rem var(--sans); letter-
   .recordSheet { margin-top: 2rem; padding: 2rem 1.3rem; }
   .recordFacts { grid-template-columns: 1fr; }
   .recordFacts div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .curatorSheet { grid-template-columns: 1fr; }
   footer { grid-template-columns: 1fr; justify-items: start; padding: 3rem 1.2rem; }
   footer > p, footer > p:last-child { justify-self: start; text-align: left; }
 }

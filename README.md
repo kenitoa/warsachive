@@ -1,13 +1,12 @@
 # 전쟁 역사 아카이브 프런트엔드
 
-GitHub Pages에 배포되는 공개 Next.js 사이트, React 관리자 화면, React Native 모바일 앱을 함께 관리합니다.
+GitHub Pages에 배포되는 공개 Next.js 사이트와 React Native 모바일 앱을 함께 관리합니다.
 
 ## 구성
 
 | 위치 | 책임 |
 | --- | --- |
 | `web` | Next.js 공개 아카이브. Pages 루트에 정적 배포 |
-| `admin` | React.js 관리자 화면. Pages의 `/admin/`에 배포 |
 | `mobile` | React Native 모바일 앱. Pages 배포 대상 아님 |
 
 ## 설치와 검증
@@ -20,7 +19,7 @@ npm run build
 
 ## GitHub Pages
 
-이 `front` 폴더를 프런트엔드 GitHub 저장소의 루트로 사용합니다. `.github/workflows/pages.yml`이 `main` 브랜치 변경을 감지해 공개 사이트와 관리자 화면을 하나의 Pages 산출물로 배포합니다.
+이 `front` 폴더를 프런트엔드 GitHub 저장소의 루트로 사용합니다. `.github/workflows/pages.yml`이 `main` 브랜치 변경을 감지해 공개 사이트만 Pages 산출물로 배포합니다.
 
 1. 저장소의 **Settings → Pages → Source**를 **GitHub Actions**로 설정합니다.
 2. Actions 변수 `SITE_URL`에 최종 Pages 주소를 등록합니다.
@@ -39,7 +38,7 @@ NEXT_PUBLIC_SITE_URL=https://kenitoa.github.io/warsachive
 공개 빌드는 다음 검색엔진 파일을 자동 생성합니다.
 
 - `sitemap.xml`: 공개 canonical URL 전달
-- `robots.txt`: 공개 사이트 허용, `/admin/` 제외
+- `robots.txt`: 공개 사이트 허용
 - `manifest.webmanifest`: 사이트 이름과 테마 전달
 - JSON-LD: `WebSite`와 `CollectionPage` 구조화 데이터
 
