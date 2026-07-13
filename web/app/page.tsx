@@ -1,14 +1,43 @@
-import { EventArchive } from "./event-archive";
+import Link from "next/link";
+import type { CSSProperties } from "react";
+import { archiveEvents } from "../lib/archive-data";
 import { getSiteUrl } from "./site-config";
 
-const classifications = [
-  ["A", "전쟁과 전투", "전투 기록, 작전, 피해 흐름"],
-  ["B", "인물과 증언", "개인 경험, 지휘관, 민간인"],
-  ["C", "지도와 장소", "전장, 이동 경로, 지역 변화"],
-  ["D", "조약과 외교", "교섭, 외교문서, 전후 처리"]
+const siteUrl = getSiteUrl();
+const publicBasePath = new URL(siteUrl).pathname.replace(/\/$/, "");
+const archiveHeroImage = `${publicBasePath}/images/archive-gallery-hero.png`;
+
+const collectionCards = [
+  {
+    eyebrow: "ARCHIVE",
+    title: "아카이브",
+    description: "문서, 사진, 증언을 한곳에서 읽고 기록의 근거까지 확인합니다.",
+    href: "#records",
+    className: "archive"
+  },
+  {
+    eyebrow: "EXPLORE",
+    title: "주제 탐색",
+    description: "사건과 인물, 장소의 연결을 따라 새로운 맥락을 발견합니다.",
+    href: "#collections",
+    className: "explore"
+  },
+  {
+    eyebrow: "TIMELINE",
+    title: "연표",
+    description: "시대의 흐름을 한눈에 보고 기록 사이의 시간을 이어 봅니다.",
+    href: "#timeline",
+    className: "timeline"
+  },
+  {
+    eyebrow: "STORY",
+    title: "기록의 목소리",
+    description: "자료 속 개인과 공동체의 이야기를 천천히 만나 봅니다.",
+    href: "#about",
+    className: "story"
+  }
 ];
 
-const siteUrl = getSiteUrl();
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -19,109 +48,117 @@ const structuredData = {
       name: "전쟁 역사 아카이브",
       alternateName: "War History Archive",
       inLanguage: "ko-KR",
-      description: "사건, 인물, 장소와 원문 사료를 출처와 맥락 속에서 탐색하는 디지털 역사 아카이브"
+      description: "사건, 인물, 장소의 기록을 맥락과 출처까지 함께 읽는 공개 역사 아카이브"
     },
     {
       "@type": "CollectionPage",
       "@id": `${siteUrl}/#collection`,
       url: siteUrl,
-      name: "전쟁 역사 아카이브 소장 기록",
+      name: "전쟁 역사 아카이브",
       isPartOf: { "@id": `${siteUrl}/#website` },
-      about: ["전쟁사", "전투 기록", "역사 인물", "역사 사료"],
       inLanguage: "ko-KR"
     }
   ]
 };
 
 export default function Home() {
+  const featuredRecords = archiveEvents.slice(0, 3);
+  const sourceTotal = archiveEvents.reduce((total, event) => total + event.sourceCount, 0);
+
   return (
-    <main id="top">
+    <main className="museumHome" id="top" style={{ "--archive-hero-image": `url("${archiveHeroImage}")` } as CSSProperties}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
-      <header className="siteHeader">
-        <a className="brand" href="#top" aria-label="전쟁 역사 아카이브 홈">
-          <span className="brandMark">WA</span>
-          <span>전쟁 역사 아카이브<small>REFERENCE LIBRARY</small></span>
+
+      <aside className="museumRail" aria-label="사이트 탐색">
+        <a className="museumBrand" href="#top" aria-label="전쟁 역사 아카이브 처음으로">
+          <span className="museumMark" aria-hidden="true"><i /><i /></span>
+          <span>HISTORY<br />ARCHIVE</span>
         </a>
-        <nav aria-label="주요 메뉴">
-          <a href="#catalogue">열람실</a>
-          <a href="#classification">분류 서가</a>
-          <a href="#principles">운영 원칙</a>
+        <nav className="museumNav" aria-label="주요 메뉴">
+          <a href="#records">아카이브</a>
+          <a href="#collections">주제 탐색</a>
+          <a href="#timeline">연표</a>
+          <a href="#stories">컬렉션</a>
+          <a href="#about">소개</a>
         </nav>
-        <span className="headerIndex">PUBLIC READING DESK</span>
-      </header>
+        <div className="railUtility">
+          <a href="#records" aria-label="기록 찾기"><span className="searchIcon" aria-hidden="true" />기록 찾기</a>
+          <span>KO <b aria-hidden="true">⌄</b></span>
+        </div>
+      </aside>
 
-      <section className="hero" aria-labelledby="hero-title">
-        <div className="heroCopy">
-          <p className="eyebrow"><span /> OPEN REFERENCE ROOM</p>
-          <h1 id="hero-title">사료를 찾고,<br /><span className="heroTitleLine"><em>맥락으로</em> 읽습니다.</span></h1>
-          <p className="lead">전쟁 기록을 전시물처럼 바라보는 대신, 도서관 열람대에서 원문과 해제를 함께 펼쳐 읽는 공개 자료실입니다. 검색, 분류, 책갈피, 인용 복사를 한 화면에서 다룹니다.</p>
-          <div className="heroActions">
-            <a className="primaryAction" href="#catalogue">문헌 검색 시작</a>
-            <a className="textAction" href="#classification">분류 서가 보기 <span>→</span></a>
+      <section className="museumHero" aria-labelledby="hero-title">
+        <div className="heroShade" />
+        <div className="heroContent">
+          <p className="museumKicker">WAR HISTORY ARCHIVE / OPEN COLLECTION</p>
+          <h1 id="hero-title">기록은 과거를,<br />기억은 역사를 만듭니다</h1>
+          <p className="museumLead">흩어진 시간의 조각을 모아<br />더 깊이, 더 오래, 더 넓게 기억합니다.</p>
+          <a className="scrollPrompt" href="#collections"><span />SCROLL TO EXPLORE</a>
+        </div>
+
+        <div className="heroMenu" aria-label="목록 보기">
+          <span aria-hidden="true"><i /><i /></span>
+          <small>MENU</small>
+        </div>
+
+        <aside className="heroTimeline" id="timeline" aria-label="주요 연표">
+          <p>TIMELINE</p>
+          <div className="timelineRange"><span>1895</span><strong>1953</strong></div>
+          <div className="timelineLine" aria-hidden="true"><i /><i /><i /><i /><i /></div>
+          <div className="timelineRecord">
+            <div className="recordThumbnail" aria-hidden="true" />
+            <p><b>1945</b><span>광복</span><small>새로운 질서가 시작되며, 기억은 서로 다른 목소리로 남았습니다.</small></p>
           </div>
-        </div>
-
-        <div className="heroGallery">
-          <aside className="accessionCard" aria-label="열람실 상태">
-            <p className="cardLabel">TODAY'S DESK</p>
-            <div className="catalogueNumber">WA-REF<br />001</div>
-            <dl>
-              <div><dt>자료 상태</dt><dd><span className="statusDot" /> 공개 열람</dd></div>
-              <div><dt>현재 주제</dt><dd>임진왜란</dd></div>
-              <div><dt>열람 도구</dt><dd>검색 · 분류 · 인용</dd></div>
-            </dl>
-          </aside>
-        </div>
+        </aside>
       </section>
 
-      <section className="archiveStats" aria-label="아카이브 현황">
-        <p><span>DOCUMENTS</span><strong>01</strong><small>열람 가능한 문헌</small></p>
-        <p><span>SOURCES</span><strong>02</strong><small>연결된 출처</small></p>
-        <p><span>TOOLS</span><strong>08</strong><small>페이지 내 열람 기능</small></p>
-        <p className="statNote">검색 결과를 누르면 열람대가 즉시 바뀌고,<br />해제와 출처 근거가 함께 갱신됩니다.</p>
+      <section className="museumCollections" id="collections" aria-label="아카이브 탐색 영역">
+        {collectionCards.map((card) => (
+          <a className={`collectionCard ${card.className}`} href={card.href} key={card.eyebrow}>
+            <span className="cardEyebrow">{card.eyebrow}</span>
+            <h2>{card.title}</h2>
+            <p>{card.description}</p>
+            <b aria-hidden="true">→</b>
+          </a>
+        ))}
       </section>
 
-      <section className="classification" id="classification">
-        <div className="sectionHeading">
-          <p className="sectionNumber">분류 서가 / STACKS</p>
-          <h2>자료를 찾는<br />네 개의 입구</h2>
+      <section className="museumRecords" id="records" aria-labelledby="records-title">
+        <div className="recordsHeading">
+          <div>
+            <p className="museumKicker">THE COLLECTION</p>
+            <h2 id="records-title">현재 열람 가능한 기록</h2>
+          </div>
+          <p>모든 기록에는 원문으로 이어지는 출처와<br />아카이브 정리 정보가 함께 남아 있습니다.</p>
         </div>
-        <div className="classificationList">
-          {classifications.map(([number, title, description]) => (
-            <article key={number}>
-              <span>{number}</span><h3>{title}</h3><p>{description}</p><b>OPEN</b>
-            </article>
+        <div className="recordGrid">
+          {featuredRecords.map((record, index) => (
+            <Link className="museumRecord" href={`/archive/${record.id}/`} key={record.id}>
+              <span>RECORD {String(index + 1).padStart(2, "0")}</span>
+              <p>{record.period} · {record.region}</p>
+              <h3>{record.title}</h3>
+              <small>{record.summary}</small>
+              <b>기록 읽기 <i aria-hidden="true">→</i></b>
+            </Link>
           ))}
         </div>
-      </section>
-
-      <section className="catalogue" id="catalogue">
-        <div className="sectionHeading horizontal">
-          <div>
-            <p className="sectionNumber">자료 열람실 / READING ROOM</p>
-            <h2>검색하고 펼쳐 읽는 자료실</h2>
-          </div>
-          <p>본문 선택, 탭 전환, 글자 크기, 책갈피, 인용 복사가 모두 같은 열람대 안에서 작동합니다.</p>
+        <div className="archiveSummary">
+          <span>ARCHIVE INDEX</span>
+          <strong>{String(archiveEvents.length).padStart(2, "0")}</strong><small>기록</small>
+          <strong>{String(sourceTotal).padStart(2, "0")}</strong><small>출처</small>
         </div>
-        <EventArchive />
       </section>
 
-      <section className="principles" id="principles">
-        <div className="principleIntro">
-          <p className="sectionNumber">운영 원칙 / METHOD</p>
-          <h2>읽을 수 있어야<br />보존된 것입니다.</h2>
-        </div>
-        <ol className="principleList">
-          <li><span>01</span><div><strong>원문과 해제를 분리하지 않습니다</strong><p>사용자가 검색한 문헌을 읽는 동안 출처, 해제, 품질 정보를 같은 화면에 둡니다.</p></div></li>
-          <li><span>02</span><div><strong>본문 자체가 인터페이스입니다</strong><p>버튼을 찾아 헤매지 않아도 문헌 카드 본문을 누르면 열람대가 갱신됩니다.</p></div></li>
-          <li><span>03</span><div><strong>읽기 상태를 직접 조절합니다</strong><p>요점, 연표, 인물·장소, 출처 탭과 글자 크기 조절을 제공합니다.</p></div></li>
-        </ol>
+      <section className="museumStory" id="stories" aria-labelledby="story-title">
+        <p className="museumKicker">WHY WE ARCHIVE</p>
+        <h2 id="story-title">기록은 사라지지 않도록<br />보존하는 일입니다.</h2>
+        <p>사건을 단정하지 않고, 서로 다른 자료가 남긴 흔적을 연결합니다. 기록의 출처와 맥락을 함께 보존해 다음 세대가 다시 읽을 수 있도록 합니다.</p>
       </section>
 
-      <footer>
-        <a className="brand footerBrand" href="#top"><span className="brandMark">WA</span><span>전쟁 역사 아카이브<small>REFERENCE LIBRARY</small></span></a>
-        <p>전쟁을 찬양하지 않고, 기록으로 이해합니다.</p>
-        <p>© 2026 · PUBLIC REFERENCE</p>
+      <footer className="museumFooter" id="about">
+        <a className="museumBrand" href="#top"><span className="museumMark" aria-hidden="true"><i /><i /></span><span>HISTORY<br />ARCHIVE</span></a>
+        <p>기록을 통해 과거를 이해하고, 기억을 통해 역사를 이어갑니다.</p>
+        <small>PUBLIC ARCHIVE · 2026</small>
       </footer>
     </main>
   );
