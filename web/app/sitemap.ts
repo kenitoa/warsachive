@@ -12,10 +12,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly" as const,
     priority: .8
   }));
+  const archiveSections = ["archive", "explore", "timeline", "collections", "stories", "about"].map((section) => ({
+    url: `${siteUrl}/${section}/`,
+    lastModified: new Date("2026-07-14T00:00:00+09:00"),
+    changeFrequency: "weekly" as const,
+    priority: .7
+  }));
   return [{
     url: siteUrl,
     lastModified: new Date("2026-07-12T00:00:00+09:00"),
     changeFrequency: "weekly",
     priority: 1
-  }, ...records];
+  }, ...archiveSections, ...records];
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { getSiteUrl } from "./site-config";
 import "./globals.css";
+import "./architecture.css";
 
 const siteUrl = getSiteUrl();
 
