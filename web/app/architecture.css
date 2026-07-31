@@ -409,3 +409,202 @@
   .recordRoutePage .recordFacts div { border-bottom: 1px solid var(--museum-line); }
   .recordRoutePage .recordFacts div:last-child { border-bottom: 0; }
 }
+
+/* Content planning views ------------------------------------------------- */
+.themeIndex,
+.timelineNarrative,
+.collectionShelf,
+.storyFeatures {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 4.5rem 0 6rem;
+}
+
+.routeSectionHeading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.routeSectionHeading p {
+  margin: 0;
+  color: var(--museum-gold);
+  font-size: .62rem;
+  letter-spacing: .15em;
+}
+.routeSectionHeading h2 {
+  margin: 0;
+  font: 400 2rem/1.2 Georgia, "Noto Serif KR", serif;
+}
+
+/* Explore: a catalogue of editorial lenses. */
+.themeCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--museum-line);
+  background: var(--museum-line);
+}
+.themeCard {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--museum-panel);
+}
+.themeCard > p:first-child {
+  margin: 0 0 2.5rem;
+  color: var(--museum-gold);
+  font-size: .6rem;
+  letter-spacing: .13em;
+}
+.themeCard h2 {
+  margin: 0 0 .8rem;
+  font: 400 2rem/1.2 Georgia, "Noto Serif KR", serif;
+}
+.themeCard > p:nth-child(3) {
+  max-width: 420px;
+  margin: 0;
+  color: var(--museum-muted);
+  font-size: .82rem;
+  line-height: 1.75;
+}
+.themeCard dl {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0 1.5rem;
+}
+.themeCard dl div { display: grid; gap: .3rem; }
+.themeCard dt { color: #858078; font-size: .6rem; }
+.themeCard dd { margin: 0; color: #ddd5ca; font-size: .75rem; }
+.themeRecordLinks {
+  display: grid;
+  margin-top: auto;
+  border-top: 1px solid var(--museum-line);
+}
+.themeRecordLinks a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--museum-line);
+  color: #c9c2b8;
+  font-size: .72rem;
+}
+.themeRecordLinks span { color: var(--museum-gold); }
+
+/* Timeline: chapters inside each event rather than another card grid. */
+.timelineNarrative { display: grid; gap: 4.5rem; }
+.timelineEvent > header {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--museum-line);
+}
+.timelineEvent header p,
+.timelineEvent header h2,
+.timelineEvent header span { margin: 0; }
+.timelineEvent header p { color: var(--museum-gold); font-size: .6rem; letter-spacing: .13em; }
+.timelineEvent header h2 { font: 400 2.2rem/1.2 Georgia, "Noto Serif KR", serif; }
+.timelineEvent header span { color: var(--museum-muted); font-size: .72rem; }
+.timelineEvent ol { margin: 0 0 1.5rem 150px; padding: 0; list-style: none; }
+.timelineEvent li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--museum-line);
+}
+.timelineEvent li span { color: var(--museum-gold); font: 400 1rem/1.5 Georgia, serif; }
+.timelineEvent li p { max-width: 780px; margin: 0; color: #b8b1a7; font-size: .84rem; line-height: 1.8; }
+.timelineEvent > a { display: inline-block; margin-left: 202px; color: #ddd5ca; font-size: .72rem; }
+
+/* Collections: research bundles with holdings and provenance counts. */
+.collectionShelf { display: grid; gap: 1.5rem; }
+.plannedCollection {
+  display: grid;
+  grid-template-columns: minmax(230px, .8fr) minmax(300px, 1.2fr) minmax(240px, .8fr);
+  border: 1px solid var(--museum-line);
+  background: var(--museum-panel);
+}
+.plannedCollection > div { padding: 2rem; }
+.plannedCollection > div + div { border-left: 1px solid var(--museum-line); }
+.collectionIdentity p { margin: 0 0 2.5rem; color: var(--museum-gold); font-size: .6rem; letter-spacing: .13em; }
+.collectionIdentity h2 { margin: 0 0 .75rem; font: 400 1.75rem/1.25 Georgia, "Noto Serif KR", serif; }
+.collectionIdentity span { color: var(--museum-muted); font-size: .7rem; }
+.collectionDescription > p { margin: 0 0 2rem; color: #b8b1a7; font-size: .8rem; line-height: 1.75; }
+.collectionDescription dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin: 0; background: var(--museum-line); }
+.collectionDescription dl div { display: grid; gap: .3rem; padding: .8rem; background: #141515; }
+.collectionDescription dt { color: #817c74; font-size: .58rem; }
+.collectionDescription dd { margin: 0; color: #d7d0c6; font-size: .72rem; }
+.collectionRecords { display: grid; align-content: start; }
+.collectionRecords a {
+  display: grid;
+  grid-template-columns: 78px 1fr auto;
+  gap: .75rem;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--museum-line);
+  color: #d8d0c5;
+  font-size: .72rem;
+}
+.collectionRecords a span { color: var(--museum-muted); font-size: .62rem; }
+.collectionRecords a b { color: var(--museum-gold); font-weight: 400; }
+
+/* Stories: editorial reading with a pull quote and named perspectives. */
+.storyFeatures { display: grid; gap: 0; }
+.storyFeature {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+  gap: 1.5rem 4rem;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--museum-line);
+}
+.storyFeature:last-child { border-bottom: 1px solid var(--museum-line); }
+.storyFeature header { grid-row: span 4; }
+.storyFeature header p { margin: 0 0 1.2rem; color: var(--museum-gold); font-size: .62rem; letter-spacing: .1em; }
+.storyFeature header h2 { margin: 0 0 1rem; font: 400 2.1rem/1.3 Georgia, "Noto Serif KR", serif; }
+.storyFeature header span { color: var(--museum-muted); font-size: .72rem; }
+.storyFeature blockquote {
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--museum-gold);
+  color: #e1d9ce;
+  font: 400 1.15rem/1.7 Georgia, "Noto Serif KR", serif;
+}
+.storyFeature > p { margin: 0; color: var(--museum-muted); font-size: .86rem; line-height: 1.9; }
+.storyPerspectives { display: flex; flex-wrap: wrap; gap: .5rem; }
+.storyPerspectives span { padding: .45rem .65rem; border: 1px solid var(--museum-line); color: #bdb6ac; font-size: .65rem; }
+.storyFeature > a { color: #ddd5ca; font-size: .72rem; }
+
+@media (max-width: 900px) {
+  .plannedCollection { grid-template-columns: 1fr 1fr; }
+  .plannedCollection .collectionRecords { grid-column: 1 / -1; border-top: 1px solid var(--museum-line); border-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .themeIndex,
+  .timelineNarrative,
+  .collectionShelf,
+  .storyFeatures { width: calc(100% - 2.5rem); padding: 2.5rem 0 4rem; }
+  .routeSectionHeading { align-items: start; flex-direction: column; gap: .6rem; }
+  .themeCards { grid-template-columns: 1fr; }
+  .themeCard { min-height: 320px; padding: 1.5rem; }
+  .themeCard > p:first-child { margin-bottom: 1.75rem; }
+
+  .timelineEvent > header { grid-template-columns: 1fr; gap: .65rem; align-items: start; }
+  .timelineEvent ol { margin-left: 0; }
+  .timelineEvent li { grid-template-columns: 38px 1fr; }
+  .timelineEvent > a { margin-left: 54px; }
+
+  .plannedCollection { grid-template-columns: 1fr; }
+  .plannedCollection > div { padding: 1.5rem; }
+  .plannedCollection > div + div { border-top: 1px solid var(--museum-line); border-left: 0; }
+  .plannedCollection .collectionRecords { grid-column: auto; }
+
+  .storyFeature { grid-template-columns: 1fr; gap: 1.2rem; padding: 2.5rem 0; }
+  .storyFeature header { grid-row: auto; }
+  .storyFeature header h2 { font-size: 1.75rem; }
+}
