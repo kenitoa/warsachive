@@ -1,419 +1,409 @@
-/* Shared route shell and information pages for the public archive. */
-.archivePage { --museum-line: rgba(236, 229, 216, .17); --museum-muted: #aaa49a; --museum-ink: #f0ebe1; --museum-gold: #b6916d; min-height: 100vh; padding-left: 136px; background: #111212; }
+/* Shared museum layout for data-driven archive routes. */
+.archivePage {
+  --museum-bg: #111212;
+  --museum-panel: #181919;
+  --museum-line: rgba(236, 229, 216, .16);
+  --museum-muted: #aaa49a;
+  --museum-ink: #f0ebe1;
+  --museum-gold: #b6916d;
+  min-height: 100vh;
+  padding-left: 136px;
+  color: var(--museum-ink);
+  background: var(--museum-bg);
+}
+
 .museumHome { padding-left: 0; }
 .mobileNavigation { display: none; }
 .archiveSummary a { margin-left: auto; color: #d8c0a8; font-size: .67rem; }
-.archiveSummary a:hover { color: #f1ebe2; }
-.routePage, .readingRoomPage { color: #eee8de; }
-.routeIntro { min-height: 360px; display: grid; align-content: end; padding: 5.5rem clamp(1.2rem, 7vw, 8rem) 4.25rem; color: #eee8de; background: linear-gradient(90deg, rgba(8, 9, 9, .94), rgba(8, 9, 9, .58)), var(--archive-hero-image) center 46% / cover; }
-.routeEyebrow { margin-bottom: 1.1rem; color: #be9670; font-size: .62rem; font-weight: 700; letter-spacing: .16em; }.routeIntro h1 { max-width: 680px; margin-bottom: 1.2rem; font: 400 clamp(2.5rem, 4.4vw, 4.25rem)/1.22 Georgia, "Noto Serif KR", serif; word-break: keep-all; }.routeIntro > p:last-child { max-width: 440px; margin: 0; color: #c2bcb2; font-size: .88rem; line-height: 1.8; word-break: keep-all; }
-.readingRoomPage .routeIntro { min-height: 320px; }.routeCatalogue { padding-top: 3.5rem; background: #d8d0c0; }
-.topicGrid, .collectionList, .storyList, .aboutPrinciples, .routeTimeline { padding: 4.5rem clamp(1.2rem, 7vw, 8rem) 6rem; margin: 0; }
-.topicGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--museum-line); }.topicGrid a { min-height: 230px; display: flex; flex-direction: column; padding: 1.6rem; background: #171817; }.topicGrid a:hover { background: #202120; }.topicGrid span { color: #bd9570; font-size: .58rem; letter-spacing: .13em; }.topicGrid h2 { margin: auto 0 1rem; font: 400 1.55rem/1.25 Georgia, "Noto Serif KR", serif; word-break: keep-all; }.topicGrid b { color: #beb7ad; font-size: .68rem; font-weight: 400; }
-.routeTimeline { list-style: none; background: #111212; }.routeTimeline li { display: grid; grid-template-columns: 82px 140px minmax(0, 1fr) auto; gap: 1.25rem; align-items: center; min-height: 120px; border-top: 1px solid var(--museum-line); }.routeTimeline li:last-child { border-bottom: 1px solid var(--museum-line); }.routeTimeline span { color: #b9916d; font-size: .64rem; letter-spacing: .12em; }.routeTimeline p { margin: 0; color: #aaa39a; font-size: .78rem; }.routeTimeline h2 { margin: 0; font: 400 1.35rem/1.3 Georgia, "Noto Serif KR", serif; word-break: keep-all; }.routeTimeline a { color: #d4cbc0; font-size: .68rem; white-space: nowrap; }
-.collectionList { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--museum-line); }.collectionList a { min-height: 260px; display: flex; flex-direction: column; padding: 2rem; background: #181918; }.collectionList a:hover { background: #212220; }.collectionList span { color: #bc9470; font-size: .62rem; }.collectionList h2 { margin: 1.2rem 0 .9rem; font: 400 1.7rem/1.25 Georgia, "Noto Serif KR", serif; word-break: keep-all; }.collectionList p { max-width: 470px; margin: 0; color: #aaa49a; font-size: .8rem; line-height: 1.72; word-break: keep-all; }.collectionList small { margin-top: auto; padding-top: 1.4rem; color: #827d75; font-size: .64rem; }
-.storyList { display: grid; gap: 0; background: #e9e3d7; color: #1b1b19; }.storyList article { max-width: 900px; padding: 2rem 0; border-top: 1px solid #a99e8e; }.storyList article:last-child { border-bottom: 1px solid #a99e8e; }.storyList p:first-child { margin-bottom: .75rem; color: #85644b; font-size: .65rem; }.storyList h2 { margin-bottom: .9rem; font: 400 1.8rem/1.25 Georgia, "Noto Serif KR", serif; }.storyList p { max-width: 700px; color: #5e5a53; font-size: .88rem; line-height: 1.8; word-break: keep-all; }.storyList a { display: inline-block; margin-top: .5rem; color: #715037; font-size: .72rem; }
-.aboutPrinciples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--museum-line); }.aboutPrinciples article { min-height: 250px; padding: 2rem; background: #171817; }.aboutPrinciples span { color: #b9916d; font-size: .65rem; letter-spacing: .12em; }.aboutPrinciples h2 { margin: 3.4rem 0 1rem; font: 400 1.5rem/1.25 Georgia, "Noto Serif KR", serif; }.aboutPrinciples p { color: #aaa49a; font-size: .8rem; line-height: 1.75; word-break: keep-all; }
-@media (max-width: 1100px) { .archivePage { padding-left: 0; } }
-@media (max-width: 760px) {
-  .museumRail { position: sticky; top: 0; z-index: 50; display: block; padding: 0; background: rgba(11, 12, 13, .98); }.desktopBrand, .museumRail > .museumNav, .museumRail > .railUtility { display: none; }.mobileNavigation { display: block; }.mobileNavigation summary { min-height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem; cursor: pointer; list-style: none; }.mobileNavigation summary::-webkit-details-marker { display: none; }.mobileNavigation .museumBrand { display: inline-flex; padding: 0; }.mobileMenuIcon { width: 25px; height: 14px; border-top: 1px solid #ddd5ca; border-bottom: 1px solid #ddd5ca; }.mobileNavigation nav { display: grid; padding: .5rem 1rem 1rem; border-top: 1px solid var(--museum-line); }.mobileNavigation nav a { padding: .8rem 0; color: #d8d0c4; font-size: .86rem; border-bottom: 1px solid rgba(255, 255, 255, .07); }
-  .routeIntro { min-height: 300px; padding: 4.2rem 1.25rem 3rem; }.routeIntro h1 { font-size: 2.45rem; }.routeIntro > p:last-child { font-size: .82rem; }.topicGrid, .collectionList, .aboutPrinciples { grid-template-columns: 1fr; }.topicGrid, .collectionList, .storyList, .aboutPrinciples, .routeTimeline { padding: 2.5rem 1.25rem 4rem; }.routeTimeline li { grid-template-columns: 46px 1fr; gap: .7rem; padding: 1.2rem 0; }.routeTimeline p, .routeTimeline h2, .routeTimeline a { grid-column: 2; }.routeTimeline h2 { font-size: 1.2rem; }.collectionList a { min-height: 220px; padding: 1.5rem; }.aboutPrinciples article { min-height: 205px; }.aboutPrinciples h2 { margin-top: 2.1rem; }
-}
 
-/* Museum visual system ----------------------------------------------------
-   Keep every data-driven route in the same exhibition language as home. */
+/* One clear banner treatment across all section pages. */
 .routeIntro {
-  position: relative;
-  isolation: isolate;
-  min-height: 430px;
-  overflow: hidden;
+  min-height: 340px;
+  display: grid;
+  align-content: end;
+  padding: 4.5rem clamp(1.25rem, 7vw, 7rem) 3.5rem;
   border-bottom: 1px solid var(--museum-line);
-  background: var(--archive-hero-image) center 46% / cover no-repeat;
-}
-
-.routeIntro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
   background:
-    linear-gradient(90deg, rgba(7, 8, 8, .97) 0%, rgba(10, 11, 11, .84) 43%, rgba(10, 11, 11, .36) 76%, rgba(8, 9, 9, .68) 100%),
-    linear-gradient(0deg, rgba(8, 9, 10, .75), transparent 52%);
-}
-
-.routeIntro::after {
-  content: "";
-  position: absolute;
-  left: clamp(1.2rem, 7vw, 8rem);
-  bottom: 0;
-  width: min(260px, 34vw);
-  height: 1px;
-  background: var(--museum-gold);
+    linear-gradient(90deg, rgba(8, 9, 9, .94), rgba(8, 9, 9, .55)),
+    var(--archive-hero-image) center 46% / cover no-repeat;
 }
 
 .routeEyebrow {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
+  margin: 0 0 1rem;
   color: var(--museum-gold);
-}
-
-.routeEyebrow::before {
-  content: "";
-  width: 34px;
-  height: 1px;
-  background: currentColor;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .16em;
 }
 
 .routeIntro h1 {
-  color: #f3eee6;
-  text-wrap: balance;
+  max-width: 720px;
+  margin: 0 0 1rem;
+  color: var(--museum-ink);
+  font: 400 clamp(2.5rem, 4.5vw, 4.2rem)/1.2 Georgia, "Noto Serif KR", serif;
+  word-break: keep-all;
 }
 
-.routeIntro > p:last-child { color: #bdb6ac; }
-.readingRoomPage .routeIntro { min-height: 390px; }
+.routeIntro > p:last-child {
+  max-width: 480px;
+  margin: 0;
+  color: #c2bcb2;
+  font-size: .88rem;
+  line-height: 1.8;
+  word-break: keep-all;
+}
 
+/* Simple, repeatable content grids. */
 .topicGrid,
 .collectionList,
 .storyList,
 .aboutPrinciples,
 .routeTimeline {
-  border-bottom: 1px solid var(--museum-line);
-  background: #111212;
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 4.5rem 0 6rem;
 }
 
 .topicGrid,
 .collectionList,
 .aboutPrinciples {
-  gap: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--museum-line);
+  border: 1px solid var(--museum-line);
 }
+
+.topicGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.collectionList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.aboutPrinciples { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .topicGrid a,
 .collectionList a,
 .aboutPrinciples article {
-  position: relative;
-  border-right: 1px solid var(--museum-line);
-  border-bottom: 1px solid var(--museum-line);
-  background: linear-gradient(145deg, #191a19, #121313);
-}
-
-.topicGrid a:nth-child(3n),
-.aboutPrinciples article:nth-child(3n),
-.collectionList a:nth-child(2n) { border-right: 0; }
-
-.topicGrid a::after,
-.collectionList a::after,
-.aboutPrinciples article::after {
-  content: "";
-  position: absolute;
-  right: 1.5rem;
-  bottom: 1.35rem;
-  width: 28px;
-  height: 1px;
-  background: var(--museum-gold);
-  opacity: .55;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--museum-panel);
 }
 
 .topicGrid a:hover,
-.collectionList a:hover,
-.aboutPrinciples article:hover { background: #202120; }
+.collectionList a:hover { background: #1e1f1f; }
+
+.topicGrid span,
+.collectionList span,
+.aboutPrinciples span {
+  color: var(--museum-gold);
+  font-size: .62rem;
+  letter-spacing: .12em;
+}
 
 .topicGrid h2,
 .collectionList h2,
-.aboutPrinciples h2,
-.routeTimeline h2 { color: var(--museum-ink); }
+.aboutPrinciples h2 {
+  margin: auto 0 1rem;
+  color: var(--museum-ink);
+  font: 400 1.55rem/1.3 Georgia, "Noto Serif KR", serif;
+  word-break: keep-all;
+}
 
-.topicGrid b,
+.collectionList h2 { margin: 1.25rem 0 1rem; }
 .collectionList p,
-.collectionList small,
-.aboutPrinciples p,
-.routeTimeline p { color: var(--museum-muted); }
-
-.storyList { color: var(--museum-ink); }
-.storyList article {
-  width: min(920px, 100%);
-  max-width: none;
-  padding: 2.4rem 0;
-  border-color: var(--museum-line);
-}
-.storyList article:last-child { border-color: var(--museum-line); }
-.storyList p:first-child,
-.storyList a { color: var(--museum-gold); }
-.storyList h2 { color: var(--museum-ink); }
-.storyList p { color: var(--museum-muted); }
-.storyList a:hover,
-.routeTimeline a:hover { color: #f0e7db; }
-
-/* The archive reading room previously used a second, light design system. */
-.routeCatalogue {
-  --ink: #f0ebe1;
-  --muted: #a9a39a;
-  --paper: #111212;
-  --panel: #191a19;
-  --shelf: #111212;
-  --line: rgba(236, 229, 216, .14);
-  --line-strong: rgba(236, 229, 216, .28);
-  --green: #b6916d;
-  --red: #c39a74;
-  --amber: #d7ad82;
-  padding-bottom: 6rem;
-  border-bottom: 1px solid var(--museum-line);
-  background: #111212;
-  color: var(--museum-ink);
-}
-
-.catalogueTools,
-.screenBezel,
-.sourceLabel,
-.interpretationPanel,
-.eventCard {
-  box-shadow: none;
-  background: linear-gradient(145deg, #1b1c1b, #141515);
-}
-
-.searchField input,
-.filterBar select { color: var(--museum-ink); }
-.searchField input::placeholder { color: #746f68; }
-.filterBar option { color: #171716; background: #f4f0e6; }
-
-.keywordChips button,
-.filterBar button,
-.readingTabs button,
-.readerTools button,
-.deskActions button,
-.eventActions button {
-  border-color: rgba(236, 229, 216, .24);
-  background: #171817;
-  color: #cbc4ba;
-}
-
-.keywordChips button:hover,
-.filterBar button:hover,
-.readingTabs button:hover,
-.readerTools button:hover,
-.deskActions button:hover,
-.eventActions button:hover,
-.recordOpen:hover {
-  border-color: var(--museum-gold);
-  color: #f0e8dd;
-}
-
-.isPressed {
-  border-color: var(--museum-gold) !important;
-  background: var(--museum-gold) !important;
-  color: #111212 !important;
-}
-
-.screenContent {
-  background:
-    linear-gradient(rgba(236, 229, 216, .045) 1px, transparent 1px),
-    linear-gradient(145deg, #191a19, #131414);
-  background-size: 100% 32px, auto;
-}
-
-.screenContent h3,
-.sourceLabel strong,
-.interpretationPanel h3,
-.eventCard h3 { color: var(--museum-ink); }
-
-.screenContent > p:not(.screenKicker),
-.sourceLabel p,
-.interpretationPanel li,
-.eventSummary,
-.eventFooter small { color: var(--museum-muted); }
-
-.screenTimeline span {
-  border-left-color: var(--museum-gold);
-  background: rgba(182, 145, 109, .08);
-  color: #bcb5ab;
-}
-
-.experienceFacts span,
-.recordLabels span {
-  border-color: var(--museum-line);
-  background: #141515;
-}
-
-.eventCard {
-  min-height: 390px;
-  transition: border-color .2s ease, background .2s ease, transform .2s ease;
-}
-
-.eventCard:hover,
-.eventCard:focus-visible,
-.eventCard.isActive {
-  border-color: var(--museum-gold);
-  background: #1d1e1d;
-  box-shadow: none;
-  transform: translateY(-3px);
-}
-
-.eventCard.isActive::before {
-  content: "OPEN RECORD";
-  position: absolute;
-  top: -1px;
-  right: 1rem;
-  padding: .36rem .55rem;
-  background: var(--museum-gold);
-  color: #111212;
-  font-size: .5rem;
-  font-weight: 800;
-  letter-spacing: .11em;
-}
-
-.eventCard { position: relative; }
-.eventRegion,
-.eventFooter span,
-.screenKicker,
-.sourceLabel span,
-.interpretationPanel > p,
-.searchField > span,
-.screenTop b { color: var(--museum-gold); }
-
-.recordOpen { color: #ddd5ca; }
-
-/* Record detail: an archival exhibition page, not a detached paper sheet. */
-.recordRoutePage {
-  color: var(--museum-ink);
-  background: #111212;
-}
-
-.recordRoutePage .recordSheet {
-  position: relative;
-  isolation: isolate;
-  width: 100%;
+.aboutPrinciples p {
   margin: 0;
-  padding: 7.5rem clamp(1.2rem, 7vw, 8rem) 6.5rem;
-  overflow: hidden;
+  color: var(--museum-muted);
+  font-size: .8rem;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+.collectionList small,
+.topicGrid b {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  color: #bdb6ac;
+  font-size: .68rem;
+  font-weight: 400;
+}
+.aboutPrinciples h2 { margin: 3rem 0 1rem; }
+
+.routeTimeline { list-style: none; }
+.routeTimeline li {
+  display: grid;
+  grid-template-columns: 64px 130px minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  min-height: 105px;
+  border-top: 1px solid var(--museum-line);
+}
+.routeTimeline li:last-child { border-bottom: 1px solid var(--museum-line); }
+.routeTimeline span { color: var(--museum-gold); font-size: .62rem; }
+.routeTimeline p { margin: 0; color: var(--museum-muted); font-size: .78rem; }
+.routeTimeline h2 { margin: 0; font: 400 1.3rem/1.3 Georgia, "Noto Serif KR", serif; }
+.routeTimeline a { color: #d8d0c5; font-size: .7rem; }
+
+.storyList article {
+  max-width: 860px;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--museum-line);
+}
+.storyList article:last-child { border-bottom: 1px solid var(--museum-line); }
+.storyList p:first-child { margin: 0 0 .75rem; color: var(--museum-gold); font-size: .65rem; }
+.storyList h2 { margin: 0 0 .9rem; font: 400 1.8rem/1.3 Georgia, "Noto Serif KR", serif; }
+.storyList p { max-width: 720px; margin: 0; color: var(--museum-muted); font-size: .86rem; line-height: 1.8; }
+.storyList a { display: inline-block; margin-top: 1.25rem; color: #d8d0c5; font-size: .72rem; }
+
+/* Archive index: search, filters, results. */
+.routeCatalogue {
+  padding: 4rem clamp(1.25rem, 7vw, 7rem) 6rem;
+  border-bottom: 1px solid var(--museum-line);
+  background: var(--museum-bg);
+}
+
+.archiveBrowser {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.archiveToolbar {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--museum-line);
+  background: var(--museum-panel);
+}
+
+.archiveSearch {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  border-bottom: 1px solid var(--museum-line);
+}
+.archiveSearch span,
+.archiveFilterRow label span {
+  color: var(--museum-gold);
+  font-size: .65rem;
+  font-weight: 700;
+}
+.archiveSearch input {
+  height: 54px;
   border: 0;
+  border-left: 1px solid var(--museum-line);
+  padding: 0 1rem;
+  outline: 0;
   background: transparent;
+  color: var(--museum-ink);
 }
+.archiveSearch input::placeholder { color: #77726b; }
+.archiveSearch input:focus { box-shadow: inset 2px 0 var(--museum-gold); }
 
-.recordRoutePage .recordSheet::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  z-index: -2;
-  height: 510px;
-  background: var(--archive-hero-image) center 46% / cover no-repeat;
-  filter: grayscale(.35) sepia(.15);
+.archiveFilterRow {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding-top: 1rem;
 }
-
-.recordRoutePage .recordSheet::after {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  z-index: -1;
-  height: 512px;
-  border-bottom: 1px solid var(--museum-line);
-  background:
-    linear-gradient(90deg, rgba(7, 8, 8, .97), rgba(8, 9, 9, .69) 58%, rgba(8, 9, 9, .45)),
-    linear-gradient(0deg, #111212 0%, transparent 48%);
+.archiveFilterRow label {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
 }
-
-.recordRoutePage .sectionNumber {
-  color: var(--museum-gold);
-  letter-spacing: .16em;
+.archiveFilterRow select,
+.archiveFilterRow button,
+.simpleEmptyState button {
+  min-height: 38px;
+  border: 1px solid var(--museum-line);
+  padding: 0 .75rem;
+  background: #121313;
+  color: #d7d0c6;
+  cursor: pointer;
 }
+.archiveFilterRow option { color: #171716; background: #f4f0e6; }
+.archiveFilterRow button:hover,
+.simpleEmptyState button:hover { border-color: var(--museum-gold); }
+.archiveFilterRow p { margin: 0 0 0 auto; color: var(--museum-muted); font-size: .72rem; }
+.archiveFilterRow p strong { color: var(--museum-ink); font-size: 1rem; }
 
-.recordRoutePage .recordSheet h1 {
-  max-width: 880px;
-  margin: 1.25rem 0 2.7rem;
-  color: #f3eee6;
-  font: 400 clamp(3rem, 5vw, 5.15rem)/1.13 Georgia, "Noto Serif KR", serif;
-  text-wrap: balance;
-}
-
-.recordRoutePage .recordFacts {
-  width: min(820px, 100%);
-  margin-bottom: 7.5rem;
-  border-color: rgba(236, 229, 216, .28);
-  background: rgba(9, 10, 10, .35);
-  backdrop-filter: blur(5px);
-}
-
-.recordRoutePage .recordFacts div { border-color: var(--museum-line); }
-.recordRoutePage .recordFacts dt { color: var(--museum-gold); }
-.recordRoutePage .recordFacts dd { color: var(--museum-ink); }
-
-.recordRoutePage .recordBody {
-  max-width: 900px;
-  padding: 0 0 4rem;
-  border-bottom: 1px solid var(--museum-line);
-}
-
-.recordRoutePage .recordBody h2 {
-  color: var(--museum-gold);
-  font: 700 .65rem/1.2 Arial, "Noto Sans KR", sans-serif;
-  letter-spacing: .15em;
-}
-
-.recordRoutePage .recordBody p {
-  margin-bottom: 0;
-  color: #c0b9af;
-  font: 400 clamp(1rem, 1.4vw, 1.18rem)/2 Georgia, "Noto Serif KR", serif;
-}
-
-.recordRoutePage .curatorSheet {
+.simpleEventList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
-  margin-top: 4rem;
   border: 1px solid var(--museum-line);
   background: var(--museum-line);
 }
-
-.recordRoutePage .curatorSheet > div {
-  min-height: 230px;
-  padding: 2rem;
-  border: 0;
-  background: linear-gradient(145deg, #191a19, #131414);
+.simpleEventCard { background: var(--museum-panel); }
+.simpleEventCard a {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
 }
+.simpleEventCard:hover { background: #1e1f1f; }
+.simpleEventIndex,
+.simpleEventFooter { display: flex; justify-content: space-between; gap: 1rem; }
+.simpleEventIndex { color: #8e8880; font-size: .58rem; letter-spacing: .1em; }
+.simpleEventRegion { margin: 2rem 0 .65rem; color: var(--museum-gold); font-size: .68rem; }
+.simpleEventCard h2 { margin: 0 0 1rem; font: 400 1.65rem/1.3 Georgia, "Noto Serif KR", serif; }
+.simpleEventSummary {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: var(--museum-muted);
+  font-size: .82rem;
+  line-height: 1.75;
+  word-break: keep-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+.simpleEventFooter {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--museum-line);
+  color: #bdb6ac;
+  font-size: .68rem;
+}
+.simpleEventFooter span:last-child { color: var(--museum-gold); }
 
-.recordRoutePage .curatorSheet h2 { color: var(--museum-gold); }
+.simpleEmptyState {
+  padding: 5rem 1.5rem;
+  border: 1px solid var(--museum-line);
+  text-align: center;
+}
+.simpleEmptyState h2 { margin: 0 0 .75rem; font: 400 1.7rem/1.3 Georgia, serif; }
+.simpleEmptyState p { margin: 0 0 1.5rem; color: var(--museum-muted); }
+
+/* Record detail: a clear reading column with grouped source information. */
+.recordRoutePage .recordSheet {
+  width: min(1080px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 5.5rem 0 6rem;
+  border: 0;
+  background: transparent;
+}
+.recordRoutePage .sectionNumber { margin: 0; color: var(--museum-gold); }
+.recordRoutePage .recordSheet h1 {
+  max-width: 800px;
+  margin: 1.25rem 0 2.5rem;
+  color: var(--museum-ink);
+  font: 400 clamp(3rem, 5vw, 4.8rem)/1.15 Georgia, "Noto Serif KR", serif;
+}
+.recordRoutePage .recordFacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 4rem;
+  border-top: 1px solid var(--museum-line);
+  border-bottom: 1px solid var(--museum-line);
+}
+.recordRoutePage .recordFacts div { padding: 1rem 0; border: 0; }
+.recordRoutePage .recordFacts dt { color: var(--museum-gold); }
+.recordRoutePage .recordFacts dd { color: var(--museum-ink); }
+.recordRoutePage .recordBody { max-width: 820px; }
+.recordRoutePage .recordBody h2,
+.recordRoutePage .curatorSheet h2 {
+  color: var(--museum-gold);
+  font: 700 .68rem/1.2 Arial, "Noto Sans KR", sans-serif;
+  letter-spacing: .1em;
+}
+.recordRoutePage .recordBody p {
+  color: #c0b9af;
+  font: 400 1.02rem/1.95 Georgia, "Noto Serif KR", serif;
+}
+.recordRoutePage .curatorSheet {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 3.5rem;
+  border: 1px solid var(--museum-line);
+  background: var(--museum-line);
+}
+.recordRoutePage .curatorSheet > div {
+  padding: 1.75rem;
+  border: 0;
+  background: var(--museum-panel);
+}
 .recordRoutePage .curatorSheet ul,
 .recordRoutePage .curatorSheet ol,
 .recordRoutePage .curatorSheet .sourceBasis p { color: var(--museum-muted); }
-
-.recordRoutePage .recordLabels { margin: 2.5rem 0; }
-.recordRoutePage .recordLabels span { color: #bcb5ab; }
+.recordRoutePage .recordLabels { margin: 2rem 0; }
+.recordRoutePage .recordLabels span {
+  border-color: var(--museum-line);
+  background: var(--museum-panel);
+  color: #bdb6ac;
+}
 .recordRoutePage .primaryAction {
-  border-color: var(--museum-gold);
-  background: transparent;
-  color: #eee6dc;
+  border-color: var(--museum-line);
+  background: var(--museum-panel);
+  color: var(--museum-ink);
 }
-.recordRoutePage .primaryAction:hover {
-  background: var(--museum-gold);
-  color: #111212;
-}
+.recordRoutePage .primaryAction:hover { border-color: var(--museum-gold); background: var(--museum-panel); }
 
 @media (max-width: 1100px) {
-  .routeIntro { min-height: 390px; }
+  .archivePage { padding-left: 0; }
 }
 
 @media (max-width: 760px) {
-  .routeIntro,
-  .readingRoomPage .routeIntro { min-height: 330px; }
-  .routeIntro::after { width: 110px; }
-
-  .topicGrid a,
-  .collectionList a,
-  .aboutPrinciples article { border-right: 0; }
-
-  .routeCatalogue { padding-top: 2.5rem; padding-bottom: 4rem; }
-  .eventCard { min-height: 340px; }
-
-  .recordRoutePage .recordSheet {
-    padding: 4.5rem 1.25rem 4rem;
+  .museumRail {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: block;
+    padding: 0;
+    background: rgba(11, 12, 13, .98);
   }
-  .recordRoutePage .recordSheet::before,
-  .recordRoutePage .recordSheet::after { height: 430px; }
-  .recordRoutePage .recordSheet h1 {
-    margin-bottom: 2rem;
-    font-size: 2.7rem;
+  .desktopBrand,
+  .museumRail > .museumNav,
+  .museumRail > .railUtility { display: none; }
+  .mobileNavigation { display: block; }
+  .mobileNavigation summary {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    cursor: pointer;
+    list-style: none;
   }
-  .recordRoutePage .recordFacts {
-    margin-bottom: 5rem;
-    background: rgba(9, 10, 10, .7);
+  .mobileNavigation summary::-webkit-details-marker { display: none; }
+  .mobileNavigation .museumBrand { display: inline-flex; padding: 0; }
+  .mobileMenuIcon {
+    width: 25px;
+    height: 14px;
+    border-top: 1px solid #ddd5ca;
+    border-bottom: 1px solid #ddd5ca;
   }
+  .mobileNavigation nav { display: grid; padding: .5rem 1rem 1rem; border-top: 1px solid var(--museum-line); }
+  .mobileNavigation nav a { padding: .8rem 0; border-bottom: 1px solid rgba(255, 255, 255, .07); }
+
+  .routeIntro { min-height: 290px; padding: 3.5rem 1.25rem 2.75rem; }
+  .routeIntro h1 { font-size: 2.45rem; }
+  .topicGrid,
+  .collectionList,
+  .aboutPrinciples { grid-template-columns: 1fr; }
+  .topicGrid,
+  .collectionList,
+  .storyList,
+  .aboutPrinciples,
+  .routeTimeline { width: calc(100% - 2.5rem); padding: 2.5rem 0 4rem; }
+
+  .routeTimeline li { grid-template-columns: 42px 1fr; gap: .65rem; padding: 1.2rem 0; }
+  .routeTimeline p,
+  .routeTimeline h2,
+  .routeTimeline a { grid-column: 2; }
+
+  .routeCatalogue { padding: 2.5rem 1.25rem 4rem; }
+  .archiveSearch { grid-template-columns: 1fr; }
+  .archiveSearch span { padding-bottom: .75rem; }
+  .archiveSearch input { border-left: 0; border-top: 1px solid var(--museum-line); padding-inline: 0; }
+  .archiveFilterRow { align-items: stretch; flex-direction: column; }
+  .archiveFilterRow label { justify-content: space-between; }
+  .archiveFilterRow select { min-width: 160px; }
+  .archiveFilterRow p { margin: .5rem 0 0; }
+  .simpleEventList { grid-template-columns: 1fr; }
+  .simpleEventCard a { min-height: 290px; padding: 1.35rem; }
+
+  .recordRoutePage .recordSheet { width: calc(100% - 2.5rem); padding: 3.5rem 0 4rem; }
+  .recordRoutePage .recordSheet h1 { font-size: 2.7rem; }
+  .recordRoutePage .recordFacts,
+  .recordRoutePage .curatorSheet { grid-template-columns: 1fr; }
+  .recordRoutePage .recordFacts { gap: 0; }
+  .recordRoutePage .recordFacts div { border-bottom: 1px solid var(--museum-line); }
   .recordRoutePage .recordFacts div:last-child { border-bottom: 0; }
-  .recordRoutePage .curatorSheet > div { min-height: auto; padding: 1.4rem; }
 }
