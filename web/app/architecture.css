@@ -19,3 +19,401 @@
   .museumRail { position: sticky; top: 0; z-index: 50; display: block; padding: 0; background: rgba(11, 12, 13, .98); }.desktopBrand, .museumRail > .museumNav, .museumRail > .railUtility { display: none; }.mobileNavigation { display: block; }.mobileNavigation summary { min-height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem; cursor: pointer; list-style: none; }.mobileNavigation summary::-webkit-details-marker { display: none; }.mobileNavigation .museumBrand { display: inline-flex; padding: 0; }.mobileMenuIcon { width: 25px; height: 14px; border-top: 1px solid #ddd5ca; border-bottom: 1px solid #ddd5ca; }.mobileNavigation nav { display: grid; padding: .5rem 1rem 1rem; border-top: 1px solid var(--museum-line); }.mobileNavigation nav a { padding: .8rem 0; color: #d8d0c4; font-size: .86rem; border-bottom: 1px solid rgba(255, 255, 255, .07); }
   .routeIntro { min-height: 300px; padding: 4.2rem 1.25rem 3rem; }.routeIntro h1 { font-size: 2.45rem; }.routeIntro > p:last-child { font-size: .82rem; }.topicGrid, .collectionList, .aboutPrinciples { grid-template-columns: 1fr; }.topicGrid, .collectionList, .storyList, .aboutPrinciples, .routeTimeline { padding: 2.5rem 1.25rem 4rem; }.routeTimeline li { grid-template-columns: 46px 1fr; gap: .7rem; padding: 1.2rem 0; }.routeTimeline p, .routeTimeline h2, .routeTimeline a { grid-column: 2; }.routeTimeline h2 { font-size: 1.2rem; }.collectionList a { min-height: 220px; padding: 1.5rem; }.aboutPrinciples article { min-height: 205px; }.aboutPrinciples h2 { margin-top: 2.1rem; }
 }
+
+/* Museum visual system ----------------------------------------------------
+   Keep every data-driven route in the same exhibition language as home. */
+.routeIntro {
+  position: relative;
+  isolation: isolate;
+  min-height: 430px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--museum-line);
+  background: var(--archive-hero-image) center 46% / cover no-repeat;
+}
+
+.routeIntro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 8, .97) 0%, rgba(10, 11, 11, .84) 43%, rgba(10, 11, 11, .36) 76%, rgba(8, 9, 9, .68) 100%),
+    linear-gradient(0deg, rgba(8, 9, 10, .75), transparent 52%);
+}
+
+.routeIntro::after {
+  content: "";
+  position: absolute;
+  left: clamp(1.2rem, 7vw, 8rem);
+  bottom: 0;
+  width: min(260px, 34vw);
+  height: 1px;
+  background: var(--museum-gold);
+}
+
+.routeEyebrow {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: var(--museum-gold);
+}
+
+.routeEyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+}
+
+.routeIntro h1 {
+  color: #f3eee6;
+  text-wrap: balance;
+}
+
+.routeIntro > p:last-child { color: #bdb6ac; }
+.readingRoomPage .routeIntro { min-height: 390px; }
+
+.topicGrid,
+.collectionList,
+.storyList,
+.aboutPrinciples,
+.routeTimeline {
+  border-bottom: 1px solid var(--museum-line);
+  background: #111212;
+}
+
+.topicGrid,
+.collectionList,
+.aboutPrinciples {
+  gap: 0;
+}
+
+.topicGrid a,
+.collectionList a,
+.aboutPrinciples article {
+  position: relative;
+  border-right: 1px solid var(--museum-line);
+  border-bottom: 1px solid var(--museum-line);
+  background: linear-gradient(145deg, #191a19, #121313);
+}
+
+.topicGrid a:nth-child(3n),
+.aboutPrinciples article:nth-child(3n),
+.collectionList a:nth-child(2n) { border-right: 0; }
+
+.topicGrid a::after,
+.collectionList a::after,
+.aboutPrinciples article::after {
+  content: "";
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.35rem;
+  width: 28px;
+  height: 1px;
+  background: var(--museum-gold);
+  opacity: .55;
+}
+
+.topicGrid a:hover,
+.collectionList a:hover,
+.aboutPrinciples article:hover { background: #202120; }
+
+.topicGrid h2,
+.collectionList h2,
+.aboutPrinciples h2,
+.routeTimeline h2 { color: var(--museum-ink); }
+
+.topicGrid b,
+.collectionList p,
+.collectionList small,
+.aboutPrinciples p,
+.routeTimeline p { color: var(--museum-muted); }
+
+.storyList { color: var(--museum-ink); }
+.storyList article {
+  width: min(920px, 100%);
+  max-width: none;
+  padding: 2.4rem 0;
+  border-color: var(--museum-line);
+}
+.storyList article:last-child { border-color: var(--museum-line); }
+.storyList p:first-child,
+.storyList a { color: var(--museum-gold); }
+.storyList h2 { color: var(--museum-ink); }
+.storyList p { color: var(--museum-muted); }
+.storyList a:hover,
+.routeTimeline a:hover { color: #f0e7db; }
+
+/* The archive reading room previously used a second, light design system. */
+.routeCatalogue {
+  --ink: #f0ebe1;
+  --muted: #a9a39a;
+  --paper: #111212;
+  --panel: #191a19;
+  --shelf: #111212;
+  --line: rgba(236, 229, 216, .14);
+  --line-strong: rgba(236, 229, 216, .28);
+  --green: #b6916d;
+  --red: #c39a74;
+  --amber: #d7ad82;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid var(--museum-line);
+  background: #111212;
+  color: var(--museum-ink);
+}
+
+.catalogueTools,
+.screenBezel,
+.sourceLabel,
+.interpretationPanel,
+.eventCard {
+  box-shadow: none;
+  background: linear-gradient(145deg, #1b1c1b, #141515);
+}
+
+.searchField input,
+.filterBar select { color: var(--museum-ink); }
+.searchField input::placeholder { color: #746f68; }
+.filterBar option { color: #171716; background: #f4f0e6; }
+
+.keywordChips button,
+.filterBar button,
+.readingTabs button,
+.readerTools button,
+.deskActions button,
+.eventActions button {
+  border-color: rgba(236, 229, 216, .24);
+  background: #171817;
+  color: #cbc4ba;
+}
+
+.keywordChips button:hover,
+.filterBar button:hover,
+.readingTabs button:hover,
+.readerTools button:hover,
+.deskActions button:hover,
+.eventActions button:hover,
+.recordOpen:hover {
+  border-color: var(--museum-gold);
+  color: #f0e8dd;
+}
+
+.isPressed {
+  border-color: var(--museum-gold) !important;
+  background: var(--museum-gold) !important;
+  color: #111212 !important;
+}
+
+.screenContent {
+  background:
+    linear-gradient(rgba(236, 229, 216, .045) 1px, transparent 1px),
+    linear-gradient(145deg, #191a19, #131414);
+  background-size: 100% 32px, auto;
+}
+
+.screenContent h3,
+.sourceLabel strong,
+.interpretationPanel h3,
+.eventCard h3 { color: var(--museum-ink); }
+
+.screenContent > p:not(.screenKicker),
+.sourceLabel p,
+.interpretationPanel li,
+.eventSummary,
+.eventFooter small { color: var(--museum-muted); }
+
+.screenTimeline span {
+  border-left-color: var(--museum-gold);
+  background: rgba(182, 145, 109, .08);
+  color: #bcb5ab;
+}
+
+.experienceFacts span,
+.recordLabels span {
+  border-color: var(--museum-line);
+  background: #141515;
+}
+
+.eventCard {
+  min-height: 390px;
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.eventCard:hover,
+.eventCard:focus-visible,
+.eventCard.isActive {
+  border-color: var(--museum-gold);
+  background: #1d1e1d;
+  box-shadow: none;
+  transform: translateY(-3px);
+}
+
+.eventCard.isActive::before {
+  content: "OPEN RECORD";
+  position: absolute;
+  top: -1px;
+  right: 1rem;
+  padding: .36rem .55rem;
+  background: var(--museum-gold);
+  color: #111212;
+  font-size: .5rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+}
+
+.eventCard { position: relative; }
+.eventRegion,
+.eventFooter span,
+.screenKicker,
+.sourceLabel span,
+.interpretationPanel > p,
+.searchField > span,
+.screenTop b { color: var(--museum-gold); }
+
+.recordOpen { color: #ddd5ca; }
+
+/* Record detail: an archival exhibition page, not a detached paper sheet. */
+.recordRoutePage {
+  color: var(--museum-ink);
+  background: #111212;
+}
+
+.recordRoutePage .recordSheet {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  margin: 0;
+  padding: 7.5rem clamp(1.2rem, 7vw, 8rem) 6.5rem;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+}
+
+.recordRoutePage .recordSheet::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -2;
+  height: 510px;
+  background: var(--archive-hero-image) center 46% / cover no-repeat;
+  filter: grayscale(.35) sepia(.15);
+}
+
+.recordRoutePage .recordSheet::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: 512px;
+  border-bottom: 1px solid var(--museum-line);
+  background:
+    linear-gradient(90deg, rgba(7, 8, 8, .97), rgba(8, 9, 9, .69) 58%, rgba(8, 9, 9, .45)),
+    linear-gradient(0deg, #111212 0%, transparent 48%);
+}
+
+.recordRoutePage .sectionNumber {
+  color: var(--museum-gold);
+  letter-spacing: .16em;
+}
+
+.recordRoutePage .recordSheet h1 {
+  max-width: 880px;
+  margin: 1.25rem 0 2.7rem;
+  color: #f3eee6;
+  font: 400 clamp(3rem, 5vw, 5.15rem)/1.13 Georgia, "Noto Serif KR", serif;
+  text-wrap: balance;
+}
+
+.recordRoutePage .recordFacts {
+  width: min(820px, 100%);
+  margin-bottom: 7.5rem;
+  border-color: rgba(236, 229, 216, .28);
+  background: rgba(9, 10, 10, .35);
+  backdrop-filter: blur(5px);
+}
+
+.recordRoutePage .recordFacts div { border-color: var(--museum-line); }
+.recordRoutePage .recordFacts dt { color: var(--museum-gold); }
+.recordRoutePage .recordFacts dd { color: var(--museum-ink); }
+
+.recordRoutePage .recordBody {
+  max-width: 900px;
+  padding: 0 0 4rem;
+  border-bottom: 1px solid var(--museum-line);
+}
+
+.recordRoutePage .recordBody h2 {
+  color: var(--museum-gold);
+  font: 700 .65rem/1.2 Arial, "Noto Sans KR", sans-serif;
+  letter-spacing: .15em;
+}
+
+.recordRoutePage .recordBody p {
+  margin-bottom: 0;
+  color: #c0b9af;
+  font: 400 clamp(1rem, 1.4vw, 1.18rem)/2 Georgia, "Noto Serif KR", serif;
+}
+
+.recordRoutePage .curatorSheet {
+  gap: 1px;
+  margin-top: 4rem;
+  border: 1px solid var(--museum-line);
+  background: var(--museum-line);
+}
+
+.recordRoutePage .curatorSheet > div {
+  min-height: 230px;
+  padding: 2rem;
+  border: 0;
+  background: linear-gradient(145deg, #191a19, #131414);
+}
+
+.recordRoutePage .curatorSheet h2 { color: var(--museum-gold); }
+.recordRoutePage .curatorSheet ul,
+.recordRoutePage .curatorSheet ol,
+.recordRoutePage .curatorSheet .sourceBasis p { color: var(--museum-muted); }
+
+.recordRoutePage .recordLabels { margin: 2.5rem 0; }
+.recordRoutePage .recordLabels span { color: #bcb5ab; }
+.recordRoutePage .primaryAction {
+  border-color: var(--museum-gold);
+  background: transparent;
+  color: #eee6dc;
+}
+.recordRoutePage .primaryAction:hover {
+  background: var(--museum-gold);
+  color: #111212;
+}
+
+@media (max-width: 1100px) {
+  .routeIntro { min-height: 390px; }
+}
+
+@media (max-width: 760px) {
+  .routeIntro,
+  .readingRoomPage .routeIntro { min-height: 330px; }
+  .routeIntro::after { width: 110px; }
+
+  .topicGrid a,
+  .collectionList a,
+  .aboutPrinciples article { border-right: 0; }
+
+  .routeCatalogue { padding-top: 2.5rem; padding-bottom: 4rem; }
+  .eventCard { min-height: 340px; }
+
+  .recordRoutePage .recordSheet {
+    padding: 4.5rem 1.25rem 4rem;
+  }
+  .recordRoutePage .recordSheet::before,
+  .recordRoutePage .recordSheet::after { height: 430px; }
+  .recordRoutePage .recordSheet h1 {
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+  }
+  .recordRoutePage .recordFacts {
+    margin-bottom: 5rem;
+    background: rgba(9, 10, 10, .7);
+  }
+  .recordRoutePage .recordFacts div:last-child { border-bottom: 0; }
+  .recordRoutePage .curatorSheet > div { min-height: auto; padding: 1.4rem; }
+}
