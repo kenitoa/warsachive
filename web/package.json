@@ -8,7 +8,8 @@
     "dev": "next dev",
     "prebuild": "npm run content:sync",
     "build": "next build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "next": "^16.1.0",

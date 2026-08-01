@@ -11,7 +11,8 @@
     "dev:web": "npm run dev --workspace @war-archive/web",
     "dev:mobile": "npm run start --workspace @war-archive/mobile",
     "build": "npm run build --workspace @war-archive/web",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
   },
   "engines": {
     "node": ">=22.13.0"

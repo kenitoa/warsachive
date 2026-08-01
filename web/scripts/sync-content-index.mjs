@@ -1,6 +1,7 @@
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { getPublishedEvents, registerUniqueEventIds } from "./archive-content-validation.mjs";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const contentDirectory = join(scriptDirectory, "..", "content");
@@ -14,25 +15,7 @@ const jsonFiles = entries
   .map((entry) => entry.name)
   .sort((left, right) => left.localeCompare(right, "en"));
 
-function isArchiveEvent(value) {
-  if (!value || typeof value !== "object") return false;
-  return typeof value.id === "string"
-    && /^[a-zA-Z0-9_-]{1,80}$/.test(value.id)
-    && typeof value.title === "string"
-    && typeof value.period === "string"
-    && typeof value.region === "string"
-    && typeof value.summary === "string"
-    && typeof value.sourceCount === "number";
-}
-
-function isPublishedPayload(value) {
-  if (isArchiveEvent(value)) return true;
-  return Boolean(value)
-    && typeof value === "object"
-    && Array.isArray(value.items)
-    && value.items.length > 0
-    && value.items.every(isArchiveEvent);
-}
+const seenEventFiles = new Map();
 
 for (const fileName of jsonFiles) {
   if (!safeFileName.test(fileName)) {
@@ -42,9 +25,11 @@ for (const fileName of jsonFiles) {
   const filePath = join(archiveDirectory, fileName);
   try {
     const payload = JSON.parse(await readFile(filePath, "utf8"));
-    if (!isPublishedPayload(payload)) {
+    const events = getPublishedEvents(payload);
+    if (!events) {
       throw new Error("공개 기록 객체 또는 공개 기록 items 배열이어야 합니다.");
     }
+    registerUniqueEventIds(events, fileName, seenEventFiles);
   } catch (error) {
     const reason = error instanceof Error ? error.message : "알 수 없는 오류";
     throw new Error(`발행 파일을 인덱싱할 수 없습니다 (${fileName}): ${reason}`);
