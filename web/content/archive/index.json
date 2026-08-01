@@ -1,90 +1,90 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-01T20:13:30.280Z",
+  "updatedAt": "2026-08-01T21:13:30.637Z",
   "items": [
     {
       "id": "an-impeachment-trial-update-2",
       "path": "an-impeachment-trial-update-2.json",
       "title": "An Impeachment Trial Update",
       "fingerprint": "b1aca2f1e4ee2408",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     },
     {
       "id": "an-impeachment-trial-update-3",
       "path": "an-impeachment-trial-update-3.json",
       "title": "An Impeachment Trial Update",
       "fingerprint": "65a09012498bcffd",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     },
     {
       "id": "best-of-understanding-settler-colonialism-in-israel-and--2",
       "path": "best-of-understanding-settler-colonialism-in-israel-and--2.json",
       "title": "[BEST OF] Understanding Settler Colonialism in Israel and the United States",
       "fingerprint": "3e084254e88ca4c2",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     },
     {
       "id": "best-of-understanding-settler-colonialism-in-israel-and-",
       "path": "best-of-understanding-settler-colonialism-in-israel-and-.json",
       "title": "[BEST OF] Understanding Settler Colonialism in Israel and the United States",
       "fingerprint": "650c2ee3a312bcc9",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     },
     {
       "id": "bhm365-special-interview-melvin-forbes-president-and-ceo",
       "path": "bhm365-special-interview-melvin-forbes-president-and-ceo.json",
       "title": "BHM365 Special Interview: Melvin Forbes, President and CEO of Forbes Consulting, Inc. (Part 1)",
       "fingerprint": "ec05eebddecf247c",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "episode-205-across-the-sea-part-1",
-      "path": "episode-205-across-the-sea-part-1.json",
-      "title": "Episode 205 - Across the Sea, Part 1",
-      "fingerprint": "40dfc59ba9206c3b",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "est-ce-la-fin-de-la-confe-de-ration",
-      "path": "est-ce-la-fin-de-la-confe-de-ration.json",
-      "title": "Est-ce la fin de la confédération?",
-      "fingerprint": "3ceccf53885ef5c9",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "first-ladies",
-      "path": "first-ladies.json",
-      "title": "First Ladies",
-      "fingerprint": "ddcad18608d3c016",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "history-repeats",
-      "path": "history-repeats.json",
-      "title": "History repeats",
-      "fingerprint": "155d986b83e1131f",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "lesson",
-      "path": "lesson.json",
-      "title": "Lesson",
-      "fingerprint": "c237135ea375cd52",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
-    },
-    {
-      "id": "the-report-episode-7-charging-decisions",
-      "path": "the-report-episode-7-charging-decisions.json",
-      "title": "The Report, Episode 7: Charging Decisions",
-      "fingerprint": "ea33509713df2c93",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     },
     {
       "id": "episode-203-the-old-man-and-the-sea",
       "path": "episode-203-the-old-man-and-the-sea.json",
       "title": "Annals of American history",
       "fingerprint": "f0f518c12a7fd7cc",
-      "updatedAt": "2026-08-01T20:13:30.280Z"
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "episode-205-across-the-sea-part-1",
+      "path": "episode-205-across-the-sea-part-1.json",
+      "title": "Episode 205 - Across the Sea, Part 1",
+      "fingerprint": "40dfc59ba9206c3b",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "est-ce-la-fin-de-la-confe-de-ration",
+      "path": "est-ce-la-fin-de-la-confe-de-ration.json",
+      "title": "Est-ce la fin de la confédération?",
+      "fingerprint": "3ceccf53885ef5c9",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "first-ladies",
+      "path": "first-ladies.json",
+      "title": "First Ladies",
+      "fingerprint": "ddcad18608d3c016",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "history-repeats",
+      "path": "history-repeats.json",
+      "title": "History repeats",
+      "fingerprint": "155d986b83e1131f",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "lesson",
+      "path": "lesson.json",
+      "title": "Lesson",
+      "fingerprint": "517c323e41db11c4",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
+    },
+    {
+      "id": "the-report-episode-7-charging-decisions",
+      "path": "the-report-episode-7-charging-decisions.json",
+      "title": "The Report, Episode 7: Charging Decisions",
+      "fingerprint": "ea33509713df2c93",
+      "updatedAt": "2026-08-01T21:13:30.637Z"
     }
   ]
 }
