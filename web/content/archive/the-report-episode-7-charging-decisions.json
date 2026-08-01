@@ -1,0 +1,56 @@
+{
+  "id": "the-report-episode-7-charging-decisions",
+  "title": "The Report, Episode 7: Charging Decisions",
+  "period": "초기 구성",
+  "region": "디지털 아카이브",
+  "summary": "하나의 역사 주제에 연결된 모든 등록 출처를 함께 수집하고 라벨링한 뒤 하나의 정보화 기록으로 통합한다. Who said what when : a chronological dictionary of quotations ix, 437 p. ; 24 cm \"Bloomsbury reference.\" History -- Miscellanea Chronology, Historical Quotations The BlazeTV Highlights: The morning after Glenn reacts to Obama's victory and puts the results into a historical context theblaze gbtv beck_archive The BlazeTV Highlights Glenn Beck 2012 Election His…",
+  "curator": {
+    "format": "history-curator-v1",
+    "context": "하나의 역사 주제에 연결된 모든 등록 출처를 함께 수집하고 라벨링한 뒤 하나의 정보화 기록으로 통합한다. Who said what when : a chronological dictionary of quotations ix, 437 p. ; 24 cm \"Bloomsbury reference.\" History -- Miscellanea Chronology, Historical Quotations The BlazeTV Highlights: The morning aft…",
+    "keyPoints": [
+      "하나의 역사 주제에 연결된 모든 등록 출처를 함께 수집하고 라벨링한 뒤 하나의 정보화 기록으로 통합한다."
+    ],
+    "chronology": [
+      "Who said what when : a chronological dictionary of quotations ix, 437 p.",
+      "The BlazeTV Highlights: The morning after Glenn reacts to Obama's victory and puts the results into a historical context theblaze gbtv beck_archive The BlazeTV Highlights Glenn Beck 2012 Election History analysis THEBLAZE_SHORT_FEATURE Radio Program Shareable PlayOnFacebook Barack Obama highlight MEDIA_ARCHIVE THEBLAZE_RTH Embeddable Progressives"
+    ],
+    "peopleAndPlaces": [
+      "하나의 역사 주제에 연결된 모든 등록 출처를 함께 수집하고 라벨링한 뒤 하나의 정보화 기록으로 통합한다.",
+      "Who said what when : a chronological dictionary of quotations ix, 437 p.",
+      "; 24 cm \"Bloomsbury reference.\" History -- Miscellanea Chronology, Historical Quotations"
+    ],
+    "sourceBasis": "등록 출처 3건과 수집 문서 3건을 중복 제거한 뒤 battle, primary-source, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record이며 평균 연관성은 0.35, 신뢰도 분포는 high 0건, medium 1건, needs-review 2건입니다."
+  },
+  "labels": [
+    "battle",
+    "primary-source",
+    "unclassified"
+  ],
+  "sourceUrl": "internal://foundation/workflow",
+  "sourceUrls": [
+    "internal://foundation/workflow",
+    "whosaidwhatwhenc0000unse_e0q6",
+    "rth_25474235_1200K"
+  ],
+  "documentIds": [
+    "foundation-001-workflow",
+    "global-history-open-sources-internet-archive-history-whosaidwhatwhenc0000unse_e0",
+    "global-history-open-sources-internet-archive-history-cursor-36-rth_25474235_1200"
+  ],
+  "sentenceIds": [
+    "foundation-001-workflow-s1",
+    "global-history-open-sources-internet-archive-history-whosaidwhatwhenc0000unse_e0-s1",
+    "global-history-open-sources-internet-archive-history-whosaidwhatwhenc0000unse_e0-s2",
+    "global-history-open-sources-internet-archive-history-cursor-36-rth_25474235_1200-s1"
+  ],
+  "sourceCount": 3,
+  "documentCount": 3,
+  "indexedTerms": 65,
+  "qualityScore": 0.66,
+  "qualityGate": {
+    "minScore": 0.6,
+    "passed": true,
+    "reason": "발행 품질 기준 통과"
+  },
+  "collectedAt": "2026-07-12T14:37:20.078Z"
+}
