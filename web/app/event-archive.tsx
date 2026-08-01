@@ -2,26 +2,26 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { archiveEvents } from "../lib/archive-data";
+import type { ArchiveEvent } from "../lib/archive-data";
 
 type SortMode = "archive" | "title" | "quality";
 
 const allLabel = "전체";
 
-export function EventArchive() {
+export function EventArchive({ events }: { events: ArchiveEvent[] }) {
   const [query, setQuery] = useState("");
   const [selectedLabel, setSelectedLabel] = useState(allLabel);
   const [sortMode, setSortMode] = useState<SortMode>("archive");
 
   const labels = useMemo(() => {
     const uniqueLabels = new Set<string>();
-    archiveEvents.forEach((event) => event.labels?.forEach((label) => uniqueLabels.add(label)));
+    events.forEach((event) => event.labels?.forEach((label) => uniqueLabels.add(label)));
     return [allLabel, ...Array.from(uniqueLabels)];
-  }, []);
+  }, [events]);
 
   const filteredEvents = useMemo(() => {
     const keyword = query.trim().toLocaleLowerCase("ko");
-    const filtered = archiveEvents.filter((event) => {
+    const filtered = events.filter((event) => {
       const searchableText = [
         event.title,
         event.period,
@@ -39,10 +39,10 @@ export function EventArchive() {
     return [...filtered].sort((left, right) => {
       if (sortMode === "title") return left.title.localeCompare(right.title, "ko");
       if (sortMode === "quality") return (right.qualityScore ?? 0) - (left.qualityScore ?? 0);
-      return archiveEvents.findIndex((event) => event.id === left.id)
-        - archiveEvents.findIndex((event) => event.id === right.id);
+      return events.findIndex((event) => event.id === left.id)
+        - events.findIndex((event) => event.id === right.id);
     });
-  }, [query, selectedLabel, sortMode]);
+  }, [events, query, selectedLabel, sortMode]);
 
   const resetFilters = () => {
     setQuery("");

@@ -31,7 +31,24 @@ npm run build
 NEXT_PUBLIC_SITE_URL=https://kenitoa.github.io/warsachive
 ```
 
-공개 사이트는 `web/content/archive.json`만 읽는 완전한 정적 사이트입니다. NAS 주소, 공개 API, CORS 설정은 필요하지 않습니다.
+공개 사이트는 `web/content/main.json`에 등록된 `web/content/archive/` 파일만 읽는 완전한 정적 사이트입니다. NAS 주소, 공개 API, CORS 설정은 필요하지 않습니다.
+
+## 콘텐츠 발행 구조
+
+```text
+web/content/
+  main.json
+  archive/
+    imjin-war.json
+```
+
+- `main.json`: `archive/`를 스캔해 자동 생성되는 브릿지 파일. 직접 편집하지 않습니다.
+- `archive/`: 발행 완료된 JSON 파일만 보관하는 공개 콘텐츠 폴더
+- 공개 파일은 단일 기록 객체 또는 `items` 배열을 가진 발행 묶음 형식을 사용할 수 있습니다.
+- 새 파일을 발행할 때는 `archive/`에 추가하기만 하면 됩니다. 로컬 개발·빌드 전에 `main.json`이 자동 갱신됩니다.
+- `main` 브랜치의 `archive/`에 JSON이 추가되면 `content-index.yml`이 갱신된 `main.json`을 자동 커밋합니다.
+- 등록되지 않은 파일은 페이지와 sitemap에 반영되지 않습니다.
+- 중복 경로, 중복 기록 ID, 폴더 밖 경로, 잘못된 JSON은 빌드 단계에서 차단됩니다.
 
 ## 검색 노출과 CTR
 
@@ -44,6 +61,6 @@ NEXT_PUBLIC_SITE_URL=https://kenitoa.github.io/warsachive
 
 배포 후 Google Search Console에 `SITE_URL/sitemap.xml`을 제출하고 실제 노출수·클릭수·검색 CTR을 확인합니다. 사이트맵과 구조화 데이터는 검색엔진 이해를 돕지만 상위 노출을 보장하지는 않습니다.
 
-NAS 발행 스케줄러는 40분마다 정보화 기록 한 건을 `web/content/archive.json`에 누적 커밋합니다. 이 push가 `pages.yml`을 자동 실행하고 `/archive/기록ID/` 상세 페이지와 sitemap을 다시 생성합니다. 기존 기록은 삭제하거나 교체하지 않습니다.
+NAS 발행 스케줄러는 발행 완료 파일을 `web/content/archive/`에 추가하기만 합니다. 이 push가 `content-index.yml`을 실행해 `web/content/main.json`을 자동 갱신하고, 이어서 `pages.yml`이 `/archive/기록ID/` 상세 페이지와 sitemap을 다시 생성합니다. 기존 기록은 삭제하거나 교체하지 않습니다.
 
 GitHub Pages 자체에는 쓰기 가능한 서버가 없으므로 NAS API 기반 노출·클릭 집계는 사용하지 않습니다. 실제 검색 노출과 CTR은 Google Search Console 등 Pages와 독립된 분석 도구에서 확인합니다.
