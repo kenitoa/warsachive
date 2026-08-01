@@ -1,13 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-01T06:13:12.987Z",
+  "updatedAt": "2026-08-01T07:13:12.727Z",
   "items": [
     {
       "id": "best-of-understanding-settler-colonialism-in-israel-and--2",
       "path": "best-of-understanding-settler-colonialism-in-israel-and--2.json",
       "title": "[BEST OF] Understanding Settler Colonialism in Israel and the United States",
       "fingerprint": "3e084254e88ca4c2",
-      "updatedAt": "2026-08-01T06:13:12.987Z"
+      "updatedAt": "2026-08-01T07:13:12.727Z"
+    },
+    {
+      "id": "the-report-episode-7-charging-decisions",
+      "path": "the-report-episode-7-charging-decisions.json",
+      "title": "The Report, Episode 7: Charging Decisions",
+      "fingerprint": "ea33509713df2c93",
+      "updatedAt": "2026-08-01T07:13:12.727Z"
     }
   ]
 }
