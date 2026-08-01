@@ -10,9 +10,29 @@ const safeFileName = /^[a-zA-Z0-9][a-zA-Z0-9_-]*\.json$/;
 
 const entries = await readdir(archiveDirectory, { withFileTypes: true });
 const jsonFiles = entries
-  .filter((entry) => entry.isFile() && entry.name.toLocaleLowerCase().endsWith(".json"))
+  .filter((entry) => entry.isFile() && entry.name.toLocaleLowerCase().endsWith(".json") && entry.name !== "index.json")
   .map((entry) => entry.name)
   .sort((left, right) => left.localeCompare(right, "en"));
+
+function isArchiveEvent(value) {
+  if (!value || typeof value !== "object") return false;
+  return typeof value.id === "string"
+    && /^[a-zA-Z0-9_-]{1,80}$/.test(value.id)
+    && typeof value.title === "string"
+    && typeof value.period === "string"
+    && typeof value.region === "string"
+    && typeof value.summary === "string"
+    && typeof value.sourceCount === "number";
+}
+
+function isPublishedPayload(value) {
+  if (isArchiveEvent(value)) return true;
+  return Boolean(value)
+    && typeof value === "object"
+    && Array.isArray(value.items)
+    && value.items.length > 0
+    && value.items.every(isArchiveEvent);
+}
 
 for (const fileName of jsonFiles) {
   if (!safeFileName.test(fileName)) {
@@ -22,8 +42,8 @@ for (const fileName of jsonFiles) {
   const filePath = join(archiveDirectory, fileName);
   try {
     const payload = JSON.parse(await readFile(filePath, "utf8"));
-    if (!payload || typeof payload !== "object") {
-      throw new Error("JSON 최상위 값은 객체여야 합니다.");
+    if (!isPublishedPayload(payload)) {
+      throw new Error("공개 기록 객체 또는 공개 기록 items 배열이어야 합니다.");
     }
   } catch (error) {
     const reason = error instanceof Error ? error.message : "알 수 없는 오류";
