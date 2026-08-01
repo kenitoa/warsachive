@@ -51,6 +51,57 @@
         "reason": "발행 품질 기준 통과"
       },
       "collectedAt": "2026-07-12T20:54:18.431Z"
+    },
+    {
+      "id": "bhm365-special-interview-melvin-forbes-president-and-ceo",
+      "title": "BHM365 Special Interview: Melvin Forbes, President and CEO of Forbes Consulting, Inc. (Part 1)",
+      "period": "미분류",
+      "region": "전세계",
+      "summary": "History Primary Source Timeline Explore important topics and moments in U.S. history through historical primary sources from the Library of Congress. the american revolution, 1763 to 1783 great depression & world war ii, 1929 to 1945 grades 6-8 three worlds meet, beginnings to 1620 the new nation, 1783 to 1815 grades 9-12 postwar united states, 1945 to present civil war and reconstruction, 1861 to 1877 progressive er…",
+      "curator": {
+        "format": "history-curator-v1",
+        "context": "History Primary Source Timeline Explore important topics and moments in U.S. history through historical primary sources from the Library of Congress. the american revolution, 1763 to 1783 great depression & world war ii, 1929 to 1945 grades 6-8 three worlds me…",
+        "keyPoints": [
+          "History Primary Source Timeline Explore important topics and moments in U.S.",
+          "history through historical primary sources from the Library of Congress.",
+          "the american revolution, 1763 to 1783 great depression & world war ii, 1929 to 1945 grades 6-8 three worlds meet, beginnings to 1620 the new nation, 1783 to 1815 grades 9-12 postwar united states, 1945 to present civil war and reconstruction, 1861 to 1877 progressive era to new era, 1900 to 1929 american history national expansion and reform, 1815-1860 rise of industrial america, 1876 to 1900"
+        ],
+        "chronology": [
+          "the american revolution, 1763 to 1783 great depression & world war ii, 1929 to 1945 grades 6-8 three worlds meet, beginnings to 1620 the new nation, 1783 to 1815 grades 9-12 postwar united states, 1945 to present civil war and reconstruction, 1861 to 1877 progressive era to new era, 1900 to 1929 american history national expansion and reform, 1815-1860 rise of industrial america, 1876 to 1900"
+        ],
+        "peopleAndPlaces": [
+          "History Primary Source Timeline Explore important topics and moments in U.S.",
+          "history through historical primary sources from the Library of Congress.",
+          "the american revolution, 1763 to 1783 great depression & world war ii, 1929 to 1945 grades 6-8 three worlds meet, beginnings to 1620 the new nation, 1783 to 1815 grades 9-12 postwar united states, 1945 to present civil war and reconstruction, 1861 to 1877 progressive era to new era, 1900 to 1929 american history national expansion and reform, 1815-1860 rise of industrial america, 1876 to 1900"
+        ],
+        "sourceBasis": "등록 출처 1건과 수집 문서 1건을 중복 제거한 뒤 battle, chronology 라벨로 분류했습니다. 맥락 그룹은 event-place이며 평균 연관성은 0.48, 신뢰도 분포는 high 1건, medium 0건, needs-review 0건입니다."
+      },
+      "labels": [
+        "battle",
+        "chronology"
+      ],
+      "sourceUrl": "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/",
+      "sourceUrls": [
+        "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/"
+      ],
+      "documentIds": [
+        "global-history-open-sources-library-of-congress-history-http-www-loc-gov-classro"
+      ],
+      "sentenceIds": [
+        "global-history-open-sources-library-of-congress-history-http-www-loc-gov-classro-s1",
+        "global-history-open-sources-library-of-congress-history-http-www-loc-gov-classro-s2",
+        "global-history-open-sources-library-of-congress-history-http-www-loc-gov-classro-s3"
+      ],
+      "sourceCount": 1,
+      "documentCount": 1,
+      "indexedTerms": 59,
+      "qualityScore": 0.69,
+      "qualityGate": {
+        "minScore": 0.6,
+        "passed": true,
+        "reason": "발행 품질 기준 통과"
+      },
+      "collectedAt": "2026-07-13T21:21:18.418Z"
     }
   ]
 }
