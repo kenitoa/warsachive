@@ -1,0 +1,78 @@
+{
+  "id": "szkice-o-teatrze",
+  "title": "Szkice o teatrze",
+  "period": "미분류",
+  "region": "전세계",
+  "summary": "Belfast : a history x, 278 p. : 25 cm Includes bibliographical references (p. 259-273) Belfast (Northern Ireland) -- History Haiti Prepared with the cooperation of the American Geographical Society Haiti -- Description and travel Haiti -- History Jefferson Street Baptist Church (Biddeford, Maine) Directory Directory - Jefferson Street Baptist Church (Biddeford, Maine) 1926; 23 cm. Directory of members of the Jefferso…",
+  "curator": {
+    "format": "history-curator-v1",
+    "context": "Belfast : a history x, 278 p. : 25 cm Includes bibliographical references (p. 259-273) Belfast (Northern Ireland) -- History Haiti Prepared with the cooperation of the American Geographical Society Haiti -- Description and travel Haiti -- History Jefferson Str…",
+    "keyPoints": [
+      "Belfast : a history x, 278 p.",
+      ": 25 cm Includes bibliographical references (p.",
+      "259-273) Belfast (Northern Ireland) -- History",
+      "Haiti Prepared with the cooperation of the American Geographical Society Haiti -- Description and travel Haiti -- History"
+    ],
+    "chronology": [
+      "Belfast : a history x, 278 p.",
+      "259-273) Belfast (Northern Ireland) -- History",
+      "Jefferson Street Baptist Church (Biddeford, Maine) Directory Directory - Jefferson Street Baptist Church (Biddeford, Maine) 1926; 23 cm."
+    ],
+    "peopleAndPlaces": [
+      "Belfast : a history x, 278 p.",
+      ": 25 cm Includes bibliographical references (p.",
+      "259-273) Belfast (Northern Ireland) -- History"
+    ],
+    "sourceBasis": "등록 출처 6건과 수집 문서 6건을 중복 제거한 뒤 unclassified, chronology, primary-source 라벨로 분류했습니다. 맥락 그룹은 review, source-record이며 평균 연관성은 0.35, 신뢰도 분포는 high 0건, medium 0건, needs-review 6건입니다."
+  },
+  "labels": [
+    "unclassified",
+    "chronology",
+    "primary-source"
+  ],
+  "sourceUrl": "belfasthistory0000magu",
+  "sourceUrls": [
+    "belfasthistory0000magu",
+    "haitijos00jose",
+    "JeffersonStBaptistChurch",
+    "malaysiaheartofs0000unse",
+    "highlightsofrece0000wrig",
+    "stateofbuncombe0000tess"
+  ],
+  "documentIds": [
+    "global-history-open-sources-internet-archive-history-cursor-242-belfasthistory00",
+    "global-history-open-sources-internet-archive-history-cursor-94-haitijos00jose",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti",
+    "global-history-open-sources-internet-archive-history-cursor-285-malaysiaheartofs",
+    "global-history-open-sources-internet-archive-history-cursor-286-highlightsofrece",
+    "global-history-open-sources-internet-archive-history-cursor-299-stateofbuncombe0"
+  ],
+  "sentenceIds": [
+    "global-history-open-sources-internet-archive-history-cursor-242-belfasthistory00-s1",
+    "global-history-open-sources-internet-archive-history-cursor-242-belfasthistory00-s2",
+    "global-history-open-sources-internet-archive-history-cursor-242-belfasthistory00-s3",
+    "global-history-open-sources-internet-archive-history-cursor-94-haitijos00jose-s1",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s1",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s2",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s3",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s4",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s5",
+    "global-history-open-sources-internet-archive-history-cursor-156-JeffersonStBapti-s6",
+    "global-history-open-sources-internet-archive-history-cursor-285-malaysiaheartofs-s1",
+    "global-history-open-sources-internet-archive-history-cursor-286-highlightsofrece-s1",
+    "global-history-open-sources-internet-archive-history-cursor-286-highlightsofrece-s2",
+    "global-history-open-sources-internet-archive-history-cursor-299-stateofbuncombe0-s1",
+    "global-history-open-sources-internet-archive-history-cursor-299-stateofbuncombe0-s2",
+    "global-history-open-sources-internet-archive-history-cursor-299-stateofbuncombe0-s3"
+  ],
+  "sourceCount": 6,
+  "documentCount": 6,
+  "indexedTerms": 108,
+  "qualityScore": 0.6,
+  "qualityGate": {
+    "minScore": 0.6,
+    "passed": true,
+    "reason": "발행 품질 기준 통과"
+  },
+  "collectedAt": "2026-08-01T12:33:01.037Z"
+}
