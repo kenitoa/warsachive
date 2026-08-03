@@ -21,7 +21,7 @@
       "초기 전투와 도시 점령, 조선 수군의 해상 방어, 명군의 참전, 강화 교섭과 재침공이 이어지며 전쟁은 1598년까지 지속되었다.",
       "이 기록은 사건을 승패 중심으로만 정리하지 않고 침공 경로, 지역별 전투, 조정의 대응, 민간 피해, 외교 교섭, 전후 복구 과정을 함께 연결하기 위한 기본 주제 자료다."
     ],
-    "sourceBasis": "등록 출처 19건과 수집 문서 19건을 중복 제거한 뒤 battle, place, diplomacy, primary-source, chronology, people, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony이며 평균 연관성은 0.40, 신뢰도 분포는 high 11건, medium 1건, needs-review 7건입니다."
+    "sourceBasis": "등록 출처 19건과 수집 문서 19건을 중복 제거한 뒤 battle, place, diplomacy, primary-source, chronology, people, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony이며 평균 연관성은 0.40, 신뢰도 분포는 high 12건, medium 1건, needs-review 6건입니다."
   },
   "labels": [
     "battle",
@@ -44,7 +44,6 @@
     "https://blogs.loc.gov/teachers/2026/02/resources-for-african-american-history-month-selected-digital-collections/",
     "WBPU_96_3_FM_20181002_010000",
     "WBPU_96_3_FM_20191225_190000",
-    "WBPU_96_3_FM_20200107_000000",
     "WBPU_96_3_FM_20181004_070000",
     "bulletindesens07soci",
     "https://blogs.loc.gov/folklife/2026/03/who-knew-march-19-is-a-special-veterans-history-project-trivia-night/",
@@ -52,7 +51,8 @@
     "https://ask.loc.gov/veterans-history/faq/369352",
     "//hdl.loc.gov/loc.mss/eadmss.ms009315",
     "https://blogs.loc.gov/headlinesandheroes/2022/04/helping-to-unfold-the-history-of-the-holocaust-through-newspapers/",
-    "https://www.loc.gov/item/hlas-bi95019616/"
+    "https://www.loc.gov/item/hlas-bi95019616/",
+    "https://www.loc.gov/item/2016631026/"
   ],
   "documentIds": [
     "imjin-war-overview",
@@ -65,7 +65,6 @@
     "global-history-open-sources-library-of-congress-history-cursor-151-https-blogs-l",
     "global-history-open-sources-internet-archive-history-cursor-262-WBPU_96_3_FM_201",
     "global-history-open-sources-internet-archive-history-cursor-281-WBPU_96_3_FM_201",
-    "global-history-open-sources-internet-archive-history-cursor-281-WBPU_96_3_FM_202",
     "global-history-open-sources-internet-archive-history-cursor-284-WBPU_96_3_FM_201",
     "global-history-open-sources-internet-archive-history-cursor-334-bulletindesens07",
     "global-history-open-sources-library-of-congress-history-cursor-228-https-blogs-l",
@@ -73,7 +72,8 @@
     "global-history-open-sources-library-of-congress-history-cursor-277-https-ask-loc",
     "global-history-open-sources-library-of-congress-history-cursor-289-http-hdl-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-301-https-blogs-l",
-    "global-history-open-sources-library-of-congress-history-cursor-320-http-www-loc-"
+    "global-history-open-sources-library-of-congress-history-cursor-320-http-www-loc-",
+    "global-history-open-sources-library-of-congress-history-cursor-328-http-www-loc-"
   ],
   "sentenceIds": [
     "imjin-war-overview-s1",
@@ -102,7 +102,6 @@
     "global-history-open-sources-library-of-congress-history-cursor-151-https-blogs-l-s2",
     "global-history-open-sources-internet-archive-history-cursor-262-WBPU_96_3_FM_201-s1",
     "global-history-open-sources-internet-archive-history-cursor-281-WBPU_96_3_FM_201-s1",
-    "global-history-open-sources-internet-archive-history-cursor-281-WBPU_96_3_FM_202-s1",
     "global-history-open-sources-internet-archive-history-cursor-284-WBPU_96_3_FM_201-s1",
     "global-history-open-sources-internet-archive-history-cursor-334-bulletindesens07-s1",
     "global-history-open-sources-internet-archive-history-cursor-334-bulletindesens07-s2",
@@ -144,12 +143,15 @@
     "global-history-open-sources-library-of-congress-history-cursor-301-https-blogs-l-s4",
     "global-history-open-sources-library-of-congress-history-cursor-301-https-blogs-l-s5",
     "global-history-open-sources-library-of-congress-history-cursor-320-http-www-loc--s1",
-    "global-history-open-sources-library-of-congress-history-cursor-320-http-www-loc--s2"
+    "global-history-open-sources-library-of-congress-history-cursor-320-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-328-http-www-loc--s1",
+    "global-history-open-sources-library-of-congress-history-cursor-328-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-328-http-www-loc--s3"
   ],
   "sourceCount": 19,
   "documentCount": 19,
-  "indexedTerms": 610,
-  "qualityScore": 0.72,
+  "indexedTerms": 588,
+  "qualityScore": 0.73,
   "qualityGate": {
     "minScore": 0.6,
     "passed": true,
