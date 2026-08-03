@@ -1,0 +1,56 @@
+{
+  "id": "multipolarity-w-ben-norton",
+  "title": "Multipolarity w/ Ben Norton",
+  "period": "미분류",
+  "region": "전세계",
+  "summary": "Search results for Group:words-And-Deeds, Available Online Search results 1 - 25 of 87. New Recording Available: Naa Oyo Kwate on Fast Food History Last fall, the Science and Business Reading Room hosted a \"Made at the Library\" conversation with author Dr. Naa Oyo A Kwate. For those that missed the event, the recording is now available online. science technology business blogs 2025-04-07",
+  "curator": {
+    "format": "history-curator-v1",
+    "context": "Search results for Group:words-And-Deeds, Available Online Search results 1 - 25 of 87. New Recording Available: Naa Oyo Kwate on Fast Food History Last fall, the Science and Business Reading Room hosted a \"Made at the Library\" conversation with author Dr. Naa…",
+    "keyPoints": [
+      "Search results for Group:words-And-Deeds, Available Online Search results 1 - 25 of 87.",
+      "New Recording Available: Naa Oyo Kwate on Fast Food History Last fall, the Science and Business Reading Room hosted a \"Made at the Library\" conversation with author Dr.",
+      "Naa Oyo A Kwate.",
+      "For those that missed the event, the recording is now available online."
+    ],
+    "chronology": [
+      "science technology business blogs 2025-04-07"
+    ],
+    "peopleAndPlaces": [
+      "Search results for Group:words-And-Deeds, Available Online Search results 1 - 25 of 87.",
+      "New Recording Available: Naa Oyo Kwate on Fast Food History Last fall, the Science and Business Reading Room hosted a \"Made at the Library\" conversation with author Dr.",
+      "Naa Oyo A Kwate."
+    ],
+    "sourceBasis": "등록 출처 2건과 수집 문서 2건을 중복 제거한 뒤 place, primary-source 라벨로 분류했습니다. 맥락 그룹은 event-place, source-record이며 평균 연관성은 0.39, 신뢰도 분포는 high 2건, medium 0건, needs-review 0건입니다."
+  },
+  "labels": [
+    "place",
+    "primary-source"
+  ],
+  "sourceUrl": "https://www.loc.gov/search?q=group:words-and-deeds",
+  "sourceUrls": [
+    "https://www.loc.gov/search?q=group:words-and-deeds",
+    "https://blogs.loc.gov/inside_adams/2025/04/kwate-recording/"
+  ],
+  "documentIds": [
+    "global-history-open-sources-library-of-congress-history-https-www-loc-gov-search",
+    "global-history-open-sources-library-of-congress-history-cursor-288-https-blogs-l"
+  ],
+  "sentenceIds": [
+    "global-history-open-sources-library-of-congress-history-https-www-loc-gov-search-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-288-https-blogs-l-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-288-https-blogs-l-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-288-https-blogs-l-s3",
+    "global-history-open-sources-library-of-congress-history-cursor-288-https-blogs-l-s4"
+  ],
+  "sourceCount": 2,
+  "documentCount": 2,
+  "indexedTerms": 47,
+  "qualityScore": 0.74,
+  "qualityGate": {
+    "minScore": 0.6,
+    "passed": true,
+    "reason": "발행 품질 기준 통과"
+  },
+  "collectedAt": "2026-07-13T21:21:18.418Z"
+}
