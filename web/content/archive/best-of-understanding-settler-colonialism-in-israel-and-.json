@@ -23,7 +23,7 @@
       "3 (ep.",
       "183) Congrats to Hearts & Wheels, who won week 2 of #moxiemillion, by sharing the show to help it reach 1 million downloads this month!"
     ],
-    "sourceBasis": "등록 출처 723건과 수집 문서 723건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 225건, medium 18건, needs-review 480건입니다."
+    "sourceBasis": "등록 출처 726건과 수집 문서 726건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 228건, medium 18건, needs-review 480건입니다."
   },
   "labels": [
     "battle",
@@ -758,7 +758,10 @@
     "https://www.loc.gov/loc/lcib/0705/weinberger.html",
     "//lccn.loc.gov/21000739",
     "https://www.congress.gov/bill/110th-congress/senate-bill/2679",
-    "https://www.loc.gov/item/2023697291/"
+    "https://www.loc.gov/item/2023697291/",
+    "https://blogs.loc.gov/kluge/2022/03/women-of-the-117th-congress-on-womens-history-month-and-making-history/",
+    "https://www.loc.gov/item/04018970/",
+    "https://www.loc.gov/item/2015669101/"
   ],
   "documentIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j",
@@ -1483,7 +1486,10 @@
     "global-history-open-sources-library-of-congress-history-cursor-375-https-www-loc",
     "global-history-open-sources-library-of-congress-history-cursor-378-http-lccn-loc",
     "global-history-open-sources-library-of-congress-history-cursor-377-https-www-con",
-    "global-history-open-sources-library-of-congress-history-cursor-384-http-www-loc-"
+    "global-history-open-sources-library-of-congress-history-cursor-384-http-www-loc-",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc-",
+    "global-history-open-sources-library-of-congress-history-cursor-388-http-www-loc-"
   ],
   "sentenceIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j-s1",
@@ -6741,11 +6747,24 @@
     "global-history-open-sources-library-of-congress-history-cursor-378-http-lccn-loc-s4",
     "global-history-open-sources-library-of-congress-history-cursor-377-https-www-con-s1",
     "global-history-open-sources-library-of-congress-history-cursor-384-http-www-loc--s1",
-    "global-history-open-sources-library-of-congress-history-cursor-384-http-www-loc--s2"
+    "global-history-open-sources-library-of-congress-history-cursor-384-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l-s3",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l-s4",
+    "global-history-open-sources-library-of-congress-history-cursor-387-https-blogs-l-s5",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc--s1",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc--s3",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc--s4",
+    "global-history-open-sources-library-of-congress-history-cursor-387-http-www-loc--s5",
+    "global-history-open-sources-library-of-congress-history-cursor-388-http-www-loc--s1",
+    "global-history-open-sources-library-of-congress-history-cursor-388-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-388-http-www-loc--s3"
   ],
-  "sourceCount": 723,
-  "documentCount": 723,
-  "indexedTerms": 15654,
+  "sourceCount": 726,
+  "documentCount": 726,
+  "indexedTerms": 15669,
   "qualityScore": 0.68,
   "qualityGate": {
     "minScore": 0.6,
