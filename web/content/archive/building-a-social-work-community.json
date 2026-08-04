@@ -23,7 +23,7 @@
       "Freedom a history of US.",
       "Companion Web site to the PBS television series of the same title, which is based on the books by Joy Hakim."
     ],
-    "sourceBasis": "등록 출처 69건과 수집 문서 69건을 중복 제거한 뒤 unclassified, chronology, people, primary-source, battle, place, diplomacy 라벨로 분류했습니다. 맥락 그룹은 review, people-testimony, event-place, source-record, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 36건, medium 10건, needs-review 23건입니다."
+    "sourceBasis": "등록 출처 68건과 수집 문서 68건을 중복 제거한 뒤 unclassified, chronology, people, primary-source, battle, place, diplomacy 라벨로 분류했습니다. 맥락 그룹은 review, people-testimony, event-place, source-record, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 36건, medium 10건, needs-review 22건입니다."
   },
   "labels": [
     "unclassified",
@@ -56,7 +56,6 @@
     "status-of-russian-navy-2024",
     "pacifica_radio_archives-BC2802",
     "pacifica_radio_archives-BC1145",
-    "womanswagehistor0000kess",
     "https://blogs.loc.gov/loc/2015/03/celebrating-women-womens-history-on-pinterest/",
     "dcatma-Women_s_History_Month_-_Women_in_Danvers_2016_-_Lisa_Dana",
     "//lccn.loc.gov/2012392071",
@@ -74,7 +73,6 @@
     "//lccn.loc.gov/07024505",
     "https://www.loc.gov/item/hlas-bi74103182/",
     "https://blogs.loc.gov/nls-music-notes/2022/03/celebrate-womens-music-history-with-the-library-of-congress/",
-    "https://www.loc.gov/item/event-403121/prints-and-photographs-virtual-orientation-native-american-history-and-visual-culture/2021-11-17/",
     "youtube-KQlXuo5VovI",
     "bluestockingsrem0000robi_f1g1",
     "youtube-6Xy9ZZebm48",
@@ -104,7 +102,8 @@
     "//hdl.loc.gov/loc.mss/eadmss.ms012152",
     "//lccn.loc.gov/2020476122",
     "https://blogs.loc.gov/law/2014/02/law-library-to-host-former-u-s-representative-patricia-schroeder-in-honor-of-womens-history-month/",
-    "https://blogs.loc.gov/law/2024/09/broads-and-bootlegging-a-brief-history-of-women-during-the-prohibition-era/"
+    "https://blogs.loc.gov/law/2024/09/broads-and-bootlegging-a-brief-history-of-women-during-the-prohibition-era/",
+    "https://www.loc.gov/item/hlas-bi2007004204/"
   ],
   "documentIds": [
     "global-history-open-sources-library-of-congress-history-http-lccn-loc-gov-005297",
@@ -127,7 +126,6 @@
     "global-history-open-sources-internet-archive-history-cursor-79-status-of-russian",
     "global-history-open-sources-internet-archive-history-cursor-92-pacifica_radio_ar",
     "global-history-open-sources-internet-archive-history-cursor-108-pacifica_radio_a",
-    "global-history-open-sources-internet-archive-history-cursor-120-womanswagehistor",
     "global-history-open-sources-library-of-congress-history-cursor-77-https-blogs-lo",
     "global-history-open-sources-internet-archive-history-cursor-153-dcatma-Women_s_H",
     "global-history-open-sources-library-of-congress-history-cursor-95-http-lccn-loc-",
@@ -145,7 +143,6 @@
     "global-history-open-sources-library-of-congress-history-cursor-140-http-lccn-loc",
     "global-history-open-sources-library-of-congress-history-cursor-176-http-www-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-176-https-blogs-l",
-    "global-history-open-sources-library-of-congress-history-cursor-181-http-www-loc-",
     "global-history-open-sources-internet-archive-history-cursor-274-youtube-KQlXuo5V",
     "global-history-open-sources-internet-archive-history-cursor-278-bluestockingsrem",
     "global-history-open-sources-internet-archive-history-cursor-280-youtube-6Xy9ZZeb",
@@ -175,7 +172,8 @@
     "global-history-open-sources-library-of-congress-history-cursor-290-http-hdl-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-333-http-lccn-loc",
     "global-history-open-sources-library-of-congress-history-cursor-339-https-blogs-l",
-    "global-history-open-sources-library-of-congress-history-cursor-348-https-blogs-l"
+    "global-history-open-sources-library-of-congress-history-cursor-348-https-blogs-l",
+    "global-history-open-sources-library-of-congress-history-cursor-367-http-www-loc-"
   ],
   "sentenceIds": [
     "global-history-open-sources-library-of-congress-history-http-lccn-loc-gov-005297-s1",
@@ -283,8 +281,6 @@
     "global-history-open-sources-internet-archive-history-cursor-108-pacifica_radio_a-s6",
     "global-history-open-sources-internet-archive-history-cursor-108-pacifica_radio_a-s7",
     "global-history-open-sources-internet-archive-history-cursor-108-pacifica_radio_a-s8",
-    "global-history-open-sources-internet-archive-history-cursor-120-womanswagehistor-s1",
-    "global-history-open-sources-internet-archive-history-cursor-120-womanswagehistor-s2",
     "global-history-open-sources-library-of-congress-history-cursor-77-https-blogs-lo-s1",
     "global-history-open-sources-internet-archive-history-cursor-153-dcatma-Women_s_H-s1",
     "global-history-open-sources-internet-archive-history-cursor-153-dcatma-Women_s_H-s2",
@@ -337,9 +333,6 @@
     "global-history-open-sources-library-of-congress-history-cursor-176-https-blogs-l-s2",
     "global-history-open-sources-library-of-congress-history-cursor-176-https-blogs-l-s3",
     "global-history-open-sources-library-of-congress-history-cursor-176-https-blogs-l-s4",
-    "global-history-open-sources-library-of-congress-history-cursor-181-http-www-loc--s1",
-    "global-history-open-sources-library-of-congress-history-cursor-181-http-www-loc--s2",
-    "global-history-open-sources-library-of-congress-history-cursor-181-http-www-loc--s3",
     "global-history-open-sources-internet-archive-history-cursor-274-youtube-KQlXuo5V-s1",
     "global-history-open-sources-internet-archive-history-cursor-274-youtube-KQlXuo5V-s2",
     "global-history-open-sources-internet-archive-history-cursor-274-youtube-KQlXuo5V-s3",
@@ -627,11 +620,12 @@
     "global-history-open-sources-library-of-congress-history-cursor-339-https-blogs-l-s2",
     "global-history-open-sources-library-of-congress-history-cursor-339-https-blogs-l-s3",
     "global-history-open-sources-library-of-congress-history-cursor-348-https-blogs-l-s1",
-    "global-history-open-sources-library-of-congress-history-cursor-348-https-blogs-l-s2"
+    "global-history-open-sources-library-of-congress-history-cursor-348-https-blogs-l-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-367-http-www-loc--s1"
   ],
-  "sourceCount": 69,
-  "documentCount": 69,
-  "indexedTerms": 3154,
+  "sourceCount": 68,
+  "documentCount": 68,
+  "indexedTerms": 3120,
   "qualityScore": 0.74,
   "qualityGate": {
     "minScore": 0.6,
