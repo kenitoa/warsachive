@@ -23,7 +23,7 @@
       "History detectives \"The History Detectives site includes highlights from the televised investigations.",
       "The site then branches out."
     ],
-    "sourceBasis": "등록 출처 97건과 수집 문서 97건을 중복 제거한 뒤 unclassified, chronology, people, place, battle, diplomacy, primary-source 라벨로 분류했습니다. 맥락 그룹은 review, people-testimony, event-place, diplomacy-aftermath, source-record이며 평균 연관성은 0.39, 신뢰도 분포는 high 37건, medium 1건, needs-review 59건입니다."
+    "sourceBasis": "등록 출처 98건과 수집 문서 98건을 중복 제거한 뒤 unclassified, chronology, people, place, battle, diplomacy, primary-source 라벨로 분류했습니다. 맥락 그룹은 review, people-testimony, event-place, diplomacy-aftermath, source-record이며 평균 연관성은 0.39, 신뢰도 분포는 high 38건, medium 1건, needs-review 59건입니다."
   },
   "labels": [
     "unclassified",
@@ -132,7 +132,8 @@
     "https://www.loc.gov/item/hlas-bi97017071/",
     "//hdl.loc.gov/loc.afc/eadvhp.vh023002",
     "//hdl.loc.gov/loc.afc/eadvhp.vh016006",
-    "https://www.loc.gov/item/27012784/"
+    "https://www.loc.gov/item/27012784/",
+    "//lccn.loc.gov/2003557456"
   ],
   "documentIds": [
     "global-history-open-sources-library-of-congress-history-http-www-loc-gov-item-sn",
@@ -231,7 +232,8 @@
     "global-history-open-sources-library-of-congress-history-cursor-288-http-www-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-302-http-hdl-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-303-http-hdl-loc-",
-    "global-history-open-sources-library-of-congress-history-cursor-380-http-www-loc-"
+    "global-history-open-sources-library-of-congress-history-cursor-380-http-www-loc-",
+    "global-history-open-sources-library-of-congress-history-cursor-401-http-lccn-loc"
   ],
   "sentenceIds": [
     "global-history-open-sources-library-of-congress-history-http-www-loc-gov-item-sn-s1",
@@ -646,11 +648,13 @@
     "global-history-open-sources-library-of-congress-history-cursor-303-http-hdl-loc--s4",
     "global-history-open-sources-library-of-congress-history-cursor-303-http-hdl-loc--s5",
     "global-history-open-sources-library-of-congress-history-cursor-380-http-www-loc--s1",
-    "global-history-open-sources-library-of-congress-history-cursor-380-http-www-loc--s2"
+    "global-history-open-sources-library-of-congress-history-cursor-380-http-www-loc--s2",
+    "global-history-open-sources-library-of-congress-history-cursor-401-http-lccn-loc-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-401-http-lccn-loc-s2"
   ],
-  "sourceCount": 97,
-  "documentCount": 97,
-  "indexedTerms": 2413,
+  "sourceCount": 98,
+  "documentCount": 98,
+  "indexedTerms": 2419,
   "qualityScore": 0.68,
   "qualityGate": {
     "minScore": 0.6,
