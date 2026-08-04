@@ -23,7 +23,7 @@
       "3 (ep.",
       "183) Congrats to Hearts & Wheels, who won week 2 of #moxiemillion, by sharing the show to help it reach 1 million downloads this month!"
     ],
-    "sourceBasis": "등록 출처 742건과 수집 문서 742건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 245건, medium 18건, needs-review 479건입니다."
+    "sourceBasis": "등록 출처 744건과 수집 문서 744건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 247건, medium 18건, needs-review 479건입니다."
   },
   "labels": [
     "battle",
@@ -777,7 +777,9 @@
     "https://www.congress.gov/bill/114th-congress/house-resolution/638",
     "https://blogs.loc.gov/international-collections/2017/08/a-literary-gem-the-history-and-future-of-the-archive-of-hispanic-literature-on-tape/",
     "https://blogs.loc.gov/international-collections/2021/07/the-history-of-printing-in-asia-according-to-library-of-congress-asian-collections-part-2/",
-    "https://www.loc.gov/preservation/conservators/schatell/detail/3fold.html"
+    "https://www.loc.gov/preservation/conservators/schatell/detail/3fold.html",
+    "//lccn.loc.gov/12032792",
+    "https://www.loc.gov/preservation/conservators/schatell/index.html"
   ],
   "documentIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j",
@@ -1521,7 +1523,9 @@
     "global-history-open-sources-library-of-congress-history-cursor-407-https-www-con",
     "global-history-open-sources-library-of-congress-history-cursor-413-https-blogs-l",
     "global-history-open-sources-library-of-congress-history-cursor-414-https-blogs-l",
-    "global-history-open-sources-library-of-congress-history-cursor-414-https-www-loc"
+    "global-history-open-sources-library-of-congress-history-cursor-414-https-www-loc",
+    "global-history-open-sources-library-of-congress-history-cursor-415-http-lccn-loc",
+    "global-history-open-sources-library-of-congress-history-cursor-416-https-www-loc"
   ],
   "sentenceIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j-s1",
@@ -6860,11 +6864,16 @@
     "global-history-open-sources-library-of-congress-history-cursor-414-https-blogs-l-s1",
     "global-history-open-sources-library-of-congress-history-cursor-414-https-blogs-l-s2",
     "global-history-open-sources-library-of-congress-history-cursor-414-https-www-loc-s1",
-    "global-history-open-sources-library-of-congress-history-cursor-414-https-www-loc-s2"
+    "global-history-open-sources-library-of-congress-history-cursor-414-https-www-loc-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-415-http-lccn-loc-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-415-http-lccn-loc-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-415-http-lccn-loc-s3",
+    "global-history-open-sources-library-of-congress-history-cursor-416-https-www-loc-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-416-https-www-loc-s2"
   ],
-  "sourceCount": 742,
-  "documentCount": 742,
-  "indexedTerms": 15775,
+  "sourceCount": 744,
+  "documentCount": 744,
+  "indexedTerms": 15785,
   "qualityScore": 0.68,
   "qualityGate": {
     "minScore": 0.6,
