@@ -23,7 +23,7 @@
       "3 (ep.",
       "183) Congrats to Hearts & Wheels, who won week 2 of #moxiemillion, by sharing the show to help it reach 1 million downloads this month!"
     ],
-    "sourceBasis": "등록 출처 719건과 수집 문서 719건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 221건, medium 18건, needs-review 480건입니다."
+    "sourceBasis": "등록 출처 720건과 수집 문서 720건을 중복 제거한 뒤 battle, people, place, primary-source, chronology, diplomacy, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, review, source-record, people-testimony, diplomacy-aftermath이며 평균 연관성은 0.41, 신뢰도 분포는 high 222건, medium 18건, needs-review 480건입니다."
   },
   "labels": [
     "battle",
@@ -754,7 +754,8 @@
     "https://www.loc.gov/item/2023697287/",
     "https://blogs.loc.gov/folklife/2026/07/new-online-collection-from-the-united-houma-nation-of-south-louisiana-documenting-cultural-practices-history-and-survivance/",
     "//lccn.loc.gov/2013422799",
-    "https://www.loc.gov/loc/lcib/10012/vets.html"
+    "https://www.loc.gov/loc/lcib/10012/vets.html",
+    "https://www.loc.gov/loc/lcib/0705/weinberger.html"
   ],
   "documentIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j",
@@ -1475,7 +1476,8 @@
     "global-history-open-sources-library-of-congress-history-cursor-369-http-www-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-369-https-blogs-l",
     "global-history-open-sources-library-of-congress-history-cursor-372-http-lccn-loc",
-    "global-history-open-sources-library-of-congress-history-cursor-371-https-www-loc"
+    "global-history-open-sources-library-of-congress-history-cursor-371-https-www-loc",
+    "global-history-open-sources-library-of-congress-history-cursor-375-https-www-loc"
   ],
   "sentenceIds": [
     "global-history-open-sources-internet-archive-history-zazeyhlkpgar9wrjupm3ovqng2j-s1",
@@ -6724,11 +6726,13 @@
     "global-history-open-sources-library-of-congress-history-cursor-372-http-lccn-loc-s3",
     "global-history-open-sources-library-of-congress-history-cursor-372-http-lccn-loc-s4",
     "global-history-open-sources-library-of-congress-history-cursor-371-https-www-loc-s1",
-    "global-history-open-sources-library-of-congress-history-cursor-371-https-www-loc-s2"
+    "global-history-open-sources-library-of-congress-history-cursor-371-https-www-loc-s2",
+    "global-history-open-sources-library-of-congress-history-cursor-375-https-www-loc-s1",
+    "global-history-open-sources-library-of-congress-history-cursor-375-https-www-loc-s2"
   ],
-  "sourceCount": 719,
-  "documentCount": 719,
-  "indexedTerms": 15641,
+  "sourceCount": 720,
+  "documentCount": 720,
+  "indexedTerms": 15644,
   "qualityScore": 0.68,
   "qualityGate": {
     "minScore": 0.6,
