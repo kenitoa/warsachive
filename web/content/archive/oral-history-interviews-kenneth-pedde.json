@@ -22,7 +22,7 @@
       "임진왜란 기록에는 지휘관과 의병, 수군, 피난민, 외교 사절처럼 서로 다른 위치의 인물이 함께 등장한다.",
       "한산도, 진주성, 평양, 행주산성, 부산포와 같은 장소는 전투 결과뿐 아니라 보급, 이동 경로, 지역 사회의 피해와 복구를 이해하는 기준점이 된다."
     ],
-    "sourceBasis": "등록 출처 21건과 수집 문서 21건을 중복 제거한 뒤 battle, people, place, diplomacy, primary-source, chronology, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, source-record, review이며 평균 연관성은 0.39, 신뢰도 분포는 high 17건, medium 2건, needs-review 2건입니다."
+    "sourceBasis": "등록 출처 22건과 수집 문서 22건을 중복 제거한 뒤 battle, people, place, diplomacy, primary-source, chronology, unclassified 라벨로 분류했습니다. 맥락 그룹은 event-place, source-record, review이며 평균 연관성은 0.38, 신뢰도 분포는 high 18건, medium 2건, needs-review 2건입니다."
   },
   "labels": [
     "battle",
@@ -55,7 +55,8 @@
     "https://www.loc.gov/item/hlas-bi2007005866/",
     "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/historia-naturae/29.html",
     "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/historia-naturae/21.html",
-    "https://www.loc.gov/item/hlas-bi2007005300/"
+    "https://www.loc.gov/item/hlas-bi2007005300/",
+    "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/historia-naturae/25.html"
   ],
   "documentIds": [
     "imjin-war-people-and-places",
@@ -78,7 +79,8 @@
     "global-history-open-sources-library-of-congress-history-cursor-277-http-www-loc-",
     "global-history-open-sources-library-of-congress-history-cursor-297-https-www-loc",
     "global-history-open-sources-library-of-congress-history-cursor-325-https-www-loc",
-    "global-history-open-sources-library-of-congress-history-cursor-335-http-www-loc-"
+    "global-history-open-sources-library-of-congress-history-cursor-335-http-www-loc-",
+    "global-history-open-sources-library-of-congress-history-cursor-417-https-www-loc"
   ],
   "sentenceIds": [
     "imjin-war-people-and-places-s1",
@@ -178,11 +180,12 @@
     "global-history-open-sources-library-of-congress-history-cursor-277-http-www-loc--s1",
     "global-history-open-sources-library-of-congress-history-cursor-297-https-www-loc-s1",
     "global-history-open-sources-library-of-congress-history-cursor-325-https-www-loc-s1",
-    "global-history-open-sources-library-of-congress-history-cursor-335-http-www-loc--s1"
+    "global-history-open-sources-library-of-congress-history-cursor-335-http-www-loc--s1",
+    "global-history-open-sources-library-of-congress-history-cursor-417-https-www-loc-s1"
   ],
-  "sourceCount": 21,
-  "documentCount": 21,
-  "indexedTerms": 763,
+  "sourceCount": 22,
+  "documentCount": 22,
+  "indexedTerms": 768,
   "qualityScore": 0.77,
   "qualityGate": {
     "minScore": 0.6,
