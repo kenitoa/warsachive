@@ -1,0 +1,1 @@
+CREATE TABLE draft_revisions (draft_id TEXT NOT NULL REFERENCES drafts(id), version INTEGER NOT NULL, payload TEXT NOT NULL, content_hash TEXT NOT NULL, state TEXT NOT NULL, changed_by TEXT NOT NULL REFERENCES users(id), private_notes TEXT NOT NULL, created_at TEXT NOT NULL, PRIMARY KEY(draft_id,version));

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "scope": "current-public-collection",
+  "cases": [
+    { "query": "임진왜란", "first": "imjin-war" },
+    { "query": "Imjin War", "first": "imjin-war" },
+    { "query": "정유재란", "first": "jeongyu-war" },
+    { "query": "난중일기", "first": "nanjung-ilgi" },
+    { "query": "징비록", "first": "jingbirok" },
+    { "query": "Yi Sun-sin", "includes": "nanjung-ilgi" },
+    { "query": "장보고의 달 착륙", "empty": true }
+  ]
+}

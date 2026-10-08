@@ -1,0 +1,21 @@
+.editor { display: grid; gap: 1.25rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,230px),1fr)); gap: 1rem; }
+.card { border: 1px solid #a89b80; padding: 1rem; background: #f5eedf; color: #2f2b25; border-radius: 4px; min-width: 0; }
+.card label { display: grid; gap: .35rem; margin: .6rem 0; }
+.card input, .card textarea, .card select { width: 100%; box-sizing: border-box; color: #2f2b25; background: #fffaf0; }
+.card input[type=checkbox] { width: auto; }
+.checks { display: flex; flex-wrap: wrap; gap: .8rem; }
+.checks label { display: flex; gap: .5rem; align-items: center; }
+.error { color: #851f14; background: #fff0e9; padding: .75rem; border-left: 3px solid #a82d1b; }
+.diff { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); gap: 1rem; }
+.diff pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; max-height: 18rem; overflow: auto; }
+.table { overflow-x: auto; }
+.table table { width: 100%; border-collapse: collapse; }
+.table th,.table td { text-align: left; padding: .7rem; border-bottom: 1px solid #a89b80; vertical-align: top; }
+.table button { white-space: normal; }
+.mono { overflow-wrap: anywhere; font-family: monospace; }
+.state { margin: .4rem 0; }
+.editor :focus-visible { outline: 3px solid #865f0c; outline-offset: 3px; }
+.card.card h2,.card.card h3,.card.card h4 { color: #2f2b25; }
+@media (max-width: 520px) { .card { padding: .75rem; } }
+.card.card p, .card.card legend, .card.card small, .card.card li, .card.card strong { color: #494138; }

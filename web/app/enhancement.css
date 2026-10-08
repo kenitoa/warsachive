@@ -1,0 +1,109 @@
+/* Functional additions use the existing museum palette and layout. */
+:root { --reading-scale: 1; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.archivePage { --museum-muted: #b8b2a8; }
+.archivePage .themeCard dt, .archivePage .themeCard dd { color: #c0b6a8; font-size: .85rem; }
+.archivePage .collectionDescription dt { color: #b6aa9b; }
+.archivePage button, .archivePage select, .fileImport, .readingToolActions a, .secondaryAction { min-height: 44px; border: 1px solid var(--museum-line); padding: .6rem .85rem; color: var(--museum-ink); background: var(--museum-panel); font: inherit; font-size: .85rem; cursor: pointer; }
+.archivePage button:hover, .readingToolActions a:hover, .secondaryAction:hover { border-color: var(--museum-gold); }
+.archivePage button:disabled { opacity: .55; cursor: default; }
+.archivePage :is(a,button,input,select,textarea,summary):focus-visible { outline: 2px solid #e4bb88; outline-offset: 4px; }
+.archivePage input:not([type=checkbox]), .archivePage textarea { min-width: 0; width: 100%; padding: .8rem; border: 1px solid var(--museum-line); background: #101111; color: var(--museum-ink); font: inherit; }
+.archivePage textarea { min-height: 130px; resize: vertical; line-height: 1.7; }
+.archivePage input[type=checkbox] { width: 20px; height: 20px; accent-color: #b6916d; }
+.archivePage label { line-height: 1.6; }
+.routeContent { max-width: 1180px; margin: auto; padding: 3rem clamp(1.25rem,5vw,4rem) 6rem; }
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; color: var(--museum-muted); font-size: .9rem; }
+.breadcrumbs a, .publicReviewNotice a, .recordSection a, .shelfManager a { text-decoration: underline; text-underline-offset: .25em; }
+.searchHelp, .publicReviewNotice, .resultMeta, .toolMessage { color: var(--museum-muted); font-size: .9rem; line-height: 1.75; }
+.searchSubmit { margin-top: .75rem; }
+.archiveSearch input { min-height: 54px; }
+.searchFilterDetails { margin-top: 1.5rem; }
+.searchFilterDetails summary, .personalNote summary, .correctionForm summary { cursor: pointer; padding: .85rem 0; min-height: 44px; }
+.archiveFilterRow { flex-wrap: wrap; }
+.archiveFilterRow label { min-height: 44px; font-size: .9rem; }
+.archiveFilterRow label span { font-size: .8rem; }
+.selectedFilters, .readingToolActions, .shelfActions, .compareChoices, .pagination { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; margin-top: 1rem; }
+.selectedFilters:empty { display: none; }
+.simpleEventIndex, .simpleEventRegion, .simpleEventFooter { font-size: .85rem; }
+.simpleEventSummary { font-size: 1rem; line-height: 1.8; }
+.resultMeta { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding-bottom: 1.75rem; }
+.resultMeta .bookmarkControl { margin-left: auto; }
+.bookmarkControl { display: inline-flex; flex-direction: column; gap: .4rem; max-width: 320px; }
+.bookmarkControl small { font-size: .8rem; }
+[aria-pressed=true] { border-color: #dfba8b !important; color: #f4dec4 !important; }
+.simpleEmptyState a { display: inline-block; margin: 1rem; }
+.readingTools { padding: 1.5rem; border: 1px solid var(--museum-line); margin: 2rem 0; background: var(--museum-panel); }
+.fontSelector { display: inline-flex; align-items: center; gap: .7rem; margin: 1rem 1rem 0 0; }
+.readingTools p { margin: 1rem 0; }
+.personalNote, .correctionForm { margin-top: 1.5rem; border-top: 1px solid var(--museum-line); }
+.personalNote label, .manualCopy, .correctionForm label { display: grid; gap: .5rem; margin: 1rem 0; }
+.recordContents { margin: 2rem 0 3rem; padding: 1.5rem; border: 1px solid var(--museum-line); }
+.recordContents h2 { margin-top: 0; font-size: 1.1rem; }
+.recordContents ol { display: grid; gap: .75rem; padding-left: 1.5rem; }
+.recordLead { max-width: 850px; color: #d0c8bd; font-size: calc(1.1rem * var(--reading-scale)); line-height: 1.9; }
+.recordRoutePage .recordBody h2, .recordSection > h2 { font: 400 1.6rem/1.5 Georgia,"Noto Serif KR",serif; letter-spacing: 0; color: var(--museum-ink); }
+.recordSection { margin: 3.5rem 0; scroll-margin-top: 95px; }
+.recordRoutePage .recordBody p, .recordSection > p, .recordSection li { font-size: calc(1.03rem * var(--reading-scale)); line-height: 1.95; }
+.recordRoutePage .recordBody .evidenceLinks, .evidenceLinks { display: flex; flex-wrap: wrap; gap: .8rem; color: var(--museum-muted); font: .9rem/1.7 Arial,sans-serif; }
+.readingPosition { display: flex; gap: .75rem; align-items: center; margin-top: 1rem; }
+.readingPosition small { font-size: .85rem; }
+.detailChronology { padding-left: 1.5rem; }
+.detailChronology li { padding: 1rem 0; border-bottom: 1px solid var(--museum-line); }
+.detailChronology h3 { font-size: 1.15rem; }
+.entityGroups { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.entityGroups a { display: inline-block; padding: .7rem; margin: .25rem; border: 1px solid var(--museum-line); }
+.reviewInformation { padding: 1.5rem; border: 1px solid var(--museum-line); background: var(--museum-panel); }
+.sourceCatalogue article { margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--museum-line); scroll-margin-top: 95px; }
+.sourceCatalogue h3 { font-size: 1.3rem; }
+.sourceCatalogue dl div { display: grid; grid-template-columns: 140px minmax(0,1fr); gap: 1rem; padding: .65rem 0; }
+.sourceCatalogue dt { color: var(--museum-muted); }
+.sourceCatalogue dd { margin: 0; overflow-wrap: anywhere; }
+.sourceCatalogue a { display: inline-block; padding: .75rem 0; }
+.recordLabels { display: flex; flex-wrap: wrap; gap: .5rem; }
+.recordLabels a { padding: .7rem; border: 1px solid var(--museum-line); }
+.relatedRecords > a { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--museum-line); }
+.relatedRecords > a span { color: var(--museum-muted); }
+.secondaryAction { display: inline-flex; align-items: center; margin: .5rem; }
+.reviewHolding p { max-width: 850px; line-height: 1.9; color: var(--museum-muted); }
+.shelfManager > section { padding: 2.5rem 0; border-bottom: 1px solid var(--museum-line); }
+.shelfManager h2 { font: 400 1.65rem/1.5 Georgia,"Noto Serif KR",serif; }
+.shelfManager p { line-height: 1.8; color: var(--museum-muted); }
+.fileImport { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.fileImport input { max-width: 280px; }
+.shelfList { list-style: none; padding: 0; }
+.shelfList li { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; border-top: 1px solid var(--museum-line); padding: 1rem 0; }
+.shelfList li > a { margin-right: auto; }
+.shelfList li > span { color: var(--museum-muted); }
+.shelfList li .savedNote { width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; }
+.compareOverflow { position: relative; margin-top: 1.5rem; overflow-x: auto; }
+.compareOverflow table { width: 100%; border-collapse: collapse; min-width: 560px; }
+.compareOverflow caption { text-align: left; margin-bottom: 1rem; }
+.compareOverflow td, .compareOverflow th { padding: 1rem; border: 1px solid var(--museum-line); vertical-align: top; text-align: left; min-width: 130px; overflow-wrap: anywhere; line-height: 1.8; }
+.localMetrics { display: flex; flex-wrap: wrap; gap: 1rem; }
+.localMetrics div { border: 1px solid var(--museum-line); padding: 1rem; }
+.localMetrics dd { margin: .5rem 0 0; font-size: 1.4rem; }
+@media(max-width:760px) {
+  .museumHero { display: grid; grid-template-columns: 1fr; min-height: 0; background-image: var(--archive-hero-image-small); }
+  .routeIntro { background-image: linear-gradient(90deg, rgba(13, 13, 12, .92), rgba(13, 13, 12, .66)), var(--archive-hero-image-small); }
+  .collectionCard::after { background-image: var(--archive-hero-image-small); }
+  .heroContent { width: auto; margin: 0; }
+  .heroTimeline { position: relative; inset: auto; width: 100%; min-height: 190px; }
+  .archiveFilterRow label { align-items: start; flex-wrap: wrap; }
+  .archiveFilterRow select { max-width: 100%; }
+  .resultMeta .bookmarkControl { margin-left: 0; }
+  .entityGroups { grid-template-columns: 1fr; }
+  .sourceCatalogue dl div { grid-template-columns: 1fr; gap: .35rem; }
+  .sourceCatalogue article, .readingTools { padding: 1rem; }
+  .recordRoutePage .recordFacts dd { overflow-wrap: anywhere; }
+  .relatedRecords > a { flex-direction: column; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+@media print {
+  .museumRail, .mobileNavigation, .skipLink, .readingTools, .readingPosition, .correctionForm, .museumFooter, .secondaryAction { display: none !important; }
+  .archivePage { padding: 0 !important; background: white !important; color: black !important; }
+  .recordRoutePage .recordSheet { width: 100%; padding: 0; }
+  .archivePage * { color: black !important; background: transparent !important; }
+  .sourceCatalogue a::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
+  .recordSection, .sourceCatalogue article { break-inside: avoid; }
+}

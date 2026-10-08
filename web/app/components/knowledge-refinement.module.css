@@ -1,0 +1,22 @@
+.panel { margin: 1.5rem 0; border: 1px solid var(--museum-line, #786e60); padding: 1.2rem; color: var(--museum-ink, #2f2b25); background: var(--museum-panel, #faf7ef); line-height: 1.8; }
+.panel h2, .panel h3 { margin: .2rem 0 .8rem; }
+.panel p { margin: .6rem 0; }
+.panel a, .basket a { text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.panel a:focus-visible, .panel button:focus-visible, .basket a:focus-visible { outline: 3px solid #b6916d; outline-offset: 4px; }
+.row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.row a, .row button { min-height: 44px; padding: .5rem .7rem; }
+.muted { color: inherit; font-size: .9rem; }
+.basket { padding: 1rem 0; border-top: 1px solid var(--museum-line, #786e60); font-size: .9rem; line-height: 1.75; }
+.basket label { display: grid; gap: .4rem; margin: .8rem 0; }
+.basket select { max-width: 100%; min-width: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1rem; }
+.list { padding-left: 1.3rem; }
+.list li { margin: .7rem 0; }
+.scope { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .7rem; margin: 1rem 0; }
+.scope div { border-left: 2px solid #b6916d; padding: .5rem .7rem; }
+.scope dt { font-weight: 700; }.scope dd { margin: .4rem 0 0; }
+.map { width: 100%; height: auto; background: #faf7ef; color: #2f2b25; }
+.tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.tabs button[aria-pressed=true] { border-color: #b6916d; background: #27251f; }
+.comparison { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; }
+@media (max-width: 540px) { .panel { padding: 1rem; }.scope { grid-template-columns: 1fr; } }

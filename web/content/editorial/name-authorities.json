@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-07",
+  "purpose": "공식 기관에서 확인한 검색용 명칭 표기. 역사 내용의 추가 근거 또는 독립 증언 수로 계산하지 않음.",
+  "entries": [
+    {
+      "target": "yi-sun-sin",
+      "kind": "person",
+      "aliases": [
+        "Yi Sun-sin"
+      ],
+      "institution": "UNESCO",
+      "url": "https://www.unesco.org/en/memory-world/nanjung-ilgi-war-diary-admiral-yi-sun-sin",
+      "location": "페이지 제목"
+    },
+    {
+      "target": "yu-seong-ryong",
+      "kind": "person",
+      "aliases": [
+        "Yu Seong-ryong"
+      ],
+      "institution": "UNESCO",
+      "url": "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf",
+      "location": "등재 신청서의 People 절(인쇄 8쪽)"
+    },
+    {
+      "target": "yu-seong-ryong",
+      "kind": "person",
+      "aliases": [
+        "Ryu Seong-ryong"
+      ],
+      "institution": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0701040000.do?arcId=17527&catCustomType=post&catId=93&cp=99&schM=view&sv=",
+      "location": "2021-04-29 보도자료 징비록 설명"
+    },
+    {
+      "target": "yu-seong-ryong",
+      "kind": "person",
+      "aliases": [
+        "Ryu Seongryong"
+      ],
+      "institution": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/ENG/contents/E0403000000.do?relicId=17038&schM=view&searchId=search",
+      "location": "유물 소개 Author 항목"
+    },
+    {
+      "target": "toyotomi-hideyoshi",
+      "kind": "person",
+      "aliases": [
+        "Toyotomi Hideyoshi"
+      ],
+      "institution": "Japan Search",
+      "url": "https://jpsearch.go.jp/en/item/keioobjecthub-569",
+      "location": "게이오대학교 제공 자료의 제목"
+    },
+    {
+      "target": "chen-lin",
+      "kind": "person",
+      "aliases": [
+        "Chen Lin"
+      ],
+      "institution": "UNESCO",
+      "url": "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf",
+      "location": "등재 신청서의 People 절(인쇄 8쪽)"
+    },
+    {
+      "target": "hyeonchungsa",
+      "kind": "place",
+      "aliases": [
+        "Hyeonchungsa",
+        "Asan City"
+      ],
+      "institution": "UNESCO",
+      "url": "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf",
+      "location": "등재 신청서의 Custodian·Accessibility 절(인쇄 5쪽)"
+    },
+    {
+      "target": "joseon",
+      "kind": "place",
+      "aliases": [
+        "Joseon",
+        "Joseon Dynasty"
+      ],
+      "institution": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/ENG/contents/E0403000000.do?relicId=17038&schM=view&searchId=search",
+      "location": "Nationality/Period 항목 및 본문"
+    },
+    {
+      "target": "jingbirok",
+      "kind": "record",
+      "aliases": [
+        "Jingbirok",
+        "The Book of Correction"
+      ],
+      "institution": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/ENG/contents/E0403000000.do?relicId=17038&schM=view&searchId=search",
+      "location": "유물 소개 제목"
+    }
+  ]
+}

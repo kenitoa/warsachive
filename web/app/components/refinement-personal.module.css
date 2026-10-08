@@ -1,0 +1,8 @@
+.panel { min-width: 0; max-width: 100%; }
+.panel :is(fieldset, article, section, label) { min-width: 0; }
+.panel pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; }
+.panel :is(input, select, textarea) { max-width: 100%; min-width: 0; }
+.panel :is(p, li, h3, h4, summary, button) { overflow-wrap: anywhere; }
+.panel details { margin-block: 1rem; }
+.panel fieldset { margin-block: 1rem; }
+@media print { .panel button { display: none; } }

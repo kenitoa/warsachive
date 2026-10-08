@@ -1,0 +1,873 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-07T12:37:34.184Z",
+  "summary": {
+    "legacyRecords": 28,
+    "fullContractRecords": 0,
+    "archivedFileRecords": 28,
+    "originalFilesPreserved": true,
+    "baselineFiles": 28,
+    "legacyIdsRetained": 28,
+    "legacyNeedsReview": 27,
+    "sourceCheckedOverlays": 1,
+    "records": 4,
+    "events": 2,
+    "sourceRecords": 2,
+    "registeredSources": 8,
+    "institutions": 4,
+    "independenceGroups": 5,
+    "humanReviewed": 0,
+    "needsReview": 27,
+    "sourceAccess": "초기 편집 출처 8개는 2026-10-07 브라우징으로 내용 확인. 선택적 HTTP 검사는 공개 조건을 충족한 v2·편집본의 허용 기관 링크만 검사하며, 이전 2,645개 링크나 이후 발행 내용의 사실성을 검증했다는 의미가 아닙니다."
+  },
+  "records": [
+    {
+      "id": "an-impeachment-trial-update-2",
+      "file": "archive/an-impeachment-trial-update-2.json",
+      "title": "An Impeachment Trial Update",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 98,
+        "qualityScore": 0.68
+      },
+      "originalUrlCounts": {
+        "total": 98,
+        "publicUrlCandidates": 39,
+        "unresolved": 59
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "d11077c5e5e72f66df9d198b897face4b2206775d356076b0ea52617c48d1402",
+      "expectedRoute": "/archive/an-impeachment-trial-update-2/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "탄핵 재판 제목과 1944년 신문·역사 사이트 소개가 섞인 요약의 연결을 확인해야 합니다."
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "an-impeachment-trial-update-3",
+      "file": "archive/an-impeachment-trial-update-3.json",
+      "title": "An Impeachment Trial Update",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 608,
+        "qualityScore": 0.62
+      },
+      "originalUrlCounts": {
+        "total": 608,
+        "publicUrlCandidates": 6,
+        "unresolved": 602
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "13922b189b698e582c366a9b0e50d0964fa870bb0186808c23c61d70f505400e",
+      "expectedRoute": "/archive/an-impeachment-trial-update-3/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "avof-38-kristalnacht-and-zyklon-b",
+      "file": "archive/avof-38-kristalnacht-and-zyklon-b.json",
+      "title": "AVOF 38 KRISTALNACHT AND ZYKLON B",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 31,
+        "qualityScore": 0.69
+      },
+      "originalUrlCounts": {
+        "total": 31,
+        "publicUrlCandidates": 10,
+        "unresolved": 21
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "84dff9a6e4a28727a6d43a9f07d08619fe203304037dcdaa61aafc20044667ab",
+      "expectedRoute": "/archive/avof-38-kristalnacht-and-zyklon-b/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "best-of-understanding-settler-colonialism-in-israel-and--2",
+      "file": "archive/best-of-understanding-settler-colonialism-in-israel-and--2.json",
+      "title": "[BEST OF] Understanding Settler Colonialism in Israel and the United States",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 560,
+        "qualityScore": 0.64
+      },
+      "originalUrlCounts": {
+        "total": 560,
+        "publicUrlCandidates": 66,
+        "unresolved": 494
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "cf58deea9ff928db52926b491117e25963b24956b2ab796d1f26c27b7a1648df",
+      "expectedRoute": "/archive/best-of-understanding-settler-colonialism-in-israel-and--2/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "best-of-understanding-settler-colonialism-in-israel-and-",
+      "file": "archive/best-of-understanding-settler-colonialism-in-israel-and-.json",
+      "title": "[BEST OF] Understanding Settler Colonialism in Israel and the United States",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 744,
+        "qualityScore": 0.68
+      },
+      "originalUrlCounts": {
+        "total": 744,
+        "publicUrlCandidates": 246,
+        "unresolved": 498
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "f7b60343f4304d02277c9d86affc0093eec0b42f41cb375f7712dcef1e582261",
+      "expectedRoute": "/archive/best-of-understanding-settler-colonialism-in-israel-and-/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "bhm365-special-interview-melvin-forbes-president-and-ceo",
+      "file": "archive/bhm365-special-interview-melvin-forbes-president-and-ceo.json",
+      "title": "BHM365 Special Interview: Melvin Forbes, President and CEO of Forbes Consulting, Inc. (Part 1)",
+      "originalMetadata": {
+        "period": "1592-1598",
+        "region": "조선과 동아시아",
+        "registeredSources": 19,
+        "qualityScore": 0.73
+      },
+      "originalUrlCounts": {
+        "total": 19,
+        "publicUrlCandidates": 12,
+        "unresolved": 7
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "9f7ab682717e2ff6294cfb7da807259c875966179d507148e14ed75f40ea209b",
+      "expectedRoute": "/archive/bhm365-special-interview-melvin-forbes-president-and-ceo/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "내부 씨드 자료 포함: 외부 근거와 구분 필요",
+        "현대 인터뷰 제목과 1592–1598/조선과 동아시아 분류의 연결을 확인해야 합니다."
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "building-a-social-work-community",
+      "file": "archive/building-a-social-work-community.json",
+      "title": "Building a Social Work Community",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 68,
+        "qualityScore": 0.74
+      },
+      "originalUrlCounts": {
+        "total": 68,
+        "publicUrlCandidates": 36,
+        "unresolved": 32
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "10d7872e16366b5426bb6fbc7579b81315947d3cbf376715938e25139373da19",
+      "expectedRoute": "/archive/building-a-social-work-community/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2-2",
+      "file": "archive/carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2-2.json",
+      "title": "Carolyn Sichel, Oral History Program, Jewish Community Library, 1973",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 82,
+        "qualityScore": 0.65
+      },
+      "originalUrlCounts": {
+        "total": 82,
+        "publicUrlCandidates": 15,
+        "unresolved": 67
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "ec06084e2fd943132f6404072c2b212601b45991f628411a29981d88719c5505",
+      "expectedRoute": "/archive/carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2-2/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2",
+      "file": "archive/carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2.json",
+      "title": "Carolyn Sichel, Oral History Program, Jewish Community Library, 1973",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 34,
+        "qualityScore": 0.63
+      },
+      "originalUrlCounts": {
+        "total": 34,
+        "publicUrlCandidates": 4,
+        "unresolved": 30
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "44e6bf6e90d655acea5cf0729e00e0efd6a336876d2652c7f57dbbba70fa5ba9",
+      "expectedRoute": "/archive/carolyn-sichel-oral-history-program-jewish-community-lib-2-2-2-2-2-2-2-2-2/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "episode-203-the-old-man-and-the-sea-2",
+      "file": "archive/episode-203-the-old-man-and-the-sea-2.json",
+      "title": "Annals of American history",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 29,
+        "qualityScore": 0.64
+      },
+      "originalUrlCounts": {
+        "total": 29,
+        "publicUrlCandidates": 6,
+        "unresolved": 23
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "a6b3ce0e015be116c03ed84198171c7da68a89ae7a57855857151e102c686c2d",
+      "expectedRoute": "/archive/episode-203-the-old-man-and-the-sea-2/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "episode-203-the-old-man-and-the-sea",
+      "file": "archive/episode-203-the-old-man-and-the-sea.json",
+      "title": "Annals of American history",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 28,
+        "qualityScore": 0.69
+      },
+      "originalUrlCounts": {
+        "total": 28,
+        "publicUrlCandidates": 10,
+        "unresolved": 18
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "2853b6a245463f9e0e0178e91093f4cce1ac53f6a7210a3c520f897f3fa664fd",
+      "expectedRoute": "/archive/episode-203-the-old-man-and-the-sea/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "동일 제목 다른 ID 존재: 동일 자료 여부 수동 검토 필요",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "episode-205-across-the-sea-part-1",
+      "file": "archive/episode-205-across-the-sea-part-1.json",
+      "title": "Episode 205 - Across the Sea, Part 1",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 50,
+        "qualityScore": 0.65
+      },
+      "originalUrlCounts": {
+        "total": 50,
+        "publicUrlCandidates": 8,
+        "unresolved": 42
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "702e6baffd779f27043021be1e9611c47ccb9f8e71a575cd70d90d7f03b12827",
+      "expectedRoute": "/archive/episode-205-across-the-sea-part-1/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "est-ce-la-fin-de-la-confe-de-ration",
+      "file": "archive/est-ce-la-fin-de-la-confe-de-ration.json",
+      "title": "Est-ce la fin de la confédération?",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 57,
+        "qualityScore": 0.62
+      },
+      "originalUrlCounts": {
+        "total": 57,
+        "publicUrlCandidates": 4,
+        "unresolved": 53
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "99a9da07aa7bedfb6dc6ec78df7e91c8046f23da4bdd5316e61d628945575380",
+      "expectedRoute": "/archive/est-ce-la-fin-de-la-confe-de-ration/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "etudes-sur-francois-premier-v-1",
+      "file": "archive/etudes-sur-francois-premier-v-1.json",
+      "title": "Etudes sur Francois Premier v 1",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 5,
+        "qualityScore": 0.64
+      },
+      "originalUrlCounts": {
+        "total": 5,
+        "publicUrlCandidates": 1,
+        "unresolved": 4
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "d9d7fa95030f5e1fb44f41388015da433c6b313d489d6bc5716217dea625768a",
+      "expectedRoute": "/archive/etudes-sur-francois-premier-v-1/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "expert-gamer-issue-77-november-2000",
+      "file": "archive/expert-gamer-issue-77-november-2000.json",
+      "title": "Expert Gamer - Issue 77 - November 2000",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 24,
+        "qualityScore": 0.61
+      },
+      "originalUrlCounts": {
+        "total": 24,
+        "publicUrlCandidates": 0,
+        "unresolved": 24
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "5721a3533631cebc20978b69b1f20321d5b2cbbb1ad01a17a9fe586058c3f07d",
+      "expectedRoute": "/archive/expert-gamer-issue-77-november-2000/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "제목은 게임 잡지인데 요약에는 Victoria 지역사·타밀어 서지가 혼합되어 있어 원문 연결 검수가 필요합니다."
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "first-ladies",
+      "file": "archive/first-ladies.json",
+      "title": "First Ladies",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 9,
+        "qualityScore": 0.62
+      },
+      "originalUrlCounts": {
+        "total": 9,
+        "publicUrlCandidates": 1,
+        "unresolved": 8
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "cd7ab7d13bc48b3e88099e43ab50ec735ffadfff392210f09263bc3bb3e1059a",
+      "expectedRoute": "/archive/first-ladies/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "history-repeats",
+      "file": "archive/history-repeats.json",
+      "title": "History repeats",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 53,
+        "qualityScore": 0.63
+      },
+      "originalUrlCounts": {
+        "total": 53,
+        "publicUrlCandidates": 3,
+        "unresolved": 50
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "6c48a54591d0e2618605dd31304b2f043fb4ea108e9389497b7814215278b84b",
+      "expectedRoute": "/archive/history-repeats/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "imjin-war",
+      "file": "archive/imjin-war.json",
+      "title": "임진왜란",
+      "originalMetadata": {
+        "period": "1592-1598",
+        "region": "조선과 동아시아",
+        "registeredSources": 2,
+        "qualityScore": 0.78
+      },
+      "originalUrlCounts": {
+        "total": 2,
+        "publicUrlCandidates": 0,
+        "unresolved": 2
+      },
+      "contract": "legacy",
+      "public": true,
+      "status": "source-checked-overlay",
+      "originalPreserved": true,
+      "sha256": "5014774e24321711bccae412a8c9b7e36d92adbc59548ca47f8add3852de688f",
+      "expectedRoute": "/archive/imjin-war/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "내부 씨드 자료 포함: 외부 근거와 구분 필요"
+      ],
+      "action": "원본 보존·별도 편집본 제공·검수 상태에 따라 공개"
+    },
+    {
+      "id": "lesson",
+      "file": "archive/lesson.json",
+      "title": "Lesson",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 10,
+        "qualityScore": 0.66
+      },
+      "originalUrlCounts": {
+        "total": 10,
+        "publicUrlCandidates": 3,
+        "unresolved": 7
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "2ab0be1ef8bee43345c2968cf6eb4d5885609abed481e32cd2f24ca8e5616d7d",
+      "expectedRoute": "/archive/lesson/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "m-i-o-h-mp-3-tabs-and-lyics",
+      "file": "archive/m-i-o-h-mp-3-tabs-and-lyics.json",
+      "title": "M.i.o.h Mp 3, Tabs And Lyics.",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 66,
+        "qualityScore": 0.74
+      },
+      "originalUrlCounts": {
+        "total": 66,
+        "publicUrlCandidates": 46,
+        "unresolved": 20
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "a70e5da27b8e18d418fa0f649b1edf4bd2185390f5d582d8e7d85595c37c5984",
+      "expectedRoute": "/archive/m-i-o-h-mp-3-tabs-and-lyics/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "multipolarity-w-ben-norton",
+      "file": "archive/multipolarity-w-ben-norton.json",
+      "title": "Multipolarity w/ Ben Norton",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 2,
+        "qualityScore": 0.74
+      },
+      "originalUrlCounts": {
+        "total": 2,
+        "publicUrlCandidates": 2,
+        "unresolved": 0
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "5a0cb514dfbe3d218a6d2771b7424c0b04524cffab59719d2cb089f1a00a8dd8",
+      "expectedRoute": "/archive/multipolarity-w-ben-norton/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "oral-history-interviews-kenneth-pedde",
+      "file": "archive/oral-history-interviews-kenneth-pedde.json",
+      "title": "Oral history interviews : Kenneth Pedde",
+      "originalMetadata": {
+        "period": "1592-1598",
+        "region": "조선과 동아시아",
+        "registeredSources": 22,
+        "qualityScore": 0.77
+      },
+      "originalUrlCounts": {
+        "total": 22,
+        "publicUrlCandidates": 18,
+        "unresolved": 4
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "c9960eb9fc0ee8a40868feeb45ebbd7b4aa7ce3ea22eb46a4448f0d076db7957",
+      "expectedRoute": "/archive/oral-history-interviews-kenneth-pedde/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "내부 씨드 자료 포함: 외부 근거와 구분 필요",
+        "구술사 제목과 1592–1598/조선과 동아시아 분류의 연결을 확인해야 합니다."
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "screening-que-bec-que-be-cois-moving-images-national-ide",
+      "file": "archive/screening-que-bec-que-be-cois-moving-images-national-ide.json",
+      "title": "Screening Québec : Québécois moving images, national identity, and the public sphere",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 14,
+        "qualityScore": 0.64
+      },
+      "originalUrlCounts": {
+        "total": 14,
+        "publicUrlCandidates": 3,
+        "unresolved": 11
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "155c7831ccd25958f071cfcaae559a6782de506aece28322829266443229dd7c",
+      "expectedRoute": "/archive/screening-que-bec-que-be-cois-moving-images-national-ide/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "swedesboro-oral-history-project-alberta-butterhof-dryden",
+      "file": "archive/swedesboro-oral-history-project-alberta-butterhof-dryden.json",
+      "title": "Swedesboro Oral History Project - Alberta Butterhof Dryden Sweeney",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 10,
+        "qualityScore": 0.62
+      },
+      "originalUrlCounts": {
+        "total": 10,
+        "publicUrlCandidates": 0,
+        "unresolved": 10
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "a3e5fbf6f6bc4fd03e277c22cf0caf7ec5faede90eb440f80537589fb68c1185",
+      "expectedRoute": "/archive/swedesboro-oral-history-project-alberta-butterhof-dryden/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "szkice-o-teatrze",
+      "file": "archive/szkice-o-teatrze.json",
+      "title": "Szkice o teatrze",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 6,
+        "qualityScore": 0.6
+      },
+      "originalUrlCounts": {
+        "total": 6,
+        "publicUrlCandidates": 0,
+        "unresolved": 6
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "a7d8416277a69a1a6ed18d7a1fb44297da0ab956aefe3e5bdbb4c527ae96ea45",
+      "expectedRoute": "/archive/szkice-o-teatrze/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "the-report-episode-7-charging-decisions",
+      "file": "archive/the-report-episode-7-charging-decisions.json",
+      "title": "The Report, Episode 7: Charging Decisions",
+      "originalMetadata": {
+        "period": "초기 구성",
+        "region": "디지털 아카이브",
+        "registeredSources": 3,
+        "qualityScore": 0.66
+      },
+      "originalUrlCounts": {
+        "total": 3,
+        "publicUrlCandidates": 0,
+        "unresolved": 3
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "cf204aa8917348e0eb4e752c88ccebf79259cb75043b3232aad69bebbd9bcc56",
+      "expectedRoute": "/archive/the-report-episode-7-charging-decisions/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨",
+        "내부 씨드 자료 포함: 외부 근거와 구분 필요"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "the-wild-west-the-mythical-cowboy-and-social-theory",
+      "file": "archive/the-wild-west-the-mythical-cowboy-and-social-theory.json",
+      "title": "The Wild West : the mythical cowboy and social theory",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 7,
+        "qualityScore": 0.64
+      },
+      "originalUrlCounts": {
+        "total": 7,
+        "publicUrlCandidates": 0,
+        "unresolved": 7
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "5f90414a1849256fe599aba4e80dd283fcfaa4c23e54ed597d90284c91256564",
+      "expectedRoute": "/archive/the-wild-west-the-mythical-cowboy-and-social-theory/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    },
+    {
+      "id": "villa-sirena-restaurant-in-1938",
+      "file": "archive/villa-sirena-restaurant-in-1938.json",
+      "title": "Villa Sirena Restaurant in 1938",
+      "originalMetadata": {
+        "period": "미분류",
+        "region": "전세계",
+        "registeredSources": 4,
+        "qualityScore": 0.61
+      },
+      "originalUrlCounts": {
+        "total": 4,
+        "publicUrlCandidates": 0,
+        "unresolved": 4
+      },
+      "contract": "legacy",
+      "public": false,
+      "status": "needs-review",
+      "originalPreserved": true,
+      "sha256": "7bb4311f5878aec29fdcee31acbd3908eb84aedbe173f17614cd042683fd73e6",
+      "expectedRoute": "/archive/villa-sirena-restaurant-in-1938/",
+      "humanReviewed": false,
+      "issues": [
+        "기존 자동 발행 점수는 내용 검수·사람 승인·독립 근거 확인을 대신하지 않습니다.",
+        "사건/자료 시기 미분류",
+        "구체적인 역사 지역 미분류",
+        "공급자 ID·내부 씨드·유효하지 않은 링크가 출처 URL에 포함됨"
+      ],
+      "action": "원본과 ID 보존·검수 안내 페이지 제공·공개 탐색 제외"
+    }
+  ],
+  "linkChecks": []
+}

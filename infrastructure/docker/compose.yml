@@ -1,0 +1,53 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/Dockerfile.api
+    restart: unless-stopped
+    env_file: ../../.env.api
+    environment:
+      NODE_ENV: production
+      ARCHIVE_API_HOST: 0.0.0.0
+      ARCHIVE_API_PORT: "4200"
+      ARCHIVE_API_INLINE_WORKER: "false"
+      ARCHIVE_API_DB_PATH: /data/archive.sqlite
+      ARCHIVE_API_EXPORT_DIR: /data/exports
+      ARCHIVE_API_PRIVATE_STORAGE_DIR: /data/private
+      ARCHIVE_API_STATIC_IMPORT_FILE: ""
+      ARCHIVE_KNOWLEDGE_FILE: /app/web/content/knowledge.json
+    ports:
+      - "127.0.0.1:4200:4200"
+    volumes:
+      - archive-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    stop_grace_period: 30s
+  worker:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/Dockerfile.api
+    command: [node, --experimental-strip-types, api/src/worker.ts]
+    restart: unless-stopped
+    env_file: ../../.env.api
+    environment:
+      NODE_ENV: production
+      ARCHIVE_API_DB_PATH: /data/archive.sqlite
+      ARCHIVE_API_EXPORT_DIR: /data/exports
+      ARCHIVE_API_PRIVATE_STORAGE_DIR: /data/private
+      ARCHIVE_API_STATIC_IMPORT_FILE: ""
+      ARCHIVE_KNOWLEDGE_FILE: /app/web/content/knowledge.json
+    volumes:
+      - archive-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      disable: true
+    stop_grace_period: 30s
+volumes:
+  archive-data:

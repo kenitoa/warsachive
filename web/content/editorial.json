@@ -1,0 +1,973 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "imjin-war",
+      "title": "임진왜란",
+      "kind": "event",
+      "period": "1592–1598",
+      "date": {
+        "startYear": 1592,
+        "endYear": 1598,
+        "precision": "range"
+      },
+      "summary": "1592년 침공부터 1598년 전쟁 종결까지, 조선·명·일본의 전투와 교섭을 함께 읽습니다. 승패의 흐름과 전쟁을 겪은 사람들의 피해를 구분해 살펴봅니다.",
+      "region": "조선과 동아시아",
+      "language": "한국어",
+      "labels": [
+        "전투",
+        "외교",
+        "민간인의 삶",
+        "사료"
+      ],
+      "aliases": [
+        "壬辰倭亂",
+        "Imjin War",
+        "일본의 조선 침략"
+      ],
+      "review": {
+        "status": "source-checked",
+        "reviewer": "AI 자료 대조",
+        "reviewedAt": "2026-10-07",
+        "note": "연결한 기관 페이지의 설명과 편집문을 AI가 대조했습니다. 역사 전문가 또는 운영자의 사람 검수·승인은 아직 이루어지지 않았습니다.",
+        "humanReviewed": false
+      },
+      "sources": [
+        {
+          "id": "nikh-imjin",
+          "title": "한국사연대기: 임진왜란",
+          "creator": "국사편찬위원회",
+          "institution": "국사편찬위원회",
+          "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305500",
+          "kind": "institutional",
+          "language": "한국어",
+          "location": "개요·강화교섭·정유재란 절; 웹 해설, 원문 쪽수 해당 없음",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "국사편찬위원회"
+        },
+        {
+          "id": "aks-imjin",
+          "title": "한국민족문화대백과사전: 임진왜란",
+          "creator": "한국민족문화대백과사전 집필진",
+          "institution": "한국학중앙연구원",
+          "url": "https://encykorea.aks.ac.kr/Article/E0047674",
+          "kind": "research",
+          "language": "한국어",
+          "location": "정의·내용 절; 웹 백과사전 해설, 원문 쪽수 해당 없음",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "한국학중앙연구원"
+        },
+        {
+          "id": "sillok-pyeongyang",
+          "title": "선조실록: 평양 수복 전투의 전모를 기록한 기사",
+          "creator": "조선왕조실록 편찬자; 국역 제공 한국고전번역원",
+          "institution": "국사편찬위원회",
+          "url": "https://sillok.history.go.kr/id/kna_12601011_013",
+          "kind": "primary",
+          "language": "한문 · 한국어 국역",
+          "created": "기사 날짜 1593년(실록의 편찬일과 구분)",
+          "location": "선조실록 34권, 선조 26년 1월 11일 13번째 기사(음력); 국역·원문 탭",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "joseon-annals"
+        }
+      ],
+      "sections": [
+        {
+          "id": "background",
+          "title": "한반도를 전장으로 한 국제전쟁",
+          "paragraphs": [
+            "일본의 조선 침공으로 시작한 전쟁은 명의 참전으로 조선·명·일본이 맞붙는 전쟁이 되었습니다. 이 기록의 시간 범위에는 1597년에 시작한 정유재란도 포함됩니다."
+          ],
+          "sourceIds": [
+            "nikh-imjin",
+            "aks-imjin"
+          ]
+        },
+        {
+          "id": "turns",
+          "title": "전투와 교섭을 함께 읽기",
+          "paragraphs": [
+            "수군과 의병의 활동, 명군의 참전, 강화 교섭은 전쟁의 흐름을 읽는 서로 연결된 요소입니다. 1593년 평양 수복은 실록에도 기록되어 있어 기관 해설과 당시 보고를 비교할 수 있습니다."
+          ],
+          "sourceIds": [
+            "nikh-imjin",
+            "sillok-pyeongyang"
+          ]
+        },
+        {
+          "id": "aftermath",
+          "title": "전쟁의 피해와 전후 변화",
+          "paragraphs": [
+            "전쟁은 조선의 생산 기반과 삶에 큰 피해를 남겼습니다. 피해와 복구를 이해하려면 군사 전개와 별도로 지역·계층·시점별 자료를 확인해야 합니다. 여기서는 피해 규모를 단일 수치로 확정하지 않습니다."
+          ],
+          "sourceIds": [
+            "aks-imjin"
+          ],
+          "interpretation": true
+        },
+        {
+          "id": "reading",
+          "title": "같은 사건을 설명하는 서로 다른 자료",
+          "paragraphs": [
+            "실록의 기록도 특정한 보고와 편찬 맥락을 갖습니다. 기관 해설을 길잡이로 삼되, 해당 기사에 쓰인 보고자의 주장과 뒤에 붙은 평가를 나누어 읽는 것이 이 컬렉션의 읽기 방법입니다."
+          ],
+          "sourceIds": [
+            "sillok-pyeongyang"
+          ],
+          "interpretation": true
+        }
+      ],
+      "chronology": [
+        {
+          "date": "1592년",
+          "year": 1592,
+          "title": "침공과 전쟁의 시작",
+          "text": "일본의 침공으로 전쟁이 시작되고 조선의 수군과 의병이 대응했습니다.",
+          "sourceIds": [
+            "nikh-imjin"
+          ]
+        },
+        {
+          "date": "1593년",
+          "year": 1593,
+          "title": "평양 수복",
+          "text": "실록의 평양 수복 기사를 기관 해설과 함께 읽습니다. 기사 날짜는 사건 전체의 진행 시점과 구분해야 합니다.",
+          "sourceIds": [
+            "sillok-pyeongyang"
+          ]
+        },
+        {
+          "date": "1597년",
+          "year": 1597,
+          "title": "재침과 정유재란",
+          "text": "강화 교섭 이후 전쟁이 다시 확대됩니다.",
+          "sourceIds": [
+            "nikh-imjin"
+          ]
+        },
+        {
+          "date": "1598년",
+          "year": 1598,
+          "title": "전쟁의 종결",
+          "text": "히데요시 사망 뒤 일본군의 철수가 진행되고 전쟁이 끝납니다.",
+          "sourceIds": [
+            "nikh-imjin"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "id": "yi-sun-sin",
+          "name": "이순신",
+          "aliases": [
+            "李舜臣",
+            "충무공",
+            "Yi Sun-sin"
+          ]
+        },
+        {
+          "id": "toyotomi-hideyoshi",
+          "name": "도요토미 히데요시",
+          "aliases": [
+            "豊臣秀吉",
+            "Toyotomi Hideyoshi"
+          ]
+        },
+        {
+          "id": "yu-seong-ryong",
+          "name": "유성룡",
+          "aliases": [
+            "柳成龍",
+            "류성룡",
+            "Yu Seong-ryong",
+            "Ryu Seong-ryong",
+            "Ryu Seongryong"
+          ]
+        }
+      ],
+      "places": [
+        {
+          "id": "joseon",
+          "name": "조선",
+          "aliases": [
+            "朝鮮",
+            "Joseon",
+            "Joseon Dynasty"
+          ]
+        },
+        {
+          "id": "pyeongyang",
+          "name": "평양",
+          "aliases": [
+            "平壤"
+          ]
+        },
+        {
+          "id": "hansan",
+          "name": "한산도",
+          "aliases": [
+            "閑山島"
+          ]
+        }
+      ],
+      "limitations": [
+        "현재 연결된 자료는 한국 기관의 해설과 조선 측 실록 중심입니다. 일본·명 측 자료의 직접 비교와 전문가 검수가 필요합니다.",
+        "정확한 피해 규모와 개별 전투의 논쟁점은 이 개요에서 판정하지 않습니다.",
+        "기존 내부 씨드 자료는 보존하고, 이 별도 편집본을 공개 화면에 적용했습니다."
+      ],
+      "relatedIds": [
+        "jeongyu-war",
+        "nanjung-ilgi",
+        "jingbirok"
+      ],
+      "collectionIds": [
+        "imjin-reading-path",
+        "records-and-perspectives"
+      ],
+      "publishedAt": "2026-10-07",
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 4,
+      "corrections": [
+        {
+          "date": "2026-10-07",
+          "reason": "내부 씨드 설명과 공식 출처 기반 편집본을 분리했습니다. 원본 파일과 기존 ID는 보존했습니다."
+        }
+      ],
+      "sourceCount": 3,
+      "featuredReason": "한 사건에서 전투·교섭·사료·전쟁 이후의 질문으로 이어지는 첫 읽기"
+    },
+    {
+      "id": "jeongyu-war",
+      "title": "정유재란",
+      "kind": "event",
+      "period": "1597–1598",
+      "date": {
+        "startYear": 1597,
+        "endYear": 1598,
+        "precision": "range"
+      },
+      "summary": "1597년 일본의 재침부터 1598년 철수까지를 살펴봅니다. 전투의 변화, 노량해전의 보고, 민간인의 피해를 서로 다른 읽기 항목으로 연결합니다.",
+      "region": "조선과 동아시아",
+      "language": "한국어",
+      "labels": [
+        "전투",
+        "외교",
+        "민간인의 삶",
+        "전후 복구"
+      ],
+      "aliases": [
+        "丁酉再亂",
+        "정유왜란"
+      ],
+      "review": {
+        "status": "source-checked",
+        "reviewer": "AI 자료 대조",
+        "reviewedAt": "2026-10-07",
+        "note": "연결한 기관 페이지의 설명과 편집문을 AI가 대조했습니다. 역사 전문가 또는 운영자의 사람 검수·승인은 아직 이루어지지 않았습니다.",
+        "humanReviewed": false
+      },
+      "sources": [
+        {
+          "id": "nikh-jeongyu",
+          "title": "한국사연대기: 정유재란",
+          "creator": "국사편찬위원회",
+          "institution": "국사편찬위원회",
+          "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305620",
+          "kind": "institutional",
+          "language": "한국어",
+          "location": "개요·노량해전과 이순신의 죽음·가혹했던 인명 피해 절; 웹 해설",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "국사편찬위원회"
+        },
+        {
+          "id": "sillok-noryang",
+          "title": "선조실록: 이덕형이 수군의 활약상에 관한 치계를 올리다",
+          "creator": "조선왕조실록 편찬자; 국역 제공 한국고전번역원",
+          "institution": "국사편찬위원회",
+          "url": "https://sillok.history.go.kr/id/kna_13111027_005",
+          "kind": "primary",
+          "language": "한문 · 한국어 국역",
+          "created": "기사 날짜 1598년(실록의 편찬일과 구분)",
+          "location": "선조실록 106권, 선조 31년 11월 27일 5번째 기사(음력); 이덕형의 보고와 사신의 논평을 구분",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "joseon-annals"
+        }
+      ],
+      "sections": [
+        {
+          "id": "renewed-war",
+          "title": "강화 교섭 뒤 다시 시작한 전쟁",
+          "paragraphs": [
+            "정유재란은 1597년에 일본이 다시 조선을 침략하면서 발생했습니다. 임진왜란의 전체 범위에 포함되지만, 국사편찬위원회 해설은 재침의 목적과 양상이 앞선 시기와 달랐다는 점을 설명합니다."
+          ],
+          "sourceIds": [
+            "nikh-jeongyu"
+          ]
+        },
+        {
+          "id": "last-battle",
+          "title": "노량의 전투와 이를 전한 보고",
+          "paragraphs": [
+            "1598년 노량해전에서 조선과 명의 수군은 함께 일본 수군과 싸웠고 이순신이 전사했습니다. 실록의 이덕형 보고 기사에는 전투 보고 뒤에 사신의 평가가 이어집니다. 보고와 평가를 같은 종류의 문장으로 읽지 않는 것이 중요합니다."
+          ],
+          "sourceIds": [
+            "nikh-jeongyu",
+            "sillok-noryang"
+          ]
+        },
+        {
+          "id": "civilian",
+          "title": "전장의 바깥에도 남은 피해",
+          "paragraphs": [
+            "기관 해설은 점령지의 살육·약탈·방화와 기근, 포로의 문제를 함께 다룹니다. 군사적 종결이 피해를 겪은 사람들의 일상 회복을 뜻하는 것은 아니므로 두 질문을 구분해 읽습니다."
+          ],
+          "sourceIds": [
+            "nikh-jeongyu"
+          ],
+          "interpretation": true
+        }
+      ],
+      "chronology": [
+        {
+          "date": "1597년",
+          "year": 1597,
+          "title": "재침",
+          "text": "전쟁이 다시 확대되고 한반도 남부에서 전투가 이어집니다.",
+          "sourceIds": [
+            "nikh-jeongyu"
+          ]
+        },
+        {
+          "date": "1598년",
+          "year": 1598,
+          "title": "철수 과정과 노량해전",
+          "text": "일본군의 철수 과정에서 조선·명 수군이 노량에서 전투를 벌였습니다. 뒤에 작성된 보고와 사건 시점을 구분해 확인합니다.",
+          "sourceIds": [
+            "sillok-noryang"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "id": "yi-sun-sin",
+          "name": "이순신",
+          "aliases": [
+            "충무공",
+            "李舜臣",
+            "Yi Sun-sin"
+          ]
+        },
+        {
+          "id": "yi-deok-hyeong",
+          "name": "이덕형",
+          "aliases": [
+            "李德馨"
+          ]
+        },
+        {
+          "id": "chen-lin",
+          "name": "진린",
+          "aliases": [
+            "陳璘",
+            "Chen Lin"
+          ]
+        }
+      ],
+      "places": [
+        {
+          "id": "noryang",
+          "name": "노량",
+          "aliases": [
+            "露梁"
+          ]
+        },
+        {
+          "id": "joseon",
+          "name": "조선",
+          "aliases": [
+            "朝鮮",
+            "Joseon",
+            "Joseon Dynasty"
+          ]
+        }
+      ],
+      "limitations": [
+        "당시 보고에 나온 선박·사상자 숫자를 확정된 통계로 재게시하지 않습니다.",
+        "구체적인 민간 피해 사례·지역별 복구 기록과 다른 참전국 자료는 추가 대조가 필요합니다.",
+        "역사 자료의 월일은 음력 여부를 확인해야 하므로 연표에는 검증된 연도만 사용했습니다."
+      ],
+      "relatedIds": [
+        "imjin-war",
+        "nanjung-ilgi",
+        "jingbirok"
+      ],
+      "collectionIds": [
+        "imjin-reading-path",
+        "records-and-perspectives"
+      ],
+      "publishedAt": "2026-10-07",
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 4,
+      "corrections": [],
+      "sourceCount": 2,
+      "sensitivity": "민간인 피해와 폭력에 대한 간단한 설명이 있습니다. 피해 이미지나 상세한 폭력 묘사는 포함하지 않습니다."
+    },
+    {
+      "id": "nanjung-ilgi",
+      "title": "난중일기",
+      "kind": "source",
+      "period": "1592–1598",
+      "date": {
+        "startYear": 1592,
+        "endYear": 1598,
+        "precision": "range"
+      },
+      "summary": "이순신이 전쟁 중 남긴 개인 일기입니다. 전투뿐 아니라 날씨, 지형, 감정과 생활의 기록을 읽으며 사료를 만든 사람의 위치를 생각해 봅니다.",
+      "region": "조선과 동아시아",
+      "language": "한국어",
+      "labels": [
+        "사료",
+        "인물",
+        "지휘",
+        "민간인의 삶"
+      ],
+      "aliases": [
+        "亂中日記",
+        "Nanjung Ilgi",
+        "이순신 일기"
+      ],
+      "review": {
+        "status": "source-checked",
+        "reviewer": "AI 자료 대조",
+        "reviewedAt": "2026-10-07",
+        "note": "연결한 기관 페이지의 설명과 편집문을 AI가 대조했습니다. 역사 전문가 또는 운영자의 사람 검수·승인은 아직 이루어지지 않았습니다.",
+        "humanReviewed": false
+      },
+      "sources": [
+        {
+          "id": "unesco-nanjung",
+          "title": "Memory of the World: Nanjung Ilgi",
+          "creator": "UNESCO",
+          "institution": "UNESCO",
+          "url": "https://www.unesco.org/en/memory-world/nanjung-ilgi-war-diary-admiral-yi-sun-sin",
+          "kind": "institutional",
+          "language": "영어",
+          "location": "기록유산 소개와 Registration Year; 친필 원문 전체를 제공하는 링크는 아님",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "nanjung-registration"
+        },
+        {
+          "id": "icdh-nanjung",
+          "title": "국제목록: 난중일기, 이순신 장군의 진중일기",
+          "creator": "유네스코 국제기록유산센터",
+          "institution": "유네스코 국제기록유산센터",
+          "url": "https://www.unescoicdh.org/home/print.php?code1=00000003&code2=00000032&listCnt=10&menukey=272&mod=view&no=63730&page=1&scode=00000004&search=4",
+          "kind": "institutional",
+          "language": "한국어",
+          "location": "소장기관·등재연도 및 기록 설명; 등록 자료에 기반한 기관 안내",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "nanjung-registration"
+        }
+      ],
+      "sections": [
+        {
+          "id": "document",
+          "title": "전쟁 중 작성한 개인의 기록",
+          "paragraphs": [
+            "UNESCO는 난중일기를 1592년부터 1598년까지 이순신이 쓴 친필 일기로 소개합니다. 전투 상황 외에도 개인적인 생각, 날씨, 전장의 지형과 사람들의 생활을 담고 있다는 점이 소개되어 있습니다."
+          ],
+          "sourceIds": [
+            "unesco-nanjung"
+          ]
+        },
+        {
+          "id": "preservation",
+          "title": "오늘 확인하는 기록과 소개 자료",
+          "paragraphs": [
+            "국제기록유산센터는 난중일기의 소장기관을 현충사로 안내합니다. UNESCO의 등록연도는 2013년입니다. 역사 자료의 작성 시기와 현대의 기록유산 등록 시기를 구별해야 합니다."
+          ],
+          "sourceIds": [
+            "unesco-nanjung",
+            "icdh-nanjung"
+          ]
+        },
+        {
+          "id": "perspective",
+          "title": "일기의 시선으로 읽기",
+          "paragraphs": [
+            "일기는 작성자가 보고 느낀 일을 전합니다. 이를 전쟁에 참여한 모든 사람의 경험으로 확장하려면 다른 기록과 비교해야 합니다. 이 페이지는 기관의 자료 소개를 요약한 것이며 친필 원문을 옮기거나 번역한 페이지는 아닙니다."
+          ],
+          "sourceIds": [
+            "unesco-nanjung"
+          ],
+          "interpretation": true
+        }
+      ],
+      "chronology": [
+        {
+          "date": "1592년",
+          "year": 1592,
+          "title": "일기 작성 시기의 시작",
+          "text": "기관 소개에 따르면 1592년부터의 기록을 담고 있습니다.",
+          "sourceIds": [
+            "unesco-nanjung"
+          ]
+        },
+        {
+          "date": "1598년",
+          "year": 1598,
+          "title": "전쟁 마지막 시기의 기록",
+          "text": "1598년까지 작성된 기록으로 소개됩니다. 개별 일자 원문 대조는 아직 제공하지 않습니다.",
+          "sourceIds": [
+            "unesco-nanjung"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "id": "yi-sun-sin",
+          "name": "이순신",
+          "aliases": [
+            "李舜臣",
+            "충무공",
+            "Yi Sun-sin"
+          ]
+        }
+      ],
+      "places": [
+        {
+          "id": "hyeonchungsa",
+          "name": "현충사",
+          "aliases": [
+            "아산",
+            "顯忠祠",
+            "Hyeonchungsa",
+            "Asan City"
+          ]
+        }
+      ],
+      "limitations": [
+        "UNESCO와 국제기록유산센터의 소개는 같은 등록 자료에 기반할 수 있어 독립적인 전쟁 증언 두 건으로 세지 않습니다.",
+        "친필 원문·판독문·국역의 문장별 대조, 개별 일자의 음양력 확인은 아직 수행하지 않았습니다.",
+        "기관 소개에 있는 이미지의 이용 권리를 확인하지 않아 이미지는 복제하지 않았습니다."
+      ],
+      "relatedIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "jingbirok"
+      ],
+      "collectionIds": [
+        "imjin-reading-path",
+        "records-and-perspectives"
+      ],
+      "publishedAt": "2026-10-07",
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 4,
+      "corrections": [],
+      "sourceCount": 2,
+      "featuredReason": "전쟁 중의 일기를 통해 작성자의 시선과 기관 소개의 범위를 구분하는 시작점"
+    },
+    {
+      "id": "jingbirok",
+      "title": "징비록",
+      "kind": "source",
+      "period": "전후 저술 · 내용 범위 1592–1598",
+      "date": {
+        "startYear": null,
+        "endYear": null,
+        "precision": "unknown"
+      },
+      "summary": "유성룡이 임진왜란 경험을 돌아보며 남긴 기록입니다. 사건을 겪은 시점과 전후에 글을 정리한 시점, 판본이 전해진 과정을 구분해 읽습니다.",
+      "region": "조선과 동아시아",
+      "language": "한국어",
+      "labels": [
+        "사료",
+        "인물",
+        "외교",
+        "전후 복구"
+      ],
+      "aliases": [
+        "懲毖錄",
+        "초본징비록",
+        "Jingbirok",
+        "The Book of Correction"
+      ],
+      "review": {
+        "status": "source-checked",
+        "reviewer": "AI 자료 대조",
+        "reviewedAt": "2026-10-07",
+        "note": "연결한 기관 페이지의 설명과 편집문을 AI가 대조했습니다. 역사 전문가 또는 운영자의 사람 검수·승인은 아직 이루어지지 않았습니다.",
+        "humanReviewed": false
+      },
+      "sources": [
+        {
+          "id": "aks-jingbirok",
+          "title": "한국민족문화대백과사전: 징비록",
+          "creator": "이장희; 한국민족문화대백과사전",
+          "institution": "한국학중앙연구원",
+          "url": "https://encykorea.aks.ac.kr/Article/E0055088",
+          "kind": "research",
+          "language": "한국어",
+          "created": "웹 항목 1995년 집필·2023년 최종 수정(역사 자료 저술일과 구분)",
+          "location": "정의·내용·의의와 평가 절; 서지와 판본 설명, 친필 원문 전체 링크는 아님",
+          "rights": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+          "checkedAt": "2026-10-07",
+          "independenceGroup": "aks-reference"
+        }
+      ],
+      "sections": [
+        {
+          "id": "author",
+          "title": "전쟁을 돌아보는 유성룡의 기록",
+          "paragraphs": [
+            "징비록은 유성룡이 임진왜란 때 경험한 일을 기록한 책입니다. 한국민족문화대백과사전은 전쟁이 끝난 뒤 벼슬에서 물러나 저술했으며, 1592년부터 1598년까지의 일을 담는다고 설명합니다."
+          ],
+          "sourceIds": [
+            "aks-jingbirok"
+          ]
+        },
+        {
+          "id": "versions",
+          "title": "사건의 시기와 책의 제작 시기",
+          "paragraphs": [
+            "같은 항목에는 1647년 간행 설명과 다른 초기 간행설이 함께 소개되어 있습니다. 내용에 등장하는 1592–1598년을 모든 판본의 제작일로 표시하면 안 됩니다. 이 기록은 특정 판본의 원문과 제작일을 확정하지 않았습니다."
+          ],
+          "sourceIds": [
+            "aks-jingbirok"
+          ]
+        },
+        {
+          "id": "comparison",
+          "title": "회고를 일기와 비교하는 방법",
+          "paragraphs": [
+            "전후에 돌아본 기록은 당시 작성한 일기와 서술의 위치가 다릅니다. 작성자가 무엇을 설명하려 했는지, 직접 경험한 일과 전해 들은 일을 어떻게 구분했는지 질문하면서 읽는 것이 이 페이지의 편집 안내입니다."
+          ],
+          "sourceIds": [
+            "aks-jingbirok"
+          ],
+          "interpretation": true
+        }
+      ],
+      "chronology": [
+        {
+          "date": "전쟁 이후 · 정확한 저술 시점 검수 대기",
+          "year": null,
+          "title": "전후의 기록 정리",
+          "text": "사건이 일어난 연도와 책을 저술·간행한 연도를 구분합니다. 이 페이지는 특정 판본 제작일을 추정해서 연표에 배치하지 않습니다.",
+          "sourceIds": [
+            "aks-jingbirok"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "id": "yu-seong-ryong",
+          "name": "유성룡",
+          "aliases": [
+            "柳成龍",
+            "류성룡",
+            "서애",
+            "Yu Seong-ryong",
+            "Ryu Seong-ryong",
+            "Ryu Seongryong"
+          ]
+        }
+      ],
+      "places": [
+        {
+          "id": "andong",
+          "name": "안동",
+          "aliases": [
+            "安東"
+          ]
+        }
+      ],
+      "limitations": [
+        "링크는 현대 백과사전의 해설입니다. 징비록 원문 전문·친필본·판본별 대조를 제공하지 않습니다.",
+        "해당 항목은 집필자의 학술적 견해를 담고 있다는 기관 고지를 함께 고려해야 합니다.",
+        "정확한 저술 시점과 판본별 제작 시점을 사람이 검수하기 전까지 시간 정렬에서 미상으로 처리합니다."
+      ],
+      "relatedIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "nanjung-ilgi"
+      ],
+      "collectionIds": [
+        "imjin-reading-path",
+        "records-and-perspectives"
+      ],
+      "publishedAt": "2026-10-07",
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 4,
+      "corrections": [],
+      "sourceCount": 1,
+      "featuredReason": "전후 회고를 통해 사건의 시기와 기록이 만들어진 시기를 구별하는 시작점"
+    }
+  ],
+  "themes": [
+    {
+      "id": "decisions-and-diplomacy",
+      "title": "전투와 교섭",
+      "question": "전쟁의 방향은 전투만으로 설명할 수 있을까?",
+      "description": "전투의 변화와 강화 교섭을 함께 읽으며 의사결정과 외교가 기록되는 방식을 살펴봅니다.",
+      "labels": [
+        "전투",
+        "외교",
+        "지휘"
+      ],
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "jingbirok"
+      ],
+      "learningQuestions": [
+        "강화 교섭을 설명하는 글에는 누구의 관점이 드러나나요?",
+        "회고와 당시 보고는 무엇을 다르게 기록하나요?"
+      ]
+    },
+    {
+      "id": "lives-after-war",
+      "title": "사람과 전쟁 이후",
+      "question": "전쟁이 끝나는 날, 사람들의 삶도 회복될까?",
+      "description": "군사적 종결과 생활의 회복을 다른 질문으로 읽습니다. 피해 규모를 성급하게 확정하지 않고 기록이 보여 주는 범위를 확인합니다.",
+      "labels": [
+        "민간인의 삶",
+        "전후 복구"
+      ],
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "nanjung-ilgi"
+      ],
+      "learningQuestions": [
+        "군사 기록에서 민간인은 어떤 방식으로 등장하나요?",
+        "지금 연결된 자료만으로 설명할 수 없는 경험은 무엇인가요?"
+      ]
+    },
+    {
+      "id": "how-to-read-sources",
+      "title": "기록을 읽는 방법",
+      "question": "일기·회고·실록은 같은 사건을 어떻게 다르게 전할까?",
+      "description": "자료를 만든 사람, 작성 시점, 전달과 편찬의 맥락을 구분합니다. 기록의 존재와 그 안의 모든 주장의 사실성은 별개로 검토합니다.",
+      "labels": [
+        "사료",
+        "인물"
+      ],
+      "recordIds": [
+        "nanjung-ilgi",
+        "jingbirok",
+        "jeongyu-war"
+      ],
+      "learningQuestions": [
+        "사건 날짜, 기록 날짜, 현대 해설의 수정일은 어떻게 다른가요?",
+        "원문과 현대 기관 해설 중 지금 읽고 있는 것은 어느 쪽인가요?"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "imjin-reading-path",
+      "title": "임진왜란, 사건에서 기록으로",
+      "region": "조선과 동아시아",
+      "period": "1592–1598 · 전후 회고",
+      "description": "전체 사건을 먼저 읽고 재침과 당시 기록, 전후 회고로 이어지는 네 단계 읽기입니다.",
+      "criteria": "임진왜란과 정유재란의 개요, 당시 일기와 전후 회고를 연결한 자료 대조 상태의 기록을 수록합니다.",
+      "limitations": "한국 기관 자료와 조선 측 기록 중심의 시작 컬렉션입니다. 일본·명 측 사료와 민간인의 직접 증언을 대표하지 않습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "nanjung-ilgi",
+        "jingbirok"
+      ],
+      "steps": [
+        {
+          "title": "1. 전체 범위를 먼저 파악하기",
+          "description": "1592–1598이라는 범위에 어떤 사건이 들어 있는지 확인합니다.",
+          "recordIds": [
+            "imjin-war"
+          ]
+        },
+        {
+          "title": "2. 재침과 종결을 따로 살펴보기",
+          "description": "정유재란의 특징을 확인하고 실록의 보고와 기관 해설을 비교합니다.",
+          "recordIds": [
+            "jeongyu-war"
+          ]
+        },
+        {
+          "title": "3. 전쟁 중의 개인 기록 읽기",
+          "description": "일기의 관점과 기관 소개의 범위를 구분합니다.",
+          "recordIds": [
+            "nanjung-ilgi"
+          ]
+        },
+        {
+          "title": "4. 전후 회고와 비교하기",
+          "description": "사건 시기와 책의 저술·간행 시점이 다르다는 점을 확인합니다.",
+          "recordIds": [
+            "jingbirok"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records-and-perspectives",
+      "title": "일기와 회고, 두 기록의 거리",
+      "region": "조선과 동아시아",
+      "period": "1592–1598의 경험 · 제작 시점 구분",
+      "description": "난중일기와 징비록을 비교하기 전에 확인할 질문을 모았습니다.",
+      "criteria": "작성자와 작성 맥락이 다른 두 사료를 다룬 현대 기관 안내와, 비교에 필요한 사건 개요를 연결합니다.",
+      "limitations": "원문 전문을 나란히 제공하는 판독 컬렉션은 아닙니다. 원문의 특정 문장과 판본·쪽수 대조는 검수 대기입니다.",
+      "recordIds": [
+        "nanjung-ilgi",
+        "jingbirok",
+        "imjin-war"
+      ],
+      "steps": [
+        {
+          "title": "1. 작성자의 위치 찾기",
+          "description": "일기를 쓰는 지휘관과 전후에 돌아보는 관료의 위치를 생각해 봅니다.",
+          "recordIds": [
+            "nanjung-ilgi",
+            "jingbirok"
+          ]
+        },
+        {
+          "title": "2. 세 종류의 시점 구별하기",
+          "description": "사건의 시기, 기록의 제작 시기, 현대 소개 페이지의 작성 시기를 구별합니다.",
+          "recordIds": [
+            "jingbirok",
+            "nanjung-ilgi"
+          ]
+        },
+        {
+          "title": "3. 개요로 돌아가 질문 남기기",
+          "description": "두 기록에서 아직 확인하지 못한 내용과 더 찾아야 할 자료를 적어 봅니다.",
+          "recordIds": [
+            "imjin-war"
+          ]
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "two-records-one-war",
+      "title": "같은 전쟁, 서로 다른 기록의 시간",
+      "deck": "난중일기와 징비록을 비교하기 전에, 글을 쓴 때와 사건이 일어난 때부터 구별해 봅니다.",
+      "introduction": "기록을 읽을 때 제목과 연도만으로 모든 것을 알 수는 없습니다. 이 글은 원문 증언이 아니라 기관 소개를 바탕으로 만든 편집 안내입니다.",
+      "sections": [
+        {
+          "id": "diary",
+          "title": "전쟁 중 남기는 글",
+          "paragraphs": [
+            "난중일기는 이순신이 전쟁 중 작성한 개인 기록으로 소개됩니다. 전투 상황과 개인의 생각, 자연환경과 생활에 관한 내용이 함께 담겨 있다는 점에서 단순한 승전 목록과는 다른 읽기 질문을 던집니다."
+          ],
+          "sourceIds": [
+            "unesco-nanjung"
+          ]
+        },
+        {
+          "id": "retrospect",
+          "title": "전쟁 뒤 돌아보는 글",
+          "paragraphs": [
+            "징비록은 전쟁이 끝난 뒤 유성룡이 경험을 정리한 기록입니다. 본문이 다루는 사건의 연도와 저술·간행 시점을 나누면, 같은 전쟁을 전하는 자료라도 글이 만들어진 상황이 다르다는 것을 알 수 있습니다."
+          ],
+          "sourceIds": [
+            "aks-jingbirok"
+          ]
+        },
+        {
+          "id": "questions",
+          "title": "차이를 결론보다 먼저 묻기",
+          "paragraphs": [
+            "두 기록을 곧바로 정답 경쟁에 놓기보다 작성자가 어디에 있었는지, 누구를 위해 무엇을 기록하려 했는지 질문해 보세요. 다음 단계는 원문과 판본을 확인하는 일입니다. 지금의 기관 소개만으로 특정 문장의 진위를 판정하지 않습니다."
+          ],
+          "sourceIds": [
+            "unesco-nanjung",
+            "aks-jingbirok"
+          ],
+          "interpretation": true
+        }
+      ],
+      "recordIds": [
+        "nanjung-ilgi",
+        "jingbirok"
+      ],
+      "sourceIds": [
+        "unesco-nanjung",
+        "aks-jingbirok"
+      ],
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 3,
+      "author": "아카이브 AI 편집",
+      "reviewNote": "기관 안내 자료 대조 완료 · 사람 검수 대기 · 역사 자료 직접 인용 없음",
+      "learningQuestions": [
+        "사건의 시기와 글이 쓰인 시기를 나누어 말할 수 있나요?",
+        "직접 보고 쓴 문장과 전해 들은 문장을 확인하려면 어떤 원문이 필요할까요?"
+      ]
+    },
+    {
+      "id": "end-and-recovery",
+      "title": "전쟁의 끝과 삶의 회복 사이",
+      "deck": "노량해전의 보고를 읽고, 군사적 종결 뒤에도 남는 질문으로 시선을 옮깁니다.",
+      "introduction": "전쟁을 끝난 연도 하나로 기억하면 전쟁을 겪은 사람들의 시간이 빠질 수 있습니다. 이 글은 피해자의 말을 재현하지 않으며, 현재 자료가 보여 주는 범위와 빈틈을 함께 살펴봅니다.",
+      "sections": [
+        {
+          "id": "report",
+          "title": "보고서 안의 전투",
+          "paragraphs": [
+            "실록의 이덕형 보고는 노량에서 조선과 명 수군이 함께 싸운 상황과 이순신의 전사를 전합니다. 뒤에는 사신의 논평이 이어집니다. 전투 보고와 편찬자의 평가를 구분하는 것이 읽기의 출발점입니다."
+          ],
+          "sourceIds": [
+            "sillok-noryang"
+          ]
+        },
+        {
+          "id": "lives",
+          "title": "전투 기사 밖의 삶",
+          "paragraphs": [
+            "정유재란 해설은 전투와 함께 약탈과 방화, 기근과 포로의 문제를 다룹니다. 전쟁 종결의 설명과 사람들이 생활을 되찾은 과정의 설명에는 서로 다른 자료가 필요합니다."
+          ],
+          "sourceIds": [
+            "nikh-jeongyu"
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "남은 질문을 기록하기",
+          "paragraphs": [
+            "현재 연결된 자료만으로 지역마다 회복이 언제 이루어졌는지는 말할 수 없습니다. 민간인이 남긴 편지·생활 기록·지역 자료를 추가 대조하기 전까지는 그 경험을 편집자가 대신 말하지 않습니다."
+          ],
+          "sourceIds": [
+            "nikh-jeongyu"
+          ],
+          "interpretation": true
+        }
+      ],
+      "recordIds": [
+        "jeongyu-war",
+        "imjin-war"
+      ],
+      "sourceIds": [
+        "sillok-noryang",
+        "nikh-jeongyu"
+      ],
+      "updatedAt": "2026-10-07",
+      "readingMinutes": 3,
+      "author": "아카이브 AI 편집",
+      "reviewNote": "기관 해설·실록 기사 대조 완료 · 사람 검수 대기 · 증언이나 직접 인용으로 구성하지 않음",
+      "learningQuestions": [
+        "군사 기록으로 알 수 있는 사실과 알 수 없는 경험은 무엇인가요?",
+        "생활의 회복을 알아보려면 어떤 지역 자료가 필요할까요?"
+      ]
+    }
+  ]
+}

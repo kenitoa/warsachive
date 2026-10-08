@@ -1,0 +1,19 @@
+{
+  "name": "@war-archive/api", "version": "0.1.0", "private": true, "type": "module",
+  "engines": { "node": ">=22.22.3" },
+  "scripts": {
+    "start": "node --env-file-if-exists=../.env.api --experimental-strip-types src/server.ts",
+    "worker": "node --env-file-if-exists=../.env.api --experimental-strip-types src/worker.ts",
+    "admin:create": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts admin",
+    "content:import": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts import",
+    "db:backup": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts backup",
+    "db:restore": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts restore",
+    "db:backup-bundle": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts backup-bundle",
+    "db:restore-bundle": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts restore-bundle",
+    "db:check": "node --env-file-if-exists=../.env.api --experimental-strip-types src/cli.ts check",
+    "lint": "eslint src tests --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts tests/*.test.mjs",
+    "build": "tsc --noEmit"
+  }
+}

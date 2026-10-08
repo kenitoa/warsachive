@@ -4,7 +4,7 @@
     "slug": "war-archive",
     "version": "0.1.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": { "supportsTablet": true },
     "android": { "package": "com.wararchive.mobile" }

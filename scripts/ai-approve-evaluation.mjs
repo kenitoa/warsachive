@@ -1,0 +1,23 @@
+import { createHash, createHmac, randomUUID } from "node:crypto";
+import { readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import { archiveAiPromptHash, verifyAiEvaluation, separateEvaluationKey } from "../api/src/adapters/ai-evaluation.ts";
+import { verifyEvaluationUsage } from "./ai-evaluation-report.mjs";
+import { readArchiveContent } from "../web/scripts/read-archive-content.mjs";
+import { publicRecord } from "../api/src/domain/archive.ts";
+
+const [reportPath, decisionsPath, outputPath] = process.argv.slice(2);
+if (!reportPath || !decisionsPath || !outputPath) throw new Error("Usage: npm run ai:approve -- REPORT_JSON REAL_REVIEW_DECISIONS_JSON NEW_APPROVAL_JSON");
+const secret = process.env.ARCHIVE_AI_EVALUATION_SECRET;
+if (!separateEvaluationKey(process.env)) throw new Error("Configure a separate evaluation signing key.");
+const hash = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
+const report = JSON.parse(await readFile(resolve(reportPath), "utf8")); const review = JSON.parse(await readFile(resolve(decisionsPath), "utf8"));
+const records = (await readArchiveContent()).publicRecords.map(publicRecord).toSorted((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+verifyEvaluationUsage(report);
+if (report.version !== 1 || report.providerCalled !== true || report.model !== process.env.ARCHIVE_AI_MODEL || report.promptHash !== archiveAiPromptHash || report.contentHash !== hash(records) || !Array.isArray(report.results) || report.results.length < 3 || report.results.length > 50 || !report.results.every(item => item.automatedPass === true) || Date.now() - Date.parse(report.generatedAt) > 7 * 86400000 || !Number.isFinite(Date.parse(report.generatedAt)) || Date.parse(report.generatedAt) > Date.now() + 300000) throw new Error("Evaluation report is incomplete, failed or stale.");
+if (review.version !== 1 || review.reportHash !== hash(report) || !/^[a-zA-Z0-9_-]{1,100}$/.test(review.reviewerId) || review.humanReviewed !== true || !Array.isArray(review.decisions) || review.decisions.length !== report.results.length || new Set(review.decisions.map(item => item.id)).size !== report.results.length || !report.results.every(item => review.decisions.some(decision => decision.id === item.id && decision.approved === true && typeof decision.reason === "string" && decision.reason.trim().length >= 10)) || !Number.isSafeInteger(review.maxInputTokens) || !Number.isSafeInteger(review.maxOutputTokens) || report.inputTokens > review.maxInputTokens || report.outputTokens > review.maxOutputTokens) throw new Error("Each case needs a real human decision and an explicit measured usage budget.");
+const now = new Date(); const body = { version: 1, id: randomUUID(), model: report.model, promptHash: report.promptHash, contentHash: report.contentHash, datasetHash: report.datasetHash, reportHash: hash(report), approvedAt: now.toISOString(), expiresAt: new Date(now.getTime() + 30 * 86400000).toISOString(), reviewerId: review.reviewerId, humanReviewed: true, caseCount: report.results.length, categories: ["fact", "abstention", "injection"] };
+if (!body.categories.every(category => report.results.some(item => item.category === category))) throw new Error("Factual, abstention and injection cases must all be present.");
+const approval = { ...body, signature: createHmac("sha256", secret).update(JSON.stringify(body)).digest("hex") }; verifyAiEvaluation(approval, secret, body.model);
+await writeFile(resolve(outputPath), JSON.stringify(approval, null, 2), { flag: "wx", mode: 0o600 });
+console.log(JSON.stringify({ operation: "ai.evaluation_approved", evaluationId: approval.id, caseCount: approval.caseCount, expiresAt: approval.expiresAt }));

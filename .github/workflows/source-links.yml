@@ -1,0 +1,23 @@
+name: Check approved source links
+on:
+  schedule:
+    - cron: "17 1 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.3
+      - run: npm run content:links
+        env:
+          ARCHIVE_SOURCE_HOSTS: ${{ vars.ARCHIVE_SOURCE_HOSTS }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: approved-source-link-report
+          path: web/content/link-report.json

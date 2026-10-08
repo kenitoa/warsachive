@@ -1,0 +1,42 @@
+/* Account and editorial tools remain secondary to the six museum sections. */
+.expansionManager { color: var(--museum-ink); min-width: 0; }
+.expansionManager > section, .expansionManager > form, .expansionManager > article, .studySpaces > section, .studySpaces > form { margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--museum-line); }
+.expansionManager h2 { font: 400 1.7rem/1.45 Georgia,"Noto Serif KR",serif; }
+.expansionManager h3 { font-size: 1.2rem; line-height: 1.6; }
+.expansionManager h4 { font-size: 1.05rem; line-height: 1.65; }
+.expansionManager p { line-height: 1.8; color: #c6bcad; }
+.expansionManager label { display: grid; gap: .6rem; margin: 1rem 0; font-size: .95rem; }
+.expansionManager label:has(input[type=checkbox]) { display: flex; align-items: start; }
+.expansionManager label input[type=checkbox] { flex-shrink: 0; margin: .2rem .5rem 0 0; }
+.expansionManager input, .expansionManager select, .expansionManager textarea { min-width: 0; max-width: 100%; }
+.expansionManager select { width: 100%; }
+.expansionManager fieldset { border: 1px solid var(--museum-line); margin: 1.5rem 0; padding: 1rem; min-width: 0; }
+.expansionManager legend { padding: 0 .6rem; color: #d9b997; }
+.expansionActions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 1.5rem 0; }
+.expansionActions > a { padding: .75rem; border: 1px solid var(--museum-line); font-size: .9rem; line-height: 1.7; }
+.expansionActions > label { max-width: 100%; }
+.expansionNotice { border: 1px solid var(--museum-line); border-left: 2px solid #b6916d; background: #181919; padding: 1.2rem; margin: 1.5rem 0; overflow-wrap: anywhere; }
+.expansionNotice > h2, .expansionNotice > h3 { margin-top: 0; }
+.expansionList { list-style: none; padding: 0; }
+.expansionList > li { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: .8rem 0; padding: .8rem 0; border-bottom: 1px solid var(--museum-line); }
+.expansionList > li > span { color: #c4b8a7; font-size: .88rem; }
+.expansionManager details > summary { cursor: pointer; min-height: 44px; padding: .75rem 0; line-height: 1.6; }
+.privateText { white-space: pre-wrap; overflow-wrap: anywhere; }
+.researchEditor .evidenceEditor { border: 1px solid var(--museum-line); padding: 1rem; margin-top: 1.5rem; }
+.readingPath { padding-left: 1.5rem; }
+.readingPath > li { padding: 1rem 0; border-bottom: 1px solid var(--museum-line); }
+.studyTaskReadings > li { margin-block: .25rem; }
+.studyTaskReadings > li > a { display: inline-flex; align-items: center; min-height: 44px; width: 100%; padding-block: .5rem; }
+.answerSpace { height: 100px; border-bottom: 1px dotted #736655; margin-bottom: 1rem; }
+.operationCounts { display: flex; flex-wrap: wrap; gap: 1rem; }
+.operationCounts > div { border: 1px solid var(--museum-line); padding: 1rem; }
+.operationCounts dd { margin: .5rem 0 0; font-size: 1.4rem; }
+.jsonEditor { min-height: 360px !important; font-family: Consolas,monospace !important; font-size: .9rem !important; overflow-wrap: anywhere; }
+.hashValue { overflow-wrap: anywhere; font-family: Consolas,monospace; font-size: .85rem; }
+.printOnly { display: none; }
+.expansionManager button, .expansionManager a, .studySpaces { overflow-wrap: anywhere; min-width: 0; }
+.assistantRecord { padding: .5rem 0 1rem; border-bottom: 1px solid var(--museum-line); }
+.assistantRecord label { margin-bottom: .5rem; }
+.expansionManager pre { max-width: 100%; }
+@media(max-width:760px) { .expansionNotice { padding: 1rem; } .expansionManager > section, .expansionManager > form, .expansionManager > article { padding-block: 1rem; } .expansionActions { align-items: stretch; } .expansionActions > button { flex: 1 1 150px; } .expansionManager h2 { font-size: 1.5rem; } }
+@media print { .expansionManager .noPrint, .expansionManager .expansionActions, .expansionManager button, .expansionManager > details, .expansionManager > p, .expansionManager > ul { display: none !important; } .teachRoute .routeIntro { display: none; } .teachRoute .routeContent { padding: 0; max-width: none; } .printOnly { display: block; } .teachingWorksheet { border: 0 !important; } .teachingWorksheet input, .teachingWorksheet textarea, .teachingWorksheet select { border: 0; background: white; color: black; } .answerSpace { height: 130px; } .readingPath > li { break-inside: avoid; } }

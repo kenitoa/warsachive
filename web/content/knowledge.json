@@ -1,0 +1,3068 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-07",
+  "scopeNote": "4개 공개 기록과 8개 등록 출처의 확인된 서지·명칭·기관 제공 관계에서 시작합니다. AI 출처 대조 상태이며 사람 최종 검수·일본과 명 측 원자료 비교·이미지 재이용 허가·좌표 검수는 완료되지 않았습니다.",
+  "entities": [
+    {
+      "id": "organization-nikh",
+      "kind": "organization",
+      "name": "국사편찬위원회",
+      "aliases": [],
+      "description": "연결한 기관 자료의 제공 주체입니다. 이 사이트와의 협약·공동 검수를 의미하지 않습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-aks",
+      "kind": "organization",
+      "name": "한국학중앙연구원",
+      "aliases": [],
+      "description": "연결한 기관 자료의 제공 주체입니다. 이 사이트와의 협약·공동 검수를 의미하지 않습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jingbirok"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-imjin",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-unesco",
+      "kind": "organization",
+      "name": "UNESCO",
+      "aliases": [],
+      "description": "연결한 기관 자료의 제공 주체입니다. 이 사이트와의 협약·공동 검수를 의미하지 않습니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-icdh",
+      "kind": "organization",
+      "name": "유네스코 국제기록유산센터",
+      "aliases": [],
+      "description": "연결한 기관 자료의 제공 주체입니다. 이 사이트와의 협약·공동 검수를 의미하지 않습니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "페이지의 제공 기관 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "yi-sun-sin",
+      "kind": "person",
+      "name": "이순신",
+      "aliases": [
+        "李舜臣",
+        "충무공",
+        "Yi Sun-sin"
+      ],
+      "description": "공개 사건·사료 기록에서 연결한 인물입니다. 생몰년·관직·전체 생애는 아직 별도 검수하지 않았습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war",
+        "nanjung-ilgi"
+      ],
+      "externalAuthorityUrls": [
+        "https://www.unesco.org/en/memory-world/nanjung-ilgi-war-diary-admiral-yi-sun-sin"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "페이지 제목 및 자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "toyotomi-hideyoshi",
+      "kind": "person",
+      "name": "도요토미 히데요시",
+      "aliases": [
+        "豊臣秀吉",
+        "Toyotomi Hideyoshi"
+      ],
+      "description": "공개 사건·사료 기록에서 연결한 인물입니다. 생몰년·관직·전체 생애는 아직 별도 검수하지 않았습니다.",
+      "recordIds": [
+        "imjin-war"
+      ],
+      "externalAuthorityUrls": [
+        "https://jpsearch.go.jp/en/item/keioobjecthub-569"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "전쟁 종결 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "yu-seong-ryong",
+      "kind": "person",
+      "name": "유성룡",
+      "aliases": [
+        "柳成龍",
+        "류성룡",
+        "서애",
+        "Yu Seong-ryong",
+        "Ryu Seong-ryong",
+        "Ryu Seongryong"
+      ],
+      "description": "공개 사건·사료 기록에서 연결한 인물입니다. 생몰년·관직·전체 생애는 아직 별도 검수하지 않았습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jingbirok"
+      ],
+      "externalAuthorityUrls": [
+        "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf",
+        "https://www.museum.go.kr/MUSEUM/contents/M0701040000.do?arcId=17527&catCustomType=post&catId=93&cp=99&schM=view&sv=",
+        "https://www.museum.go.kr/ENG/contents/E0403000000.do?relicId=17038&schM=view&searchId=search"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "yi-deok-hyeong",
+      "kind": "person",
+      "name": "이덕형",
+      "aliases": [
+        "李德馨"
+      ],
+      "description": "공개 사건·사료 기록에서 연결한 인물입니다. 생몰년·관직·전체 생애는 아직 별도 검수하지 않았습니다.",
+      "recordIds": [
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 제목·본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "chen-lin",
+      "kind": "person",
+      "name": "진린",
+      "aliases": [
+        "陳璘",
+        "Chen Lin"
+      ],
+      "description": "공개 사건·사료 기록에서 연결한 인물입니다. 생몰년·관직·전체 생애는 아직 별도 검수하지 않았습니다.",
+      "recordIds": [
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [
+        "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 본문의 진린 표기",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "joseon",
+      "kind": "place",
+      "name": "조선",
+      "aliases": [
+        "朝鮮",
+        "Joseon",
+        "Joseon Dynasty"
+      ],
+      "description": "기록에서 쓰는 역사적 지역·정치체 명칭입니다. 현대 국경과 일치하는 경계로 표시하지 않습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [
+        "https://www.museum.go.kr/ENG/contents/E0403000000.do?relicId=17038&schM=view&searchId=search"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "pyeongyang",
+      "kind": "place",
+      "name": "평양",
+      "aliases": [
+        "平壤"
+      ],
+      "description": "연결 기록 또는 소장 자료 안내에 나오는 장소입니다. 역사적 사건 위치의 좌표는 확정하지 않았습니다.",
+      "recordIds": [
+        "imjin-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "기사 제목·본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "hansan",
+      "kind": "place",
+      "name": "한산도",
+      "aliases": [
+        "閑山島"
+      ],
+      "description": "연결 기록 또는 소장 자료 안내에 나오는 장소입니다. 역사적 사건 위치의 좌표는 확정하지 않았습니다.",
+      "recordIds": [
+        "imjin-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "전쟁 전개 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "noryang",
+      "kind": "place",
+      "name": "노량",
+      "aliases": [
+        "露梁"
+      ],
+      "description": "연결 기록 또는 소장 자료 안내에 나오는 장소입니다. 역사적 사건 위치의 좌표는 확정하지 않았습니다.",
+      "recordIds": [
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "hyeonchungsa",
+      "kind": "place",
+      "name": "현충사",
+      "aliases": [
+        "顯忠祠",
+        "Hyeonchungsa"
+      ],
+      "description": "연결 기록 또는 소장 자료 안내에 나오는 장소입니다. 역사적 사건 위치의 좌표는 확정하지 않았습니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "externalAuthorityUrls": [
+        "https://media.unesco.org/sites/default/files/webform/mow001/republic_of_korea_nanjung_ilgi.pdf"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관 현충사",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "andong",
+      "kind": "place",
+      "name": "안동",
+      "aliases": [
+        "安東"
+      ],
+      "description": "연결 기록 또는 소장 자료 안내에 나오는 장소입니다. 역사적 사건 위치의 좌표는 확정하지 않았습니다.",
+      "recordIds": [
+        "jingbirok"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "국가문화유산 소재지·미디어 정보",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-hyeonchungsa",
+      "kind": "organization",
+      "name": "현충사",
+      "aliases": [
+        "Hyeonchungsa"
+      ],
+      "description": "국제기록유산센터가 난중일기의 소장기관으로 안내한 주체입니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-korean-studies-advancement-center",
+      "kind": "organization",
+      "name": "한국국학진흥원",
+      "aliases": [],
+      "description": "백과사전이 징비록 필사본의 소재·소장 안내에 표시한 기관입니다. 판본마다 소장기관을 구분합니다.",
+      "recordIds": [
+        "jingbirok"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "징비록 표지 미디어 정보·소재지",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "organization-itkc",
+      "kind": "organization",
+      "name": "한국고전번역원",
+      "aliases": [],
+      "description": "연결한 실록 기사 국역의 제공 표시에 나오는 기관입니다. 원본 실물 소장기관으로 간주하지 않습니다.",
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war"
+      ],
+      "externalAuthorityUrls": [],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "페이지 하단 국역 저작권·제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "페이지 하단 국역 제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nikh-imjin",
+      "title": "한국사연대기: 임진왜란",
+      "creator": "국사편찬위원회",
+      "providerId": "organization-nikh",
+      "kind": "institutional",
+      "languageTags": [
+        "ko"
+      ],
+      "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305500",
+      "locator": "개요·강화교섭·정유재란 절; 웹 해설, 원문 쪽수 해당 없음",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [],
+      "resourceIds": [
+        "resource-nikh-imjin"
+      ],
+      "rightsIds": [
+        "rights-nikh-imjin"
+      ],
+      "provenanceGroup": "국사편찬위원회",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요·강화교섭·정유재란 절; 웹 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "aks-imjin",
+      "title": "한국민족문화대백과사전: 임진왜란",
+      "creator": "한국민족문화대백과사전 집필진",
+      "providerId": "organization-aks",
+      "kind": "research",
+      "languageTags": [
+        "ko"
+      ],
+      "url": "https://encykorea.aks.ac.kr/Article/E0047674",
+      "locator": "정의·내용 절; 웹 백과사전 해설, 원문 쪽수 해당 없음",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [],
+      "resourceIds": [
+        "resource-aks-imjin"
+      ],
+      "rightsIds": [
+        "rights-aks-imjin"
+      ],
+      "provenanceGroup": "한국학중앙연구원",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-imjin",
+          "locator": "정의·내용 절; 웹 백과사전 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "sillok-pyeongyang",
+      "title": "선조실록: 평양 수복 전투의 전모를 기록한 기사",
+      "creator": "조선왕조실록 편찬자; 국역 제공 한국고전번역원",
+      "providerId": "organization-nikh",
+      "kind": "primary",
+      "languageTags": [
+        "zh-Hant",
+        "ko"
+      ],
+      "url": "https://sillok.history.go.kr/id/kna_12601011_013",
+      "locator": "선조실록 34권, 선조 26년 1월 11일 13번째 기사(음력); 국역·원문 탭",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [
+        "material-seonjo-sillok"
+      ],
+      "resourceIds": [
+        "resource-sillok-pyeongyang"
+      ],
+      "rightsIds": [
+        "rights-sillok-pyeongyang"
+      ],
+      "provenanceGroup": "joseon-annals",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "선조실록 34권, 선조 26년 1월 11일 13번째 기사(음력); 국역·원문 탭",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "nikh-jeongyu",
+      "title": "한국사연대기: 정유재란",
+      "creator": "국사편찬위원회",
+      "providerId": "organization-nikh",
+      "kind": "institutional",
+      "languageTags": [
+        "ko"
+      ],
+      "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305620",
+      "locator": "개요·노량해전과 이순신의 죽음·가혹했던 인명 피해 절; 웹 해설",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [],
+      "resourceIds": [
+        "resource-nikh-jeongyu"
+      ],
+      "rightsIds": [
+        "rights-nikh-jeongyu"
+      ],
+      "provenanceGroup": "국사편찬위원회",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "개요·노량해전과 이순신의 죽음·가혹했던 인명 피해 절; 웹 해설",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "sillok-noryang",
+      "title": "선조실록: 이덕형이 수군의 활약상에 관한 치계를 올리다",
+      "creator": "조선왕조실록 편찬자; 국역 제공 한국고전번역원",
+      "providerId": "organization-nikh",
+      "kind": "primary",
+      "languageTags": [
+        "zh-Hant",
+        "ko"
+      ],
+      "url": "https://sillok.history.go.kr/id/kna_13111027_005",
+      "locator": "선조실록 106권, 선조 31년 11월 27일 5번째 기사(음력); 이덕형의 보고와 사신의 논평을 구분",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [
+        "material-seonjo-sillok"
+      ],
+      "resourceIds": [
+        "resource-sillok-noryang"
+      ],
+      "rightsIds": [
+        "rights-sillok-noryang"
+      ],
+      "provenanceGroup": "joseon-annals",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "선조실록 106권, 선조 31년 11월 27일 5번째 기사(음력); 이덕형의 보고와 사신의 논평을 구분",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "unesco-nanjung",
+      "title": "Memory of the World: Nanjung Ilgi",
+      "creator": "UNESCO",
+      "providerId": "organization-unesco",
+      "kind": "institutional",
+      "languageTags": [
+        "en"
+      ],
+      "url": "https://www.unesco.org/en/memory-world/nanjung-ilgi-war-diary-admiral-yi-sun-sin",
+      "locator": "기록유산 소개와 Registration Year; 친필 원문 전체를 제공하는 링크는 아님",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [
+        "material-nanjung-ilgi"
+      ],
+      "resourceIds": [
+        "resource-unesco-nanjung"
+      ],
+      "rightsIds": [
+        "rights-unesco-nanjung"
+      ],
+      "provenanceGroup": "nanjung-registration",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "기록유산 소개와 Registration Year; 친필 원문 전체를 제공하는 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "icdh-nanjung",
+      "title": "국제목록: 난중일기, 이순신 장군의 진중일기",
+      "creator": "유네스코 국제기록유산센터",
+      "providerId": "organization-icdh",
+      "kind": "institutional",
+      "languageTags": [
+        "ko"
+      ],
+      "url": "https://www.unescoicdh.org/home/print.php?code1=00000003&code2=00000032&listCnt=10&menukey=272&mod=view&no=63730&page=1&scode=00000004&search=4",
+      "locator": "소장기관·등재연도 및 기록 설명; 등록 자료에 기반한 기관 안내",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [
+        "material-nanjung-ilgi"
+      ],
+      "resourceIds": [
+        "resource-icdh-nanjung"
+      ],
+      "rightsIds": [
+        "rights-icdh-nanjung"
+      ],
+      "provenanceGroup": "nanjung-registration",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관·등재연도 및 기록 설명; 등록 자료에 기반한 기관 안내",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "aks-jingbirok",
+      "title": "한국민족문화대백과사전: 징비록",
+      "creator": "이장희; 한국민족문화대백과사전",
+      "providerId": "organization-aks",
+      "kind": "research",
+      "languageTags": [
+        "ko"
+      ],
+      "url": "https://encykorea.aks.ac.kr/Article/E0055088",
+      "locator": "정의·내용·의의와 평가 절; 서지와 판본 설명, 친필 원문 전체 링크는 아님",
+      "publicationDate": null,
+      "accessedAt": "2026-10-07",
+      "materialIds": [
+        "material-jingbirok"
+      ],
+      "resourceIds": [
+        "resource-aks-jingbirok"
+      ],
+      "rightsIds": [
+        "rights-aks-jingbirok"
+      ],
+      "provenanceGroup": "aks-reference",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용·의의와 평가 절; 서지와 판본 설명, 친필 원문 전체 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-nanjung-ilgi",
+      "title": "난중일기",
+      "kind": "diary",
+      "creatorIds": [
+        "yi-sun-sin"
+      ],
+      "languageTags": [
+        "zh-Hant"
+      ],
+      "dateIds": [
+        "date-nanjung-creation"
+      ],
+      "editionIds": [
+        "edition-nanjung-autograph"
+      ],
+      "description": "전쟁 중 작성한 일기라는 작품 단위 정보입니다. 현재 연결한 기관 안내는 원문 전체 전사·번역과 구분합니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "material-jingbirok",
+      "title": "징비록",
+      "kind": "retrospective",
+      "creatorIds": [
+        "yu-seong-ryong"
+      ],
+      "languageTags": [
+        "zh-Hant"
+      ],
+      "dateIds": [
+        "date-jingbirok-creation",
+        "date-jingbirok-publication"
+      ],
+      "editionIds": [
+        "edition-jingbirok-manuscript",
+        "edition-jingbirok-woodblock"
+      ],
+      "description": "전후 회고 기록의 작품 단위입니다. 필사본·목판본의 형태와 소장 정보를 합치지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "material-seonjo-sillok",
+      "title": "선조실록",
+      "kind": "annals",
+      "creatorIds": [],
+      "languageTags": [
+        "zh-Hant"
+      ],
+      "dateIds": [],
+      "editionIds": [
+        "edition-sillok-taebaeksan"
+      ],
+      "description": "연결한 두 기사의 공통 자료 단위입니다. 기사 날짜는 실록 편찬·간행 날짜를 뜻하지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "자료열람 표제",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "자료열람 표제",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "editions": [
+    {
+      "id": "edition-nanjung-autograph",
+      "materialId": "material-nanjung-ilgi",
+      "title": "난중일기 친필 기록",
+      "form": "manuscript",
+      "extent": "기관 안내의 7권",
+      "dateIds": [
+        "date-nanjung-creation"
+      ],
+      "custodianId": "organization-hyeonchungsa",
+      "identifier": null,
+      "description": "작품의 디지털 해설과 원본 필사 자료를 구분합니다. 권별 전체 상태·청구기호는 미확인입니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "handwritten journal·seven volumes 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "edition-jingbirok-manuscript",
+      "materialId": "material-jingbirok",
+      "title": "징비록 필사본 안내",
+      "form": "manuscript",
+      "extent": null,
+      "dateIds": [
+        "date-jingbirok-creation"
+      ],
+      "custodianId": "organization-korean-studies-advancement-center",
+      "identifier": null,
+      "description": "기관 페이지의 필사본 안내에 한정한 항목입니다. 전체 면수·청구기호·현재 열람 절차는 확인 대기입니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "징비록 표지 미디어 정보의 필사본·한국국학진흥원",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "edition-jingbirok-woodblock",
+      "materialId": "material-jingbirok",
+      "title": "징비록 16권 7책 목판본 안내",
+      "form": "woodblock",
+      "extent": "16권 7책",
+      "dateIds": [
+        "date-jingbirok-publication"
+      ],
+      "custodianId": null,
+      "identifier": null,
+      "description": "백과사전 본문의 목판본 설명입니다. 필사본 소재지나 한 가지 간행 연도를 이 판본에 일괄 적용하지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "서지적 사항·내용",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "edition-sillok-taebaeksan",
+      "materialId": "material-seonjo-sillok",
+      "title": "태백산사고본에 연결한 실록 기사",
+      "form": "unknown",
+      "extent": null,
+      "dateIds": [],
+      "custodianId": null,
+      "identifier": null,
+      "description": "페이지가 제시한 판본별 장차를 기사 위치와 연결합니다. 이 사이트는 원본 실물의 현재 소장 위치를 추정하지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "태백산사고본·영인본 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "태백산사고본·영인본 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "translation-sillok-pyeongyang",
+      "materialId": "material-seonjo-sillok",
+      "editionId": "edition-sillok-taebaeksan",
+      "languageTag": "ko",
+      "translatorIds": [],
+      "providerId": "organization-itkc",
+      "title": "평양 수복 기사 국역",
+      "scope": "연결한 기사 1건의 기관 제공 국역; 실록 전체 번역이나 사이트 자체 번역이 아닙니다.",
+      "status": "available-at-provider",
+      "resourceIds": [
+        "resource-sillok-pyeongyang"
+      ],
+      "rightsId": "rights-sillok-pyeongyang",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "국역 탭·한국고전번역원 제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "translation-sillok-noryang",
+      "materialId": "material-seonjo-sillok",
+      "editionId": "edition-sillok-taebaeksan",
+      "languageTag": "ko",
+      "translatorIds": [],
+      "providerId": "organization-itkc",
+      "title": "이덕형 보고 기사 국역",
+      "scope": "연결한 기사 1건의 기관 제공 국역; 실록 전체 번역이나 사이트 자체 번역이 아닙니다.",
+      "status": "available-at-provider",
+      "resourceIds": [
+        "resource-sillok-noryang"
+      ],
+      "rightsId": "rights-sillok-noryang",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "국역 탭·한국고전번역원 제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource-nikh-imjin",
+      "sourceId": "nikh-imjin",
+      "kind": "institution-page",
+      "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305500",
+      "materialId": null,
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-nikh-imjin",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요·강화교섭·정유재란 절; 웹 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-aks-imjin",
+      "sourceId": "aks-imjin",
+      "kind": "institution-page",
+      "url": "https://encykorea.aks.ac.kr/Article/E0047674",
+      "materialId": null,
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-aks-imjin",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-imjin",
+          "locator": "정의·내용 절; 웹 백과사전 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-sillok-pyeongyang",
+      "sourceId": "sillok-pyeongyang",
+      "kind": "original-and-translation",
+      "url": "https://sillok.history.go.kr/id/kna_12601011_013",
+      "materialId": "material-seonjo-sillok",
+      "editionId": "edition-sillok-taebaeksan",
+      "translationId": "translation-sillok-pyeongyang",
+      "rightsId": "rights-sillok-pyeongyang",
+      "iiifManifest": null,
+      "description": "기관 페이지에서 원문·국역 탭을 선택할 수 있습니다. 국역의 전체 번역자·번역일은 미확정입니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "선조실록 34권, 선조 26년 1월 11일 13번째 기사(음력); 국역·원문 탭",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-nikh-jeongyu",
+      "sourceId": "nikh-jeongyu",
+      "kind": "institution-page",
+      "url": "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i305620",
+      "materialId": null,
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-nikh-jeongyu",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "개요·노량해전과 이순신의 죽음·가혹했던 인명 피해 절; 웹 해설",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-sillok-noryang",
+      "sourceId": "sillok-noryang",
+      "kind": "original-and-translation",
+      "url": "https://sillok.history.go.kr/id/kna_13111027_005",
+      "materialId": "material-seonjo-sillok",
+      "editionId": "edition-sillok-taebaeksan",
+      "translationId": "translation-sillok-noryang",
+      "rightsId": "rights-sillok-noryang",
+      "iiifManifest": null,
+      "description": "기관 페이지에서 원문·국역 탭을 선택할 수 있습니다. 국역의 전체 번역자·번역일은 미확정입니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "선조실록 106권, 선조 31년 11월 27일 5번째 기사(음력); 이덕형의 보고와 사신의 논평을 구분",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-unesco-nanjung",
+      "sourceId": "unesco-nanjung",
+      "kind": "institution-page",
+      "url": "https://www.unesco.org/en/memory-world/nanjung-ilgi-war-diary-admiral-yi-sun-sin",
+      "materialId": "material-nanjung-ilgi",
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-unesco-nanjung",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "기록유산 소개와 Registration Year; 친필 원문 전체를 제공하는 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-icdh-nanjung",
+      "sourceId": "icdh-nanjung",
+      "kind": "institution-page",
+      "url": "https://www.unescoicdh.org/home/print.php?code1=00000003&code2=00000032&listCnt=10&menukey=272&mod=view&no=63730&page=1&scode=00000004&search=4",
+      "materialId": "material-nanjung-ilgi",
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-icdh-nanjung",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관·등재연도 및 기록 설명; 등록 자료에 기반한 기관 안내",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "resource-aks-jingbirok",
+      "sourceId": "aks-jingbirok",
+      "kind": "institution-page",
+      "url": "https://encykorea.aks.ac.kr/Article/E0055088",
+      "materialId": "material-jingbirok",
+      "editionId": null,
+      "translationId": null,
+      "rightsId": "rights-aks-jingbirok",
+      "iiifManifest": null,
+      "description": "기관 자료 안내 링크입니다. 이미지·본문 전체를 이 사이트가 복제한 디지털 원본은 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용·의의와 평가 절; 서지와 판본 설명, 친필 원문 전체 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "rights": [
+    {
+      "id": "rights-nikh-imjin",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "한국사연대기: 임진왜란 — 국사편찬위원회",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-aks-imjin",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "한국민족문화대백과사전: 임진왜란 — 한국학중앙연구원",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-imjin",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-sillok-pyeongyang",
+      "target": "translation",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "선조실록: 평양 수복 전투의 전모를 기록한 기사 — 국사편찬위원회",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-nikh-jeongyu",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "한국사연대기: 정유재란 — 국사편찬위원회",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-sillok-noryang",
+      "target": "translation",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "선조실록: 이덕형이 수군의 활약상에 관한 치계를 올리다 — 국사편찬위원회",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-unesco-nanjung",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "Memory of the World: Nanjung Ilgi — UNESCO",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-icdh-nanjung",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "국제목록: 난중일기, 이순신 장군의 진중일기 — 유네스코 국제기록유산센터",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "rights-aks-jingbirok",
+      "target": "image",
+      "status": "unknown",
+      "statement": "원문·이미지 재사용 조건은 해당 기관에서 별도 확인해야 합니다. 이 사이트는 이미지와 원문 전문을 복제하지 않고 출처 링크와 자체 요약을 제공합니다.",
+      "licenseUrl": null,
+      "attribution": "한국민족문화대백과사전: 징비록 — 한국학중앙연구원",
+      "holder": null,
+      "permissions": {
+        "display": false,
+        "download": false,
+        "reuse": false
+      },
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "페이지 이용 조건·출처 표시; 개별 미디어 허가 미확인",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "dates": [
+    {
+      "id": "date-imjin-range",
+      "label": "사건 범위",
+      "originalText": "1592–1598",
+      "calendar": "unknown",
+      "precision": "range",
+      "startYear": 1592,
+      "endYear": 1598,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "event",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-jeongyu-range",
+      "label": "재침·철수 범위",
+      "originalText": "1597–1598",
+      "calendar": "unknown",
+      "precision": "range",
+      "startYear": 1597,
+      "endYear": 1598,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "event",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-pyeongyang-article",
+      "label": "실록 기사 날짜",
+      "originalText": "선조 26년 1월 11일",
+      "calendar": "lunisolar",
+      "precision": "day",
+      "startYear": 1593,
+      "endYear": 1593,
+      "month": 1,
+      "day": 11,
+      "era": "선조 26년",
+      "conversion": null,
+      "purpose": "article",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "기사 표제의 선조 26년 1월 11일",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-noryang-article",
+      "label": "보고 기사 날짜",
+      "originalText": "선조 31년 11월 27일",
+      "calendar": "lunisolar",
+      "precision": "day",
+      "startYear": 1598,
+      "endYear": 1598,
+      "month": 11,
+      "day": 27,
+      "era": "선조 31년",
+      "conversion": null,
+      "purpose": "article",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 표제의 선조 31년 11월 27일",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-nanjung-creation",
+      "label": "일기 작성 범위",
+      "originalText": "1592–1598",
+      "calendar": "unknown",
+      "precision": "range",
+      "startYear": 1592,
+      "endYear": 1598,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "creation",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-nanjung-registration",
+      "label": "세계기록유산 등재 연도",
+      "originalText": "2013",
+      "calendar": "gregorian",
+      "precision": "year",
+      "startYear": 2013,
+      "endYear": 2013,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "registration",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "Registration Year",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-jingbirok-creation",
+      "label": "저술 시점",
+      "originalText": "전쟁이 끝난 뒤 저술; 정확한 연도 미확정",
+      "calendar": "unknown",
+      "precision": "unknown",
+      "startYear": null,
+      "endYear": null,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "creation",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "내용의 전후 저술 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "date-jingbirok-publication",
+      "label": "판본별 간행 시점",
+      "originalText": "간행 연대에 복수 설명이 있어 판본별 대조 필요",
+      "calendar": "unknown",
+      "precision": "unknown",
+      "startYear": null,
+      "endYear": null,
+      "month": null,
+      "day": null,
+      "era": null,
+      "conversion": null,
+      "purpose": "publication",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "내용의 간행 연대 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-nanjung-creator",
+      "subjectId": "material-nanjung-ilgi",
+      "predicate": "creator",
+      "text": "UNESCO 자료 안내는 이순신을 일기 작성자로 설명합니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "qualification": "기관 서지 설명 대조; 원문 전체의 사실성에 대한 사람 승인이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-nanjung-creation",
+      "subjectId": "material-nanjung-ilgi",
+      "predicate": "creation-period",
+      "text": "기관 안내의 작성 범위는 1592–1598년입니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "qualification": "연도 범위와 각 일기의 역법·일자를 구분합니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-nanjung-custodian",
+      "subjectId": "edition-nanjung-autograph",
+      "predicate": "custodian",
+      "text": "국제기록유산센터는 소장기관을 현충사로 안내합니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "qualification": "기관 안내의 확인일 기준이며 실물 열람 가능 여부는 별도 확인이 필요합니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-nanjung-registration",
+      "subjectId": "material-nanjung-ilgi",
+      "predicate": "registration",
+      "text": "세계기록유산 등록 연도는 2013년으로 표시됩니다.",
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "qualification": "등록 연도는 일기 제작 연도와 다릅니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "Registration Year",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-jingbirok-creator",
+      "subjectId": "material-jingbirok",
+      "predicate": "creator",
+      "text": "백과사전은 유성룡의 전후 회고 기록으로 설명합니다.",
+      "recordIds": [
+        "jingbirok"
+      ],
+      "qualification": "정확한 저술 연도와 판본별 간행 연도는 확정하지 않았습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-jingbirok-editions",
+      "subjectId": "material-jingbirok",
+      "predicate": "bibliography",
+      "text": "같은 항목에서 본문의 목판본 설명과 미디어의 필사본 안내가 구분됩니다.",
+      "recordIds": [
+        "jingbirok"
+      ],
+      "qualification": "작품의 제목이 같아도 형태·분량·소장 정보는 판본별로 연결합니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "서지적 사항·미디어 정보",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-pyeongyang-date",
+      "subjectId": "sillok-pyeongyang",
+      "predicate": "article-date",
+      "text": "기사 표제는 선조 26년 1월 11일이며 당시 역법의 날짜입니다.",
+      "recordIds": [
+        "imjin-war"
+      ],
+      "qualification": "그레고리력으로 환산하지 않았으며 사건의 모든 전개 시점으로 사용하지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "기사 표제",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "claim-noryang-date",
+      "subjectId": "sillok-noryang",
+      "predicate": "article-date",
+      "text": "선조 31년 11월 27일의 보고 기사는 기사 날짜와 보고된 전투 시점을 구분해 읽어야 합니다.",
+      "recordIds": [
+        "jeongyu-war"
+      ],
+      "qualification": "기사 날짜를 노량해전 날짜나 실록 편찬일로 대체하지 않습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 표제·본문의 전투 보고",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "disagreements": [
+    {
+      "id": "disagreement-jingbirok-printing",
+      "title": "징비록 간행 연대의 복수 설명",
+      "question": "어느 판본·간행 행위를 가리키는 연도인가요?",
+      "recordIds": [
+        "jingbirok"
+      ],
+      "claimIds": [
+        "claim-jingbirok-editions"
+      ],
+      "positions": [
+        {
+          "label": "1647년 간행 설명",
+          "description": "항목은 1647년 간행을 설명합니다. 이 연도를 모든 필사본·판본의 제작일로 적용하지 않습니다.",
+          "evidence": [
+            {
+              "sourceId": "aks-jingbirok",
+              "locator": "내용의 1647년 간행 문단",
+              "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+            }
+          ]
+        },
+        {
+          "label": "앞선 수록·간행 설명",
+          "description": "같은 항목은 1633년 문집 수록과 후속 간행을 연결하는 다른 설명도 병기합니다.",
+          "evidence": [
+            {
+              "sourceId": "aks-jingbirok",
+              "locator": "내용의 한편 처음 간행 문단",
+              "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+            }
+          ]
+        }
+      ],
+      "status": "open",
+      "resolution": null,
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "내용의 간행 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "location-joseon",
+      "entityId": "joseon",
+      "label": "조선",
+      "kind": "historical-region",
+      "coordinate": null,
+      "boundary": {
+        "status": "unknown",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "imjin-war",
+        "jeongyu-war"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "location-pyeongyang",
+      "entityId": "pyeongyang",
+      "label": "평양",
+      "kind": "battle-reference",
+      "coordinate": null,
+      "boundary": {
+        "status": "not-applicable",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "imjin-war"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "기사 제목·본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "location-hansan",
+      "entityId": "hansan",
+      "label": "한산도",
+      "kind": "battle-reference",
+      "coordinate": null,
+      "boundary": {
+        "status": "not-applicable",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "imjin-war"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "전쟁 전개 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "location-noryang",
+      "entityId": "noryang",
+      "label": "노량",
+      "kind": "battle-reference",
+      "coordinate": null,
+      "boundary": {
+        "status": "not-applicable",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "jeongyu-war"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "location-hyeonchungsa",
+      "entityId": "hyeonchungsa",
+      "label": "현충사",
+      "kind": "custodian-location",
+      "coordinate": null,
+      "boundary": {
+        "status": "not-applicable",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "nanjung-ilgi"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관 현충사",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "location-andong",
+      "entityId": "andong",
+      "label": "안동",
+      "kind": "custodian-location",
+      "coordinate": null,
+      "boundary": {
+        "status": "not-applicable",
+        "note": "확인한 위치 근거·유효 시기의 경계 자료가 없으므로 지도에 점·국경을 만들지 않습니다."
+      },
+      "dateIds": [],
+      "recordIds": [
+        "jingbirok"
+      ],
+      "uncertainty": "좌표와 역사적 경계를 검수하지 않았습니다. 장소 목록과 관련 기록으로 탐색할 수 있습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "국가문화유산 소재지·미디어 정보",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-yi-nanjung",
+      "subjectId": "yi-sun-sin",
+      "predicate": "authored",
+      "objectId": "material-nanjung-ilgi",
+      "note": "작품 작성자 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "자료 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-yu-jingbirok",
+      "subjectId": "yu-seong-ryong",
+      "predicate": "authored",
+      "objectId": "material-jingbirok",
+      "note": "작품 작성자 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-edition-nanjung-autograph",
+      "subjectId": "edition-nanjung-autograph",
+      "predicate": "edition-of",
+      "objectId": "material-nanjung-ilgi",
+      "note": "판본·자료 형태와 작품의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "handwritten journal·seven volumes 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-edition-jingbirok-manuscript",
+      "subjectId": "edition-jingbirok-manuscript",
+      "predicate": "edition-of",
+      "objectId": "material-jingbirok",
+      "note": "판본·자료 형태와 작품의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "징비록 표지 미디어 정보의 필사본·한국국학진흥원",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-edition-jingbirok-woodblock",
+      "subjectId": "edition-jingbirok-woodblock",
+      "predicate": "edition-of",
+      "objectId": "material-jingbirok",
+      "note": "판본·자료 형태와 작품의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "서지적 사항·내용",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-edition-sillok-taebaeksan",
+      "subjectId": "edition-sillok-taebaeksan",
+      "predicate": "edition-of",
+      "objectId": "material-seonjo-sillok",
+      "note": "판본·자료 형태와 작품의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "태백산사고본·영인본 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "태백산사고본·영인본 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "holding-edition-nanjung-autograph",
+      "subjectId": "edition-nanjung-autograph",
+      "predicate": "held-by",
+      "objectId": "organization-hyeonchungsa",
+      "note": "기관 안내에서 확인한 소장 관계; 사이트 기관 협약이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "handwritten journal·seven volumes 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        },
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "holding-edition-jingbirok-manuscript",
+      "subjectId": "edition-jingbirok-manuscript",
+      "predicate": "held-by",
+      "objectId": "organization-korean-studies-advancement-center",
+      "note": "기관 안내에서 확인한 소장 관계; 사이트 기관 협약이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "징비록 표지 미디어 정보의 필사본·한국국학진흥원",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-nikh-imjin",
+      "subjectId": "nikh-imjin",
+      "predicate": "provided-by",
+      "objectId": "organization-nikh",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요·강화교섭·정유재란 절; 웹 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-aks-imjin",
+      "subjectId": "aks-imjin",
+      "predicate": "provided-by",
+      "objectId": "organization-aks",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-imjin",
+          "locator": "정의·내용 절; 웹 백과사전 해설, 원문 쪽수 해당 없음",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-sillok-pyeongyang",
+      "subjectId": "sillok-pyeongyang",
+      "predicate": "provided-by",
+      "objectId": "organization-nikh",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "선조실록 34권, 선조 26년 1월 11일 13번째 기사(음력); 국역·원문 탭",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-nikh-jeongyu",
+      "subjectId": "nikh-jeongyu",
+      "predicate": "provided-by",
+      "objectId": "organization-nikh",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-jeongyu",
+          "locator": "개요·노량해전과 이순신의 죽음·가혹했던 인명 피해 절; 웹 해설",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-sillok-noryang",
+      "subjectId": "sillok-noryang",
+      "predicate": "provided-by",
+      "objectId": "organization-nikh",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "선조실록 106권, 선조 31년 11월 27일 5번째 기사(음력); 이덕형의 보고와 사신의 논평을 구분",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-unesco-nanjung",
+      "subjectId": "unesco-nanjung",
+      "predicate": "provided-by",
+      "objectId": "organization-unesco",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "unesco-nanjung",
+          "locator": "기록유산 소개와 Registration Year; 친필 원문 전체를 제공하는 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-icdh-nanjung",
+      "subjectId": "icdh-nanjung",
+      "predicate": "provided-by",
+      "objectId": "organization-icdh",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관·등재연도 및 기록 설명; 등록 자료에 기반한 기관 안내",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "provider-aks-jingbirok",
+      "subjectId": "aks-jingbirok",
+      "predicate": "provided-by",
+      "objectId": "organization-aks",
+      "note": "디지털 자료 제공 관계; 실물 소장과 구분",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "정의·내용·의의와 평가 절; 서지와 판본 설명, 친필 원문 전체 링크는 아님",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-translation-sillok-pyeongyang",
+      "subjectId": "translation-sillok-pyeongyang",
+      "predicate": "translation-of",
+      "objectId": "material-seonjo-sillok",
+      "note": "일부 기사 국역과 원자료의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "국역 탭·한국고전번역원 제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "relation-translation-sillok-noryang",
+      "subjectId": "translation-sillok-noryang",
+      "predicate": "translation-of",
+      "objectId": "material-seonjo-sillok",
+      "note": "일부 기사 국역과 원자료의 관계",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "국역 탭·한국고전번역원 제공 표시",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-imjin-war-joseon",
+      "subjectId": "imjin-war",
+      "predicate": "associated-place",
+      "objectId": "joseon",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-imjin-war-pyeongyang",
+      "subjectId": "imjin-war",
+      "predicate": "associated-place",
+      "objectId": "pyeongyang",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-pyeongyang",
+          "locator": "기사 제목·본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-imjin-war-hansan",
+      "subjectId": "imjin-war",
+      "predicate": "associated-place",
+      "objectId": "hansan",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "전쟁 전개 설명",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-jeongyu-war-noryang",
+      "subjectId": "jeongyu-war",
+      "predicate": "associated-place",
+      "objectId": "noryang",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "sillok-noryang",
+          "locator": "기사 본문",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-jeongyu-war-joseon",
+      "subjectId": "jeongyu-war",
+      "predicate": "associated-place",
+      "objectId": "joseon",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "nikh-imjin",
+          "locator": "개요",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-nanjung-ilgi-hyeonchungsa",
+      "subjectId": "nanjung-ilgi",
+      "predicate": "associated-place",
+      "objectId": "hyeonchungsa",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "icdh-nanjung",
+          "locator": "소장기관 현충사",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "place-jingbirok-andong",
+      "subjectId": "jingbirok",
+      "predicate": "associated-place",
+      "objectId": "andong",
+      "note": "공개 기록에서 연결한 장소; 지도 좌표 확정이 아닙니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "evidence": [
+        {
+          "sourceId": "aks-jingbirok",
+          "locator": "국가문화유산 소재지·미디어 정보",
+          "note": "기관 페이지의 해당 위치를 대조한 서지 근거입니다. 자료의 모든 역사적 주장을 승인한 것은 아닙니다."
+        }
+      ]
+    }
+  ],
+  "collectionLevels": [
+    {
+      "id": "introduction",
+      "label": "입문: 사건의 범위",
+      "description": "기관 해설과 근거 링크를 통해 사건을 처음 읽습니다.",
+      "requirements": [
+        "출처와 해설의 범위 확인",
+        "불확실성 표시"
+      ],
+      "requiredReview": "source-checked"
+    },
+    {
+      "id": "source-reading",
+      "label": "사료 안내: 작품과 판본",
+      "description": "작성자·시점·판본·제공 기관을 구분하는 읽기 단계입니다.",
+      "requirements": [
+        "작품과 판본 구분",
+        "원문·국역·현대 해설 구분"
+      ],
+      "requiredReview": "source-checked"
+    },
+    {
+      "id": "comparison",
+      "label": "비교: 전문가 검수 필요",
+      "description": "여러 원자료의 관점과 주장 대조를 위한 출시 단계입니다.",
+      "requirements": [
+        "각 관점의 원자료 대조",
+        "번역·해석 전문가 승인",
+        "이견 근거 연결"
+      ],
+      "requiredReview": "approved"
+    },
+    {
+      "id": "research",
+      "label": "연구: 서지·권리 완결 필요",
+      "description": "정확한 판본 위치와 권리 조건을 확인한 연구용 단계입니다.",
+      "requirements": [
+        "소장·판본·위치 완결",
+        "인용 위치 검증",
+        "미디어 권리 승인"
+      ],
+      "requiredReview": "approved"
+    }
+  ],
+  "recordLinks": [
+    {
+      "recordId": "imjin-war",
+      "entityIds": [
+        "yi-sun-sin",
+        "toyotomi-hideyoshi",
+        "yu-seong-ryong",
+        "joseon",
+        "pyeongyang",
+        "hansan"
+      ],
+      "sourceIds": [
+        "nikh-imjin",
+        "aks-imjin",
+        "sillok-pyeongyang"
+      ],
+      "materialIds": [
+        "material-seonjo-sillok"
+      ],
+      "dateIds": [
+        "date-imjin-range",
+        "date-pyeongyang-article"
+      ],
+      "claimIds": [
+        "claim-pyeongyang-date"
+      ],
+      "locationIds": [
+        "location-joseon",
+        "location-pyeongyang",
+        "location-hansan"
+      ],
+      "collectionLevelId": "introduction"
+    },
+    {
+      "recordId": "jeongyu-war",
+      "entityIds": [
+        "yi-sun-sin",
+        "yi-deok-hyeong",
+        "chen-lin",
+        "noryang",
+        "joseon"
+      ],
+      "sourceIds": [
+        "nikh-jeongyu",
+        "sillok-noryang"
+      ],
+      "materialIds": [
+        "material-seonjo-sillok"
+      ],
+      "dateIds": [
+        "date-jeongyu-range",
+        "date-noryang-article"
+      ],
+      "claimIds": [
+        "claim-noryang-date"
+      ],
+      "locationIds": [
+        "location-joseon",
+        "location-noryang"
+      ],
+      "collectionLevelId": "introduction"
+    },
+    {
+      "recordId": "nanjung-ilgi",
+      "entityIds": [
+        "yi-sun-sin",
+        "hyeonchungsa"
+      ],
+      "sourceIds": [
+        "unesco-nanjung",
+        "icdh-nanjung"
+      ],
+      "materialIds": [
+        "material-nanjung-ilgi"
+      ],
+      "dateIds": [
+        "date-nanjung-creation",
+        "date-nanjung-registration"
+      ],
+      "claimIds": [
+        "claim-nanjung-creator",
+        "claim-nanjung-creation",
+        "claim-nanjung-custodian",
+        "claim-nanjung-registration"
+      ],
+      "locationIds": [
+        "location-hyeonchungsa"
+      ],
+      "collectionLevelId": "source-reading"
+    },
+    {
+      "recordId": "jingbirok",
+      "entityIds": [
+        "yu-seong-ryong",
+        "andong"
+      ],
+      "sourceIds": [
+        "aks-jingbirok"
+      ],
+      "materialIds": [
+        "material-jingbirok"
+      ],
+      "dateIds": [
+        "date-jingbirok-creation",
+        "date-jingbirok-publication"
+      ],
+      "claimIds": [
+        "claim-jingbirok-creator",
+        "claim-jingbirok-editions"
+      ],
+      "locationIds": [
+        "location-andong"
+      ],
+      "collectionLevelId": "source-reading"
+    }
+  ],
+  "localizations": [
+    {
+      "recordId": "imjin-war",
+      "locale": "ko",
+      "sourceVersion": "2026-10-07",
+      "status": "source-checked",
+      "title": "임진왜란",
+      "summary": "1592년 침공부터 1598년 전쟁 종결까지, 조선·명·일본의 전투와 교섭을 함께 읽습니다. 승패의 흐름과 전쟁을 겪은 사람들의 피해를 구분해 살펴봅니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "sourceIdentity": {
+        "title": "임진왜란",
+        "summary": "1592년 침공부터 1598년 전쟁 종결까지, 조선·명·일본의 전투와 교섭을 함께 읽습니다. 승패의 흐름과 전쟁을 겪은 사람들의 피해를 구분해 살펴봅니다."
+      }
+    },
+    {
+      "recordId": "imjin-war",
+      "locale": "en",
+      "sourceVersion": "2026-10-07",
+      "status": "draft",
+      "title": "Imjin War",
+      "summary": "English editorial translation is awaiting bilingual review and is not published.",
+      "review": {
+        "status": "needs-review",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 번역 초안",
+        "humanReviewed": false,
+        "note": "번역 검수 미완료. 공개 언어 전환·검색 색인·공개 내보내기에서 제외합니다."
+      },
+      "sourceIdentity": {
+        "title": "임진왜란",
+        "summary": "1592년 침공부터 1598년 전쟁 종결까지, 조선·명·일본의 전투와 교섭을 함께 읽습니다. 승패의 흐름과 전쟁을 겪은 사람들의 피해를 구분해 살펴봅니다."
+      }
+    },
+    {
+      "recordId": "jeongyu-war",
+      "locale": "ko",
+      "sourceVersion": "2026-10-07",
+      "status": "source-checked",
+      "title": "정유재란",
+      "summary": "1597년 일본의 재침부터 1598년 철수까지를 살펴봅니다. 전투의 변화, 노량해전의 보고, 민간인의 피해를 서로 다른 읽기 항목으로 연결합니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "sourceIdentity": {
+        "title": "정유재란",
+        "summary": "1597년 일본의 재침부터 1598년 철수까지를 살펴봅니다. 전투의 변화, 노량해전의 보고, 민간인의 피해를 서로 다른 읽기 항목으로 연결합니다."
+      }
+    },
+    {
+      "recordId": "jeongyu-war",
+      "locale": "en",
+      "sourceVersion": "2026-10-07",
+      "status": "draft",
+      "title": "Renewed invasion in 1597",
+      "summary": "English editorial translation is awaiting bilingual review and is not published.",
+      "review": {
+        "status": "needs-review",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 번역 초안",
+        "humanReviewed": false,
+        "note": "번역 검수 미완료. 공개 언어 전환·검색 색인·공개 내보내기에서 제외합니다."
+      },
+      "sourceIdentity": {
+        "title": "정유재란",
+        "summary": "1597년 일본의 재침부터 1598년 철수까지를 살펴봅니다. 전투의 변화, 노량해전의 보고, 민간인의 피해를 서로 다른 읽기 항목으로 연결합니다."
+      }
+    },
+    {
+      "recordId": "nanjung-ilgi",
+      "locale": "ko",
+      "sourceVersion": "2026-10-07",
+      "status": "source-checked",
+      "title": "난중일기",
+      "summary": "이순신이 전쟁 중 남긴 개인 일기입니다. 전투뿐 아니라 날씨, 지형, 감정과 생활의 기록을 읽으며 사료를 만든 사람의 위치를 생각해 봅니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "sourceIdentity": {
+        "title": "난중일기",
+        "summary": "이순신이 전쟁 중 남긴 개인 일기입니다. 전투뿐 아니라 날씨, 지형, 감정과 생활의 기록을 읽으며 사료를 만든 사람의 위치를 생각해 봅니다."
+      }
+    },
+    {
+      "recordId": "nanjung-ilgi",
+      "locale": "en",
+      "sourceVersion": "2026-10-07",
+      "status": "draft",
+      "title": "Nanjung Ilgi",
+      "summary": "English editorial translation is awaiting bilingual review and is not published.",
+      "review": {
+        "status": "needs-review",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 번역 초안",
+        "humanReviewed": false,
+        "note": "번역 검수 미완료. 공개 언어 전환·검색 색인·공개 내보내기에서 제외합니다."
+      },
+      "sourceIdentity": {
+        "title": "난중일기",
+        "summary": "이순신이 전쟁 중 남긴 개인 일기입니다. 전투뿐 아니라 날씨, 지형, 감정과 생활의 기록을 읽으며 사료를 만든 사람의 위치를 생각해 봅니다."
+      }
+    },
+    {
+      "recordId": "jingbirok",
+      "locale": "ko",
+      "sourceVersion": "2026-10-07",
+      "status": "source-checked",
+      "title": "징비록",
+      "summary": "유성룡이 임진왜란 경험을 돌아보며 남긴 기록입니다. 사건을 겪은 시점과 전후에 글을 정리한 시점, 판본이 전해진 과정을 구분해 읽습니다.",
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 자료 대조",
+        "humanReviewed": false,
+        "note": "기관 서지·자료 안내와 대조했습니다. 역사 전문가 또는 운영자의 사람 최종 검수는 대기 중입니다."
+      },
+      "sourceIdentity": {
+        "title": "징비록",
+        "summary": "유성룡이 임진왜란 경험을 돌아보며 남긴 기록입니다. 사건을 겪은 시점과 전후에 글을 정리한 시점, 판본이 전해진 과정을 구분해 읽습니다."
+      }
+    },
+    {
+      "recordId": "jingbirok",
+      "locale": "en",
+      "sourceVersion": "2026-10-07",
+      "status": "draft",
+      "title": "Jingbirok",
+      "summary": "English editorial translation is awaiting bilingual review and is not published.",
+      "review": {
+        "status": "needs-review",
+        "checkedAt": "2026-10-07",
+        "checkedBy": "AI 번역 초안",
+        "humanReviewed": false,
+        "note": "번역 검수 미완료. 공개 언어 전환·검색 색인·공개 내보내기에서 제외합니다."
+      },
+      "sourceIdentity": {
+        "title": "징비록",
+        "summary": "유성룡이 임진왜란 경험을 돌아보며 남긴 기록입니다. 사건을 겪은 시점과 전후에 글을 정리한 시점, 판본이 전해진 과정을 구분해 읽습니다."
+      }
+    }
+  ]
+}

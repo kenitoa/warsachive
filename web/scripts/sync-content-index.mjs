@@ -32,7 +32,7 @@ for (const fileName of jsonFiles) {
     registerUniqueEventIds(events, fileName, seenEventFiles);
   } catch (error) {
     const reason = error instanceof Error ? error.message : "알 수 없는 오류";
-    throw new Error(`발행 파일을 인덱싱할 수 없습니다 (${fileName}): ${reason}`);
+    throw new Error(`발행 파일을 인덱싱할 수 없습니다 (${fileName}): ${reason}`, { cause: error });
   }
 }
 

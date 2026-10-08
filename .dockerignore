@@ -1,0 +1,14 @@
+node_modules
+.git
+**/node_modules
+**/.next
+**/out
+**/dist
+**/data
+api/var
+backups
+.env*
+**/.env*
+**/*.sqlite*
+playwright-report
+test-results

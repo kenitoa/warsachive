@@ -1,0 +1,139 @@
+/* Editorial additions preserve the museum shell and its four home entry cards. */
+.archiveApp { --museum-line: rgba(236, 229, 216, .16); --museum-muted: #aaa49a; --museum-ink: #f0ebe1; --museum-gold: #b6916d; }
+.museumRail { overflow-y: auto; }
+.archiveSkipLink { position: fixed; top: .75rem; left: .75rem; z-index: 100; transform: translateY(-180%); padding: .8rem 1rem; background: #f0ebe1; color: #111212; font-weight: 700; }
+.archiveSkipLink:focus { transform: translateY(0); }
+.archivePage :target { scroll-margin-top: 6rem; }
+.museumNav a[aria-current="page"], .mobileNavigation a[aria-current="page"] { color: #f0ebe1; font-weight: 700; border-left: 2px solid #b6916d; padding-left: .65rem; }
+.railUtility { gap: .5rem; padding-inline: 1.3rem; }
+.railUtility a { min-height: 44px; font-size: .72rem; line-height: 1.6; word-break: keep-all; }
+.railUtility > span { color: #b7b0a6; font-size: .72rem; }
+.heroScope { max-width: 430px; margin: -1rem 0 1.75rem; color: #d3ccc1; font-size: .84rem; line-height: 1.8; word-break: keep-all; }
+.heroTimeline > .heroTimelineNote { margin: .8rem 0 1.2rem; color: #c4bdb3; font-size: .8rem; line-height: 1.75; letter-spacing: 0; }
+.heroTimeline .editorialTextLink { font-size: .85rem; }
+.museumRecord .featuredReason { margin: 1rem 0; color: #c3baad; font-size: .8rem; line-height: 1.65; }
+.archiveSummary { flex-wrap: wrap; gap: .75rem; }
+.entryPaths { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.entryPaths a { display: grid; gap: .7rem; border-top: 1px solid var(--museum-line); padding-top: 1.25rem; }
+.entryPaths strong { color: #ede7dd; font: 400 1.12rem/1.5 Georgia, "Noto Serif KR", serif; }
+.entryPaths span { color: #bdb5aa; font-size: .85rem; line-height: 1.6; }
+.footerLinks { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: .8rem; }
+.footerLinks a { font-size: .78rem; color: #ccc3b7; }
+.museumFooter > div > p { margin: 0; color: #aaa299; font-size: .82rem; line-height: 1.7; }
+.editorialTextLink, .editorialActions a { display: inline-block; color: #e0c2a4; font-size: .9rem; line-height: 1.7; padding: .6rem 0; text-underline-offset: .25em; }
+.editorialTextLink:hover, .editorialActions a:hover, .editorialProse a:hover, .sectionSourceLinks a:hover { text-decoration: underline; }
+.editorialMuted { color: #bcb4a9; font-size: .9rem; line-height: 1.8; }
+.editorialEyebrow { color: #c29e7b; font-size: .75rem; font-weight: 700; letter-spacing: .08em; line-height: 1.6; }
+.themeQuestion { margin: 1.5rem 0 0; color: #e7ded1; font: 400 1.12rem/1.7 Georgia, "Noto Serif KR", serif; word-break: keep-all; }
+.themeCard > p:nth-child(3), .themeRecordLinks a, .collectionDescription > p, .collectionRecords a { font-size: .86rem; }
+.themeRecordLinks { margin-top: 1rem; }
+.themeRecordLinks a { min-height: 44px; align-items: center; }
+.themeRecordLinks span:first-child { color: #d1c7b9; }
+.editorialQuestions { margin: 1rem 0 .5rem; color: #c2b9ac; font-size: .86rem; line-height: 1.8; }
+.editorialQuestions summary { min-height: 44px; padding: .6rem 0; cursor: pointer; color: #e0c2a4; }
+.editorialQuestions ul { padding-left: 1.2rem; }
+.themeBrowseLinks { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; }
+.yearJump { display: flex; flex-wrap: wrap; gap: .5rem; }
+.yearJump a { border: 1px solid var(--museum-line); padding: .65rem .85rem; font-size: .87rem; color: #d8c4af; }
+.yearJump a:hover { border-color: #b6916d; }
+.timelineNarrative { gap: 2.5rem; }
+.datedTimeline { padding: 0; margin: 0; list-style: none; }
+.datedTimeline > li { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--museum-line); }
+.datedTimeline > li:last-child { border-bottom: 1px solid var(--museum-line); }
+.momentDate { display: grid; align-content: start; gap: .6rem; padding-top: .25rem; }
+.momentDate > span { color: #d9b793; font: 400 1.4rem/1.5 Georgia, serif; }
+.momentDate small { color: #b9b0a4; font-size: .85rem; }
+.datedTimeline h2 { margin: .7rem 0 1rem; color: #e9e2d7; font: 400 1.6rem/1.35 Georgia, "Noto Serif KR", serif; }
+.datedTimeline p { max-width: 800px; color: #c4baac; font-size: .95rem; line-height: 1.85; margin: 0; }
+.datedTimeline .editorialEyebrow { color: #bc9874; font-size: .77rem; }
+.momentLinks { display: flex; flex-wrap: wrap; gap: .65rem 1.5rem; margin-top: 1.1rem; }
+.momentLinks a { color: #dbc6b1; font-size: .85rem; line-height: 1.7; }
+.collectionIdentity h2 a:hover, .storyFeature h2 a:hover { color: #d8b18b; }
+.collectionDescription > .selectionCriteria { margin: 1.25rem 0 0; font-size: .82rem; line-height: 1.75; color: #b8ac9b; }
+.collectionDescription dd, .collectionDescription dt { font-size: .82rem; }
+.storyFeature > .storyDeck { color: #e4d9ca; font: 400 1.15rem/1.75 Georgia, "Noto Serif KR", serif; padding-left: 1.25rem; border-left: 2px solid #b6916d; }
+.storyFeature header span, .storyFeature > a, .storyFeature > p { font-size: .9rem; }
+.editorialSheet { width: min(1050px, calc(100% - 3rem)); margin: 0 auto; padding: 3rem 0 5rem; }
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: .7rem; color: #bcb2a4; font-size: .85rem; line-height: 1.7; margin-bottom: 3rem; }
+.breadcrumbs a { color: #dec4a7; }
+.editorialHeader { border-bottom: 1px solid var(--museum-line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+.editorialHeader h1 { max-width: 880px; margin: 1rem 0 1.5rem; color: #f0e8dc; font: 400 clamp(2.4rem, 4.8vw, 4rem)/1.25 Georgia, "Noto Serif KR", serif; word-break: keep-all; }
+.editorialHeader > p:not(.routeEyebrow) { max-width: 800px; color: #c7bdaf; font-size: 1.08rem; line-height: 1.9; }
+.editorialFacts { display: flex; flex-wrap: wrap; gap: .65rem 1.6rem; color: #bcb3a7; font-size: .86rem; line-height: 1.7; }
+.editorialNotice { border: 1px solid var(--museum-line); border-left: 2px solid #b6916d; padding: 1.5rem; background: #181919; margin: 1.5rem 0; color: #cbbfb0; }
+.editorialNotice h2 { color: #e7d9c9; margin: 0 0 .9rem; font: 400 1.2rem/1.45 Georgia, "Noto Serif KR", serif; }
+.editorialNotice p, .editorialNotice li { font-size: .94rem; line-height: 1.85; }
+.editorialNotice p:last-child { margin-bottom: 0; }
+.editorialNotice ul { padding-left: 1.3rem; margin-bottom: 0; }
+.editorialContents { padding: 1.25rem 0; margin: 1.5rem 0 3rem; border-top: 1px solid var(--museum-line); border-bottom: 1px solid var(--museum-line); }
+.editorialContents h2 { font-size: .9rem; color: #c9a37d; margin: 0 0 .9rem; }
+.editorialContents ol, .editorialContents ul { padding-left: 1.4rem; margin: 0; }
+.editorialContents li { line-height: 1.8; margin: .25rem 0; color: #c9c0b3; }
+.editorialContents a { display: inline-block; min-height: 36px; padding: .2rem 0; font-size: .95rem; color: #dacfbe; }
+.readingStep { padding: 1rem 0 2rem; }
+.readingStep > h2, .editorialProse h2, .storySourceList > h2, .editorialRelated > h2 { margin: .7rem 0 1.2rem; color: #e8dfd1; font: 400 1.75rem/1.45 Georgia, "Noto Serif KR", serif; }
+.readingStep > p, .editorialProse p, .storyIntroduction { color: #c7bcae; font: 400 1.04rem/1.95 Georgia, "Noto Serif KR", serif; max-width: 820px; }
+.readingStep > .editorialEyebrow, .editorialProse > .editorialEyebrow { font-family: Arial, "Noto Sans KR", sans-serif; font-size: .78rem; color: #c29e7b; }
+.editorialRecordList { list-style: none; padding: 0; display: grid; gap: 1rem; margin: 1.5rem 0 0; }
+.editorialRecordList > li > a { display: grid; gap: .6rem; padding: 1.4rem; border: 1px solid var(--museum-line); background: #171818; }
+.editorialRecordList > li > a:hover { border-color: #987855; }
+.editorialRecordList span { color: #c7ad91; font-size: .84rem; line-height: 1.65; }
+.editorialRecordList strong { color: #e8decf; font: 400 1.25rem/1.4 Georgia, "Noto Serif KR", serif; }
+.editorialRecordList p { max-width: 820px; color: #bdb2a3; font-size: .95rem; line-height: 1.8; margin: 0; }
+.editorialActions { display: flex; flex-wrap: wrap; gap: 1rem 2rem; border-top: 1px solid var(--museum-line); margin-top: 3rem; padding-top: 1rem; }
+.editorialProse { padding: 1rem 0 2rem; }
+.sectionSourceLinks { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin-top: 1.2rem; }
+.sectionSourceLinks a { color: #d5b793; font-size: .86rem; line-height: 1.8; }
+.storySourceList { border-top: 1px solid var(--museum-line); padding: 2rem 0; }
+.storySourceList > p { color: #bcb1a2; font-size: .9rem; line-height: 1.8; }
+.storySourceList ol { padding-left: 1.4rem; }
+.storySourceList li { border-bottom: 1px solid var(--museum-line); padding: 1rem 0; }
+.storySourceList a { color: #d8b997; font-size: .98rem; line-height: 1.8; }
+.storySourceList p, .storySourceList small { color: #bcb1a3; font-size: .88rem; line-height: 1.8; margin: .5rem 0 0; }
+.menuGuide { display: grid; gap: 1px; background: var(--museum-line); border: 1px solid var(--museum-line); margin: 2rem 0; }
+.menuGuide > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 1rem; padding: 1.2rem; background: #171818; }
+.menuGuide dt { color: #ddbd98; font-size: .94rem; }
+.menuGuide dd { color: #c0b5a6; font-size: .94rem; line-height: 1.75; margin: 0; }
+.aboutGuide { padding-top: 0; }
+.aboutPrinciples p { font-size: .91rem; }
+.archivePage a, .archivePage p, .archivePage h1, .archivePage h2, .archivePage li { overflow-wrap: anywhere; }
+@media (max-width: 1100px) {
+  .museumNav { gap: 1rem; }
+  .museumNav a { font-size: .78rem; }
+}
+@media (max-width: 760px) {
+  .mobileNavigationBar { display: flex; align-items: center; justify-content: space-between; padding: .6rem 1rem; gap: 1rem; min-height: 64px; }
+  .mobileNavigationBar > button { border: 1px solid #6d6459; border-radius: 0; padding: .65rem .75rem; display: flex; align-items: center; gap: .65rem; min-height: 44px; background: transparent; color: #e5d9c8; font-size: .85rem; }
+  .mobileNavigation nav[hidden] { display: none; }
+  .mobileMenuUtility { padding: .75rem 1rem 1rem; border-top: 1px solid var(--museum-line); }
+  .mobileMenuUtility[hidden] { display: none; }
+  .mobileMenuUtility a { display: inline-flex; align-items: center; min-height: 44px; color: #e0c2a4; font-size: .95rem; }
+  .mobileNavigation nav a { min-height: 44px; font-size: .95rem; }
+  .heroContent { padding-top: 6rem; }
+  .heroScope { margin: -.5rem 0 1.5rem; font-size: .85rem; }
+  .heroMenu small { font-size: .77rem; }
+  .entryPaths { grid-template-columns: 1fr; }
+  .archiveSummary strong { font-size: 1.4rem; }
+  .archiveSummary a { width: 100%; margin-left: 0; font-size: .85rem; }
+  .collectionCard p { font-size: .85rem; }
+  .museumRecord > small { font-size: .9rem; }
+  .datedTimeline > li { grid-template-columns: 1fr; gap: .8rem; padding: 1.5rem 0; }
+  .momentDate { display: flex; flex-wrap: wrap; align-items: baseline; gap: .8rem; }
+  .momentDate > span { font-size: 1.25rem; }
+  .datedTimeline h2 { font-size: 1.5rem; }
+  .editorialSheet { width: calc(100% - 2.5rem); padding-top: 2rem; }
+  .editorialHeader h1 { font-size: 2.5rem; }
+  .editorialNotice { padding: 1.2rem; }
+  .editorialRecordList > li > a { padding: 1.2rem; }
+  .menuGuide > div { grid-template-columns: 1fr; gap: .6rem; }
+  .editorialContents a { min-height: 44px; }
+}
+@media print {
+  .archiveSkipLink, .museumRail, .museumFooter, .heroMenu { display: none !important; }
+  .archivePage { padding: 0; background: #fff; color: #111; }
+  .editorialSheet { width: 100%; padding: 0; }
+  .editorialSheet p, .editorialSheet h1, .editorialSheet h2, .editorialSheet a, .editorialSheet li, .editorialSheet span, .editorialSheet small { color: #111; }
+  .editorialNotice, .editorialRecordList > li > a { background: #fff; border-color: #bbb; }
+  .editorialActions { display: none; }
+  .editorialProse, .storySourceList li { break-inside: avoid; }
+}

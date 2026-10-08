@@ -1,0 +1,4 @@
+import type { ImportConflict } from "../../lib/workspace-domain";
+import styles from "./refinement-personal.module.css";
+const fieldNames: Record<string, string> = { title: "제목", question: "연구 질문", goal: "학습 목표", level: "읽기 수준", recordIds: "자료 목록", claims: "주장과 근거", notes: "연구 메모", questions: "학습 질문", teacherNotes: "교사 메모", answerKey: "교사 답안", nextChecks: "다음 확인 작업" };
+export function ConflictPreview({ conflicts }: { conflicts: ImportConflict[] }) { return <div className={styles.panel}>{conflicts.map(conflict => <details key={`${conflict.kind}:${conflict.id}`}><summary>{conflict.title || "제목 없는 작업"} · 다른 버전 비교</summary><p>기기 수정 {conflict.localUpdatedAt} / 가져온 수정 {conflict.incomingUpdatedAt}</p>{conflict.differences.map(change => <section key={change.field}><h4>{fieldNames[change.field] ?? change.field}</h4><p>기기 사본</p><pre className="privateText">{change.local}</pre><p>가져온 사본</p><pre className="privateText">{change.incoming}</pre></section>)}</details>)}</div>; }

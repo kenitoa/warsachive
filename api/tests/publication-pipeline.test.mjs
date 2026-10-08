@@ -1,0 +1,34 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { mkdtemp, readFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { Store } from "../src/infrastructure/database.ts";
+import { readConfig } from "../src/config.ts";
+import { createApp } from "../src/http/app.ts";
+import { readSignedPublication, applyPublication } from "../../web/lib/publication-import.mjs";
+import { isPublicRecord } from "../../web/lib/archive-domain.ts";
+
+test("CMS signed export imports into static web and withdrawal closes both discovery paths",async t=>{
+ const folder=await mkdtemp(join(tmpdir(),"archive-publication-pipeline-"));
+ const config=readConfig({ARCHIVE_API_DB_PATH:join(folder,"test.sqlite"),ARCHIVE_API_EXPORT_DIR:join(folder,"exports"),ARCHIVE_API_SESSION_SECRET:"pipeline-session-fixture-only-secret",ARCHIVE_PUBLICATION_SECRET:"pipeline-signing-fixture-only-secret"});
+ const store=new Store(config.dbPath);t.after(()=>store.close());const app=createApp({store,config});
+ const original=JSON.parse(await readFile(new URL("../../web/content/editorial.json",import.meta.url),"utf8")).records;
+ const editor=await app.auth.bootstrapAdmin("pipeline-editor@example.org","Fixture editor","fixture-password-only-123");
+ const reviewerSession=await app.auth.register({email:"pipeline-reviewer@example.org",name:"Fixture reviewer",password:"fixture-password-only-123"},app.auth.createSession(null).token,"fixture");
+ store.run("UPDATE users SET role='reviewer' WHERE id=?",reviewerSession.user.id);const reviewer={...reviewerSession.user,role:"reviewer"};
+ const draft=app.editorial.save(editor,null,{record:original[0],privateNotes:"TEST PRIVATE NOTE"},"fixture");
+ const submitted=app.editorial.transition(editor,draft.id,"submit",{version:draft.version},"fixture");
+ const checked=app.editorial.transition(reviewer,draft.id,"source-check",{version:submitted.version,note:"Test-only source gate"},"fixture");
+ const approved=app.editorial.transition(reviewer,draft.id,"approve",{version:checked.version,contentHash:checked.contentHash,note:"Test-only independent review"},"fixture");
+ app.editorial.transition(editor,draft.id,"publish",{version:approved.version},"fixture");await app.worker.tick();await app.worker.tick();
+ let publication=readSignedPublication(join(config.exportDirectory,"approved.json"),config.publicationSecret);
+ assert.equal(publication.items[0].id,original[0].id);assert.equal(publication.items[0].review.humanReviewed,true);
+ assert.ok(!JSON.stringify(publication).includes("TEST PRIVATE NOTE"));
+ assert.equal(applyPublication(original,publication).filter(isPublicRecord).length,original.length);
+ const current=app.editorial.draft(reviewer,draft.id);
+ app.editorial.transition(reviewer,draft.id,"withhold",{version:current.version,note:"Test-only withdrawal"},"fixture");await app.worker.tick();
+ publication=readSignedPublication(join(config.exportDirectory,"approved.json"),config.publicationSecret);
+ assert.deepEqual(publication.withheldIds,[original[0].id]);
+ const merged=applyPublication(original,publication);assert.equal(merged.find(record=>record.id===original[0].id).review.status,"withheld");assert.equal(merged.filter(isPublicRecord).length,original.length-1);assert.equal(app.editorial.publicRecords().length,0);
+});

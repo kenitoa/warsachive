@@ -4,17 +4,56 @@
   "private": true,
   "workspaces": [
     "web",
-    "mobile"
+    "mobile",
+    "api"
   ],
   "scripts": {
     "content:sync": "node web/scripts/sync-content-index.mjs",
+    "content:audit": "node --experimental-strip-types web/scripts/content-audit.mjs",
+    "content:review": "node --experimental-strip-types web/scripts/editorial-review.mjs",
+    "content:gate": "node --experimental-strip-types web/scripts/editorial-review.mjs --gate",
+    "content:links": "node --experimental-strip-types web/scripts/check-source-links.mjs",
     "dev:web": "npm run dev --workspace @war-archive/web",
     "dev:mobile": "npm run start --workspace @war-archive/mobile",
-    "build": "npm run build --workspace @war-archive/web",
+    "build": "npm run build --workspace @war-archive/api && npm run build --workspace @war-archive/web",
+    "dev:api": "npm run start --workspace @war-archive/api",
+    "worker": "npm run worker --workspace @war-archive/api",
+    "admin:create": "npm run admin:create --workspace @war-archive/api",
+    "content:import": "npm run content:import --workspace @war-archive/api",
+    "start": "node --env-file-if-exists=.env.api scripts/start-local.mjs",
+    "lint": "eslint . --max-warnings 0",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "test:browser": "playwright test",
+    "test:withdrawal": "node scripts/check-withdrawal-build.mjs",
+    "test:static": "node --experimental-strip-types web/scripts/verify-static-output.mjs",
+    "preview": "node web/scripts/serve-static.mjs",
+    "ai:evaluate": "node --env-file-if-exists=.env.api --experimental-strip-types scripts/ai-evaluate.mjs",
+    "ai:approve": "node --env-file-if-exists=.env.api --experimental-strip-types scripts/ai-approve-evaluation.mjs",
+    "publication:evidence": "node --env-file-if-exists=.env.api --experimental-strip-types scripts/publication-evidence.mjs",
+    "test:performance": "node scripts/performance-audit.mjs",
+    "test:browser:isolated": "node scripts/browser-isolated.mjs"
   },
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=22.22.3"
+  },
+  "overrides": {
+    "xcode": {
+      "uuid": "11.1.1"
+    },
+    "metro": {
+      "image-size": "2.0.4"
+    }
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@next/eslint-plugin-next": "^16.2.10",
+    "@playwright/test": "^1.63.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.4.0",
+    "sharp": "^0.35.5",
+    "typescript-eslint": "^8.71.1"
   }
 }
