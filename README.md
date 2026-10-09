@@ -46,7 +46,7 @@ npm run preview
 
 API 브라우저 전체 검사는 `test:browser:isolated`로 파일·화면 크기마다 새 fixture를 시작합니다. 실제 로그인 속도 제한을 완화하지 않습니다. 성능 검사는 Playwright Chromium이 설치된 미리보기 4173 서버 또는 `ARCHIVE_PERFORMANCE_SITE`의 공개 HTTPS 주소에서 30회 측정하며 현장 Core Web Vitals나 실물 기기 증거를 대신하지 않습니다.
 
-`NEXT_PUBLIC_SITE_URL`은 최종 공개 HTTPS 주소로 설정합니다. 설정이 없으면 GitHub Actions에서는 저장소의 Pages 주소를 계산하고 로컬에서는 localhost를 사용합니다. 프로젝트 Pages 경로와 canonical 주소가 일치해야 합니다. 실제 환경 파일은 커밋하지 않습니다. `.env.example`에는 키 이름만 제공합니다.
+Vercel에서는 시스템 변수로 운영 도메인과 preview 주소를 자동 계산합니다. 커스텀 도메인은 production 환경의 `NEXT_PUBLIC_SITE_URL`에 최종 HTTPS 주소를 설정합니다. 로컬에서는 localhost를 사용합니다. 실제 환경 파일은 커밋하지 않으며 `.env.example`에는 키 이름만 제공합니다.
 
 ## 발행과 검수
 
@@ -72,12 +72,13 @@ npm run content:links
 
 현재 매니페스트는 사이트 정보를 제공하며 웹 오프라인 동작을 보장하지 않습니다. 오프라인 읽기는 모바일 앱의 마지막 공개 보관본에 구현했습니다.
 
-## GitHub Pages
+## Vercel
 
-1. Settings → Pages → Source를 GitHub Actions로 설정합니다.
-2. Actions 변수 `SITE_URL`에 최종 HTTPS 주소를 등록합니다.
-3. main에 push하면 lint·타입 검사·테스트·콘텐츠 gate·정적 빌드·canonical 검증 후 배포합니다.
-4. 배포 후 실제 `/release.json`의 SHA·콘텐츠 해시와 핵심 URL을 확인합니다.
+1. `stock-project1/kenitoa-warsachive`를 GitHub 저장소에 연결하고 Root Directory `web`, Framework `Other`, Output `out`을 사용합니다.
+2. Actions 변수 `SITE_URL`은 `https://kenitoa-warsachive.vercel.app`로 설정합니다.
+3. `main` push가 lint·타입 검사·테스트·콘텐츠 gate·정적 빌드·canonical 검증 후 Vercel 운영 배포를 만듭니다.
+4. 배포 후 `Verify Vercel production deployment`가 실제 `/release.json`의 SHA·콘텐츠 해시와 핵심 HTTPS URL을 확인합니다.
+5. 기존 GitHub Pages 발행과 자동 배포 workflow는 중단합니다. 운영 설정과 복구는 [Vercel 운영 문서](docs/vercel-migration.md)를 따릅니다.
 
 PR에는 `Validate archive changes` 워크플로가 적용됩니다. 브랜치 보호에서 검증 성공과 검수자 승인을 필수로 설정하는 작업은 저장소 관리자가 해야 합니다. 설정만 추가했다고 실제 GitHub 배포가 검증된 것은 아닙니다.
 
