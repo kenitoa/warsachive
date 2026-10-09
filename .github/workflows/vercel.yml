@@ -1,0 +1,69 @@
+name: Verify Vercel production deployment
+
+on:
+  deployment_status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vercel-production-verification
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+      ARCHIVE_BUILD_PROFILE: production
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.3
+          cache: npm
+      - name: Identify the deployed source
+        run: echo "ARCHIVE_RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Verify published release and key URLs
+        run: node web/scripts/post-deploy-smoke.mjs
+      - name: Load optional signed publication
+        env:
+          APPROVED_JSON: ${{ secrets.ARCHIVE_APPROVED_EXPORT_JSON }}
+          VERIFY_KEY: ${{ secrets.ARCHIVE_PUBLICATION_VERIFY_SECRET }}
+          EVIDENCE_KEY: ${{ secrets.ARCHIVE_DEPLOYMENT_EVIDENCE_SECRET }}
+        run: |
+          node --input-type=module <<'JS'
+          import { writeFile, appendFile } from 'node:fs/promises';
+          const configured = [process.env.APPROVED_JSON, process.env.VERIFY_KEY, process.env.EVIDENCE_KEY];
+          if (configured.some(Boolean)) {
+            if (!configured.every(Boolean)) throw new Error('Configure all three signed-publication secrets together.');
+            JSON.parse(process.env.APPROVED_JSON);
+            await writeFile('/tmp/archive-approved-publication.json', process.env.APPROVED_JSON, { mode: 0o600, flag: 'wx' });
+            await appendFile(process.env.GITHUB_ENV, 'ARCHIVE_APPROVED_EXPORT_FILE=/tmp/archive-approved-publication.json\n');
+          }
+          JS
+      - if: env.ARCHIVE_APPROVED_EXPORT_FILE != ''
+        run: npm ci
+      - name: Observe signed build and live publication
+        if: env.ARCHIVE_APPROVED_EXPORT_FILE != ''
+        env:
+          ARCHIVE_PUBLICATION_VERIFY_SECRET: ${{ secrets.ARCHIVE_PUBLICATION_VERIFY_SECRET }}
+          ARCHIVE_DEPLOYMENT_EVIDENCE_SECRET: ${{ secrets.ARCHIVE_DEPLOYMENT_EVIDENCE_SECRET }}
+        run: |
+          sudo apt-get update && sudo apt-get install --no-install-recommends -y fonts-noto-cjk
+          npm run build --workspace @war-archive/web
+          mkdir -p /tmp/archive-publication-evidence
+          node --experimental-strip-types scripts/publication-evidence.mjs build /tmp/archive-publication-evidence/build.json
+          node --experimental-strip-types scripts/publication-evidence.mjs deploy /tmp/archive-publication-evidence/deploy-feed.json
+      - name: Retain private signed observations
+        if: env.ARCHIVE_APPROVED_EXPORT_FILE != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: signed-publication-vercel
+          path: /tmp/archive-publication-evidence/*.json
+          if-no-files-found: error
+          retention-days: 3

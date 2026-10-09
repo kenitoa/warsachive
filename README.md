@@ -1,6 +1,8 @@
 # 전쟁 역사 아카이브
 
-기존 박물관형 화면과 GitHub Pages 정적 발행 구조를 유지한 공개 역사 자료 열람 서비스입니다. 사용자는 기록을 검색하고, 사건·인물·장소의 맥락과 주장별 출처를 읽고, 자신의 브라우저나 모바일 기기에 보관합니다.
+공개 웹: https://kenitoa-warsachive.vercel.app/ · [Vercel 배포 및 복구](docs/vercel-migration.md)
+
+기존 박물관형 화면과 정적 발행 구조를 유지하고 Vercel로 배포하는 공개 역사 자료 열람 서비스입니다. 사용자는 기록을 검색하고, 사건·인물·장소의 맥락과 주장별 출처를 읽고, 자신의 브라우저나 모바일 기기에 보관합니다.
 
 확장 버전 고도화의 [30개 항목 반영표](docs/refinement-implementation.md), [검증 결과](docs/refinement-verification.md), [새 운영 절차와 마이그레이션](docs/refinement-operations.md)을 함께 확인하세요. 입력 복구·동일 작업 복귀·협업/교육 일반 폼·CMS 검토·기관 이행과 업무별 권한을 연결했습니다. 실제 공급자 및 운영 확인이 필요한 기능은 해당 증거가 없으면 활성화하지 않습니다.
 

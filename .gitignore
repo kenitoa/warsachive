@@ -32,3 +32,6 @@ backups/
 artifacts/
 .env.*
 !.env.example
+
+.vercel
+.env*

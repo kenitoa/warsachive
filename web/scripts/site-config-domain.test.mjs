@@ -28,3 +28,13 @@ test("unsafe configuration fails before emitting assets or metadata", () => {
   assert.throws(() => resolveSiteConfig({ profile: "unexpected" }), /preview or production/);
   assert.deepEqual(resolveSiteConfig({}), { siteUrl: "http://localhost:3000", basePath: "" });
 });
+
+test("Vercel production uses the stable root and previews use their own deployment", () => {
+  const environment = { vercel: "1", githubRepository: "owner/warsachive", vercelProductionUrl: "archive.vercel.app", vercelUrl: "archive-preview.vercel.app" };
+  assert.deepEqual(resolveSiteConfig({ ...environment, vercelEnvironment: "production" }), { siteUrl: "https://archive.vercel.app", basePath: "" });
+  assert.deepEqual(resolveSiteConfig({ ...environment, vercelEnvironment: "preview" }), { siteUrl: "https://archive-preview.vercel.app", basePath: "" });
+  assert.deepEqual(resolveSiteConfig({ ...environment, vercelEnvironment: "production", siteUrl: "https://archive.example.org" }), { siteUrl: "https://archive.example.org", basePath: "" });
+  assert.throws(() => resolveSiteConfig({ vercel: "1", githubRepository: "owner/warsachive" }), /Vercel requires/);
+  assert.throws(() => resolveSiteConfig({ ...environment, siteUrl: "http://localhost:3000" }), /HTTPS/);
+  assert.throws(() => resolveSiteConfig({ vercel: "1", vercelUrl: "host/path" }), /Vercel requires/);
+});

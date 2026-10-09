@@ -1,5 +1,7 @@
 # 배포·설정·복구
 
+현재 공개 웹의 운영 배포는 [Vercel 이관 및 운영](vercel-migration.md)을 따른다. 아래 Pages 발행·rollback 절차는 이관 전 운영 기록이며 현재 활성 배포 절차가 아니다. 기존 서명 검증·발행 증거·API 영속성 계약은 Vercel 이관 문서에서 계속 유지한다.
+
 ## 승인 자료의 발행 확인 증거
 
 Pages 워크플로에 서명된 승인 export를 사용할 때는 보호된 GitHub Secrets `ARCHIVE_APPROVED_EXPORT_JSON`, `ARCHIVE_PUBLICATION_VERIFY_SECRET`, `ARCHIVE_DEPLOYMENT_EVIDENCE_SECRET` 세 개를 함께 설정한다. JSON은 현재 보류 목록까지 포함한 최신 worker export 원문이며 다른 비밀값과 분리된 검증/관측 키를 사용한다. 일부만 설정하면 배포를 거절한다. GitHub Secret 크기 한도를 넘는 운영 자료는 안전한 별도 승인 artifact 전달 경로를 마련한 뒤 기존 file 계약에 연결해야 한다. 공개 저장소에 private export를 커밋하지 않는다.

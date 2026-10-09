@@ -15,13 +15,13 @@ const { publicRecords: records, editorial } = await readArchiveContent();
 const ids = new Set(records.map((record) => record.id));
 if (ids.size !== records.length) throw new Error("Public archive contains duplicate IDs.");
 const siteUrl = getSiteUrl();
-let gitSha = process.env.ARCHIVE_RELEASE_SHA || process.env.GITHUB_SHA || "";
+let gitSha = process.env.ARCHIVE_RELEASE_SHA || process.env.VERCEL_GIT_COMMIT_SHA || process.env.GITHUB_SHA || "";
 if (!gitSha) {
   try { gitSha = execFileSync("git", ["rev-parse", "HEAD"], { cwd: webDirectory, encoding: "utf8" }).trim(); }
   catch { gitSha = "uncommitted"; }
 }
 const generatedAt = new Date().toISOString();
-const mode = process.env.ARCHIVE_BUILD_PROFILE === "preview" ? "preview" : process.env.GITHUB_ACTIONS === "true" ? "ci" : "local";
+const mode = process.env.ARCHIVE_BUILD_PROFILE === "preview" || process.env.VERCEL_ENV === "preview" ? "preview" : process.env.VERCEL === "1" || process.env.GITHUB_ACTIONS === "true" ? "ci" : "local";
 const release = createReleaseMetadata(records, siteUrl, gitSha, generatedAt, mode);
 const { contentHash } = release;
 const mobile = { version: 1, siteUrl, contentHash, generatedAt, records };

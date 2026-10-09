@@ -3,5 +3,9 @@ export interface SiteEnvironment {
   siteUrl?: string;
   githubActions?: string;
   githubRepository?: string;
+  vercel?: string;
+  vercelEnvironment?: string;
+  vercelUrl?: string;
+  vercelProductionUrl?: string;
 }
 export function resolveSiteConfig(environment: SiteEnvironment): { siteUrl: string; basePath: string };
