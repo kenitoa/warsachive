@@ -179,6 +179,13 @@ for (const route of ["/", "/archive/", "/archive/imjin-war/", "/explore/", "/tim
     page.on("response", response => { if (response.url().startsWith("http://127.0.0.1:4173/") && response.status() >= 400) failedAssets.push(`${response.status()} ${response.url()}`); });
     await page.goto(route);
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    if (route === "/archive/imjin-war/") {
+      const knowledgeTargets = page.locator("#knowledge > details > summary");
+      expect(await knowledgeTargets.count()).toBeGreaterThan(0);
+      for (const target of await knowledgeTargets.all()) {
+        expect(await target.evaluate(element => element.getBoundingClientRect().height)).toBeGreaterThanOrEqual(44);
+      }
+    }
     const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze();
     expect(result.violations.map(item => ({ id: item.id, nodes: item.nodes.map(node => ({ target: node.target, summary: node.failureSummary })) }))).toEqual([]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
