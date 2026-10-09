@@ -11,8 +11,24 @@ export class Store {
     if (path !== ":memory:") mkdirSync(dirname(path), { recursive: true, mode: 0o700 });
     this.db = new DatabaseSync(path);
     if (path !== ":memory:") chmodSync(path, 0o600);
-    this.db.exec("PRAGMA busy_timeout=5000; PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL;");
-    this.migrate();
+    try {
+      this.db.exec("PRAGMA busy_timeout=5000; PRAGMA foreign_keys=ON;");
+      // Changing journal mode can return SQLITE_BUSY before busy_timeout applies.
+      // API and worker startup may race on a new database; retry only this step.
+      const deadline = Date.now() + 5000;
+      const pause = new Int32Array(new SharedArrayBuffer(4));
+      for (;;) {
+        try { this.db.exec("PRAGMA journal_mode=WAL;"); break; }
+        catch (error) {
+          if (!(error instanceof Error) || !("errcode" in error) || error.errcode !== 5 || Date.now() >= deadline) throw error;
+          Atomics.wait(pause, 0, 0, 25);
+        }
+      }
+      this.migrate();
+    } catch (error) {
+      this.db.close();
+      throw error;
+    }
   }
   get(sql: string, ...params: SQLInputValue[]): Row | undefined { return this.db.prepare(sql).get(...params); }
   all(sql: string, ...params: SQLInputValue[]): Row[] { return this.db.prepare(sql).all(...params); }

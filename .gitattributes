@@ -1,0 +1,2 @@
+# Archive checksums identify the original bytes, including their line endings.
+web/content/archive/*.json -text

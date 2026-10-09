@@ -65,7 +65,7 @@ test("trusted local startup snapshot exposes real source-checked data without cr
 
 test("independent API and worker processes can initialize the same database migrations safely", async (t) => {
   const env = await fixture(t); const path = resolve(env.directory, "concurrent.sqlite"); const databaseModule = new URL("../src/infrastructure/database.ts", import.meta.url).href; const source = `import { Store } from ${JSON.stringify(databaseModule)}; const store = new Store(process.argv[1]); process.stdout.write(JSON.stringify({count:store.get('SELECT count(*) AS count FROM schema_migrations').count,integrity:store.get('PRAGMA quick_check').quick_check})); store.close();`;
-  const execute = promisify(execFile); const results = await Promise.all([1, 2].map(() => execute(process.execPath, ["--experimental-strip-types", "--input-type=module", "--eval", source, path]))); const expected = env.store.get("SELECT count(*) AS count FROM schema_migrations")?.count; for (const result of results) { const value = object(JSON.parse(result.stdout) as unknown); assert.equal(value.count, expected); assert.equal(value.integrity, "ok"); }
+  const execute = promisify(execFile); const results = await Promise.all([1, 2, 3, 4].map(() => execute(process.execPath, ["--experimental-strip-types", "--input-type=module", "--eval", source, path]))); const expected = env.store.get("SELECT count(*) AS count FROM schema_migrations")?.count; for (const result of results) { const value = object(JSON.parse(result.stdout) as unknown); assert.equal(value.count, expected); assert.equal(value.integrity, "ok"); }
 });
 
 test("administrator CLI accepts piped stdin while preserving password whitespace and refuses a second bootstrap", async (t) => {
