@@ -26,7 +26,7 @@
 | 20 운영 업무 | 실제 업무 큐·업무 범위 있는 담당자 선택·우선순위·기한·다음 행동·실패별 복구 | `refinement-operations.tsx`, workboard/jobs API |
 | 21 권리·파일 | 표시/다운로드/수업/상업/번역/변형·지역·기간·저작자 표기·실제 증빙, 서명된 파일 검사와 실제 IIIF 조건 | 기관 권리 폼, attachments/scan API, IIIF 뷰어 |
 | 22 변경 영향 | 서지 ID뿐 아니라 제목/URL/작성자/독립 출처 그룹 대조, 연결 자료와 언어판 영향 목록·원문 버전 변경 안내 | CMS preflight, 연구 스냅샷·콘텐츠 검증 |
-| 23 발행 증거 | 승인 해시/버전→서명 export→빌드→공개 페이지→모바일 feed, 동일 SHA·산출물 해시 증거 | `publication-evidence.mjs`, publication API·Pages workflow |
+| 23 발행 증거 | 승인 해시/버전→서명 export→빌드→공개 페이지→모바일 feed, 동일 SHA·산출물 해시 증거 | `publication-evidence.mjs`, publication API·Vercel workflow |
 | 24 정정 처리 | 접수·분류·수락·종결 분리, 반영 완료에는 실제 버전/발행 증거와 종결 근거 필요, 반영하지 않은 제안은 사유와 함께 별도 거절 | 정정 큐·공개 접수 조회 |
 | 25 모바일 | 묶음 확인·자료 수/실제 바이트 진행·실패 재시도·버전·이전 보관본·온라인 보류 차단·선택형 계정 | `mobile/catalog-client.ts`, `App.tsx`, `account-panel.tsx` |
 | 26 다국어 | 전체 본문·메뉴·오류·도움말·역자·검수자·원본 문단 해시 계약, 승인된 실제 언어판만 URL/hreflang 제공 | `knowledge-localization.ts`, `/read/` |

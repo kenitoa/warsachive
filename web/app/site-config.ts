@@ -6,7 +6,6 @@ export function getSiteUrl(): string {
     profile: process.env.ARCHIVE_BUILD_PROFILE,
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
     githubActions: process.env.GITHUB_ACTIONS,
-    githubRepository: process.env.GITHUB_REPOSITORY,
     vercel: process.env.VERCEL,
     vercelEnvironment: process.env.VERCEL_ENV,
     vercelUrl: process.env.VERCEL_URL,
@@ -14,7 +13,7 @@ export function getSiteUrl(): string {
   }).siteUrl;
 }
 
-/** Same-origin path for public assets, including the GitHub Pages project prefix. */
+/** Same-origin path for public assets using the configured application prefix. */
 export function sitePath(path: string): string {
   if (!path.startsWith("/") || path.startsWith("//") || path.includes("..")) {
     throw new Error("A public asset path must be an absolute application path.");

@@ -41,7 +41,7 @@ production은 Vercel의 고정 프로젝트 주소, preview는 해당 배포 주
 
 GitHub Actions 저장소 변수 `SITE_URL`은 `https://kenitoa-warsachive.vercel.app`로 설정한다. `.env`와 `.vercel` 파일은 커밋하지 않는다. Vercel 시스템 변수는 직접 추가할 필요가 없다. API·결제·관리자 비밀키는 웹 배포에 필요하지 않다.
 
-Vercel 주소를 도출하지 못하면 Pages나 localhost 주소로 잘못 발행하지 않고 실패한다. 로컬/PR 검증은 기존 preview 프로필과 loopback 주소를 사용한다.
+Vercel 주소를 도출하지 못하면 다른 주소나 localhost로 잘못 발행하지 않고 실패한다. 로컬/PR 검증은 기존 preview 프로필과 loopback 주소를 사용한다.
 
 ## 승인 자료와 발행 증거
 
@@ -58,16 +58,15 @@ Vercel 주소를 도출하지 못하면 Pages나 localhost 주소로 잘못 발�
 3. `main` push 후 Vercel 빌드 검증과 운영 도메인 승격을 확인한다.
 4. 공개 `release.json`의 `gitSha`를 실제 push SHA와 비교한다.
 5. `.github/workflows/vercel.yml`이 production 성공 `deployment_status` 후 운영 HTTPS와 해당 SHA를 검증한다. 수동 실행은 선택한 브랜치의 현재 SHA를 확인한다.
-6. 공개 화면·상세·검색·sitemap·RSS·정적 자산을 확인한 뒤 기존 GitHub Pages를 Unpublish한다.
+6. 공개 화면·상세·검색·sitemap·RSS·정적 자산과 실제 운영 응답 헤더를 확인한다.
 
-기존 `pages.yml`은 제거하여 Pages 자동 발행을 중단한다. `github.io` 주소는 Vercel에서 제어할 수 없으므로 새 주소로 자동 HTTP 리다이렉트되지는 않는다. 외부에 공유한 링크는 새 주소로 갱신한다.
+외부에 공유한 링크는 현재 Vercel 운영 주소로 갱신한다. 운영 URL은 명시한 공개 주소 또는 Vercel 시스템 환경 변수에서만 결정하며, Git 저장소 이름으로 다른 호스팅 주소를 생성하지 않는다.
 
 ## 복구와 운영 경계
 
 - 검증된 이전 Vercel production 배포를 Promote하거나 원인 변경을 되돌리는 새 커밋을 `main`에 push한다.
 - 콘텐츠 보류 목록이 바뀌었다면 과거 산출물을 승격하지 말고 최신 보류 목록으로 재빌드한다. 오래된 승인 파일로 보류 자료를 다시 공개하지 않는다.
 - 복구 후에도 공개 SHA와 핵심 URL을 확인한다. DB 초기화나 운영 데이터 삭제는 필요하지 않다.
-- Pages 복구가 필요하면 이관 전 workflow와 설정을 승인된 복구 커밋으로 복원하고 다시 발행한다.
 - DB 마이그레이션은 없다. 기존 로컬 API·SQLite·worker를 유지한다. 계정·관리자·결제 서버의 외부 운영 배포는 이번 범위 밖이다.
 - Linux 검증에서 발견한 초기 WAL 전환 경합은 SQLITE_BUSY에만 최대 5초 재시도한다. 마이그레이션 파일은 수정하지 않으며 기존 초기화 실패는 그대로 보고한다.
 - `.gitattributes`가 원본 archive JSON의 바이트를 운영체제 간 보존한다. 기존 원본 체크섬은 변경하지 않는다.

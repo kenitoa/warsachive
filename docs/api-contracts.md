@@ -10,7 +10,7 @@
 
 `GET /auth/session`으로 세션과 CSRF 값을 받은 뒤, 변경 요청에 허용된 `Origin`, `Content-Type: application/json`, `X-CSRF-Token`을 보낸다. 브라우저는 `credentials: include`를 사용한다. 쿠키는 HttpOnly, SameSite=Strict이며 운영은 Secure와 `__Host-` 접두사를 사용한다. 프론트엔드의 메뉴 숨김과 역할 표시는 보안 경계가 아니다. 서버에서 역할·소유권·참여자 권한을 검사한다.
 
-웹과 API는 같은 사이트에서 운영해야 한다. 별개의 github.io 사이트와 무관한 API 도메인을 연결했다고 Strict 쿠키가 동작하지 않는다. 운영 API는 같은 사이트의 서브도메인 또는 HTTPS 역방향 프록시로 연결하고 origin 허용 목록을 정확히 설정한다. `/health/metrics`는 관리자만 열람한다.
+웹과 API는 같은 사이트에서 운영해야 한다. 서로 무관한 웹과 API 도메인을 연결하면 Strict 쿠키가 동작하지 않는다. 운영 API는 같은 사이트의 서브도메인 또는 HTTPS 역방향 프록시로 연결하고 origin 허용 목록을 정확히 설정한다. `/health/metrics`는 관리자만 열람한다.
 
 ## 공개 API와 정적 자료
 

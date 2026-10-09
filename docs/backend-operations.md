@@ -65,7 +65,7 @@ bundle은 온라인 DB snapshot, snapshot에 연결된 PNG/JPEG/PDF, SHA-256 man
 
 compose는 production 모드, 컨테이너 API의 0.0.0.0:4200 바인딩과 DB/export/private의 `/data` 경로를 명시한다. 같은 환경 파일의 로컬 상대 경로나 빈 값이 영속 volume 경로를 바꾸지 않는다. 초기 snapshot은 컨테이너에서 기본 비활성이며 필요하면 운영자가 별도 읽기 전용 파일 mount와 경로 설정을 추가한다. root 이미지에는 src·마이그레이션·계약만 복사하며 중첩 환경 파일도 build context에서 제외한다.
 
-CI의 Linux container job은 비루트 실행과 실제 컨테이너의 readiness를 검사하도록 정의했다. 이 세션의 로컬 자동 검증과 실제 CI 실행 결과는 별개다. 서버 호스팅 계정·TLS 도메인·배포 secrets가 제공되지 않아 운영 클라우드 배포는 수행하지 않았다. 공개 Pages에 유료 서비스를 올리기 전에 해당 호스팅의 이용 조건과 적절한 운영 호스팅을 확인한다.
+CI의 Linux container job은 비루트 실행과 실제 컨테이너의 readiness를 검사하도록 정의했다. 이 세션의 로컬 자동 검증과 실제 CI 실행 결과는 별개다. 서버 호스팅 계정·TLS 도메인·배포 secrets가 제공되지 않아 운영 클라우드 배포는 수행하지 않았다. 공개 웹에 유료 서비스를 올리기 전에 해당 호스팅의 이용 조건과 적절한 운영 호스팅을 확인한다.
 
 ## 관측·장애 대응
 

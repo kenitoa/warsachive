@@ -2,7 +2,6 @@ export interface SiteEnvironment {
   profile?: string;
   siteUrl?: string;
   githubActions?: string;
-  githubRepository?: string;
   vercel?: string;
   vercelEnvironment?: string;
   vercelUrl?: string;

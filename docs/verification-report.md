@@ -37,7 +37,7 @@
 | npm run build | 정적 페이지 48개 생성 성공 |
 | npm run test:static | 15개 주요/상세 경로, canonical·OG·공개 hash·검색 최소화·사이트맵 비공개 제외·이미지 크기·RSC 요청 파일 43개 성공 |
 | npm run test:browser -- --workers=2 | Chromium 데스크톱·Pixel 7 에뮬레이션 42개 성공 |
-| Pages 하위 경로 검증 | /warsachive에서 동일한 브라우저 검사 42개 성공 |
+| 정적 하위 경로 검증 | /warsachive에서 동일한 브라우저 검사 42개 성공 |
 | 빠른 검색/상세/컬렉션 복귀 반복 | 데스크톱·모바일 각 3회, 12개 성공 |
 | npm run build:android --workspace @war-archive/mobile | Metro 575 modules, Hermes 번들 생성 성공 |
 | npm run content:gate | 공개 4개, 보류 27개 계약 검사 성공 |
@@ -56,7 +56,7 @@ Windows Next 정적 출력의 중첩 RSC 파일 문제를 실제 요청에서 �
 
 데이터베이스와 DB 마이그레이션은 없습니다. 공개 URL·모바일 조회 URL·검사 호스트·release SHA·미리보기 포트/경로·빌드 프로필은 [.env.example](../.env.example)과 [배포 문서](deployment.md)에 정의했습니다. 비밀값을 추가하지 않았습니다.
 
-배포 하위 경로 검사는 https://kenitoa.github.io/warsachive를 metadata 기준으로 빌드한 산출물을 loopback에서 제공한 검사입니다. 실제 사이트에 이번 변경을 배포하거나 push하지 않았습니다. 로컬 release의 gitSha는 기존 HEAD이며, 미커밋 변경을 포함하는 운영 배포 SHA 검증 증거가 아닙니다.
+이 보고서의 배포 하위 경로 검사는 이관 전 정적 산출물을 loopback에서 제공한 검사입니다. 해당 검사 시점에는 실제 사이트에 변경을 배포하거나 push하지 않았습니다. 당시 로컬 release의 gitSha는 기존 HEAD이며, 미커밋 변경을 포함하는 운영 배포 SHA 검증 증거가 아닙니다. 현재 운영 배포 절차는 [Vercel 운영 문서](vercel-migration.md)를 따릅니다.
 
 다음은 별도 미완료 또는 미검증 항목입니다.
 

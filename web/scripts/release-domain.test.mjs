@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createReleaseMetadata } from "./release-domain.mjs";
 
-test("release preserves the Pages path and identifies exact content independently of build time", () => {
+test("release preserves the application path and identifies exact content independently of build time", () => {
   const records = [{ id: "imjin-war", updatedAt: "2026-10-07" }];
   const first = createReleaseMetadata(records, "https://example.org/warsachive/", "a".repeat(40), "2026-10-07T00:00:00Z");
   const second = createReleaseMetadata(records, "https://example.org/warsachive", "a".repeat(40), "2026-10-08T00:00:00Z");

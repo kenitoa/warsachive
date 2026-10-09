@@ -20,7 +20,7 @@
 | 기록 품질·발행 경계 | archive-domain, editorial, content audit | 관련성·근거·인적 검수 구분·원본 보존; 사람의 검수 발명 없음 |
 | 관리자 검수 운영 | review/gate/link CLI, PR template, operations | 실제 파일/PR 기반 큐·검수; 비공개 웹 관리자와 독립 승인·이력·발행 API 제공 |
 | 분석·KPI | shelf local metrics, operations | 기기 안의 집계; 외부 서비스 전체 분석은 연결 후 검증 |
-| 배포·복구 | validate/pages/source-links workflows, release/hash smoke | 실행 가능한 CI/CD·이전 승인 SHA 재빌드; 실제 권한/배포 미검증 |
+| 배포·복구 | validate/vercel/source-links workflows, release/hash smoke | 실행 가능한 CI/CD·이전 승인 SHA 재빌드; 실제 권한/배포 확인은 운영 증거로 별도 기록 |
 | 문서·환경 | README, docs, .env.example | 계약·운영·출시·복구·필요 변수·서버 의존 범위 |
 | 계정·제보·기여·업로드 | service-boundaries.md | 접수·계정·권한·협업 API 구현; 공개 파일은 권리 확인 후 노출 |
 | 결제·AI·다국어 | service-boundaries.md | 실 공급자 어댑터·계약과 검수 gate 구현; 실제 공급자 검증·승인 번역은 별도 |

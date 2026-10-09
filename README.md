@@ -78,7 +78,7 @@ npm run content:links
 2. Actions 변수 `SITE_URL`은 `https://kenitoa-warsachive.vercel.app`로 설정합니다.
 3. `main` push가 lint·타입 검사·테스트·콘텐츠 gate·정적 빌드·canonical 검증 후 Vercel 운영 배포를 만듭니다.
 4. 배포 후 `Verify Vercel production deployment`가 실제 `/release.json`의 SHA·콘텐츠 해시와 핵심 HTTPS URL을 확인합니다.
-5. 기존 GitHub Pages 발행과 자동 배포 workflow는 중단합니다. 운영 설정과 복구는 [Vercel 운영 문서](docs/vercel-migration.md)를 따릅니다.
+5. 운영 설정과 복구는 [Vercel 운영 문서](docs/vercel-migration.md)를 따릅니다.
 
 PR에는 `Validate archive changes` 워크플로가 적용됩니다. 브랜치 보호에서 검증 성공과 검수자 승인을 필수로 설정하는 작업은 저장소 관리자가 해야 합니다. 설정만 추가했다고 실제 GitHub 배포가 검증된 것은 아닙니다.
 

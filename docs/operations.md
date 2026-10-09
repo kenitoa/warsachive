@@ -21,7 +21,7 @@
 6. 여러 URL이 같은 자료에서 파생되면 같은 independenceGroup을 부여합니다. 출처 수를 독립 검증 수처럼 제시하지 않습니다.
 7. `npm run content:gate`, lint/typecheck/test/build/test:static/test:browser 후 정적 미리보기를 확인합니다.
 8. 검수자가 PR의 콘텐츠 체크리스트를 검토합니다. 공개 저장소의 모든 브랜치·PR에는 비공개 초안을 넣지 않습니다.
-9. 승인 후 main에 병합하면 Pages 배포와 release SHA 확인이 실행됩니다.
+9. 승인 후 main에 병합하면 Vercel 배포와 release SHA 확인이 실행됩니다.
 10. 출처 변경·정정 요청은 운영자가 검토하고 corrections/updatedAt/review.note에 수정 이유를 남깁니다.
 
 ## 실제 운영 도구

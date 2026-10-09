@@ -1,6 +1,6 @@
 /** Resolve one URL/prefix contract for Next output, public data and page metadata. */
 export function resolveSiteConfig(environment) {
-  const { profile, siteUrl, githubActions, githubRepository, vercel, vercelEnvironment, vercelUrl, vercelProductionUrl } = environment;
+  const { profile, siteUrl, githubActions, vercel, vercelEnvironment, vercelUrl, vercelProductionUrl } = environment;
   if (profile && !["preview", "production"].includes(profile)) {
     throw new Error("ARCHIVE_BUILD_PROFILE must be preview or production.");
   }
@@ -13,13 +13,7 @@ export function resolveSiteConfig(environment) {
     candidate = `https://${host}`;
   }
   if (!candidate) {
-    const repository = githubRepository?.split("/");
-    if (profile !== "preview" && repository?.length === 2 && repository.every((part) => /^[a-zA-Z0-9_.-]+$/.test(part))) {
-      const [owner, name] = repository;
-      candidate = name.endsWith(".github.io") ? `https://${name}` : `https://${owner}.github.io/${name}`;
-    } else {
-      candidate = "http://localhost:3000";
-    }
+    candidate = "http://localhost:3000";
   }
   const url = new URL(candidate);
   if (!["http:", "https:"].includes(url.protocol) || url.username || url.password || url.search || url.hash) {
@@ -27,7 +21,7 @@ export function resolveSiteConfig(environment) {
   }
   const production = vercel === "1" || profile === "production" || (githubActions === "true" && profile !== "preview");
   if (production && url.protocol !== "https:") {
-    throw new Error("Production requires an HTTPS site URL or a valid GitHub repository.");
+    throw new Error("Production requires an HTTPS site URL.");
   }
   if (profile === "preview" && url.pathname !== "/") {
     throw new Error("Preview requires a site URL without a path prefix.");
