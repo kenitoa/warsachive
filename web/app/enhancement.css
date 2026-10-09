@@ -44,6 +44,7 @@
 .recordLead { max-width: 850px; color: #d0c8bd; font-size: calc(1.1rem * var(--reading-scale)); line-height: 1.9; }
 .recordRoutePage .recordBody h2, .recordSection > h2 { font: 400 1.6rem/1.5 Georgia,"Noto Serif KR",serif; letter-spacing: 0; color: var(--museum-ink); }
 .recordSection { margin: 3.5rem 0; scroll-margin-top: 95px; }
+.recordSection details > summary { min-height: 44px; padding: .6rem 0; line-height: 1.6; cursor: pointer; }
 .recordRoutePage .recordBody p, .recordSection > p, .recordSection li { font-size: calc(1.03rem * var(--reading-scale)); line-height: 1.95; }
 .recordRoutePage .recordBody .evidenceLinks, .evidenceLinks { display: flex; flex-wrap: wrap; gap: .8rem; color: var(--museum-muted); font: .9rem/1.7 Arial,sans-serif; }
 .readingPosition { display: flex; gap: .75rem; align-items: center; margin-top: 1rem; }
