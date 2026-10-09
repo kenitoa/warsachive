@@ -19,6 +19,8 @@
 
 Git 연결이 `main` push를 운영 배포하고 다른 브랜치와 PR은 preview로 배포한다. 빌드마다 lint/typecheck/test/content gate/build/static 검증을 수행한다. 실패한 빌드는 운영 도메인으로 승격되지 않는다.
 
+공유 이미지는 `web/assets/fonts/NotoSansKR.ttf`를 명시적으로 로드한다. [Google Fonts 원본](https://github.com/google/fonts/tree/main/ofl/notosanskr)과 `OFL.txt` 라이선스를 함께 보관하며 빌드 중 네트워크 글꼴 다운로드를 하지 않는다. 글꼴은 정적 public 폴더 밖에 있어 방문자에게 10MB 글꼴을 전송하지 않는다.
+
 production은 Vercel의 고정 프로젝트 주소, preview는 해당 배포 주소를 사용한다. canonical·RSS·sitemap·공개 JSON·정적 자산 주소를 같은 설정으로 계산한다. `release.json`은 `VERCEL_GIT_COMMIT_SHA`를 기록한다. 기록 ID와 URL 경로를 유지한다.
 
 ## 환경 변수
